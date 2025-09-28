@@ -160,7 +160,6 @@ const DesktopNav = ({ pages }: DesktopNavProps) => (
           '&:hover': {
             color: 'primary.dark',
             backgroundColor: 'transparent',
-            textDecoration: 'underline',
           },
         }}
       >
