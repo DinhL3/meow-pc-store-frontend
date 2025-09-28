@@ -26,7 +26,7 @@ const BREAKPOINT = 'md';
 
 const PAGES = [
   { label: 'Buy PC', path: '/buy-pc' },
-  { label: 'Build your own', path: '/build-your-own' },
+  { label: 'Customize your own', path: '/custom-order' },
   { label: 'About', path: '/about' },
 ] as const;
 
