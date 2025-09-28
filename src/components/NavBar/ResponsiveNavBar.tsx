@@ -18,7 +18,7 @@ import logoImage from '../../assets/new-logo-sm.png';
 
 // Constants
 const LOGO_HEIGHT = {
-  mobile: '52px',
+  mobile: '48px',
   desktop: '52px',
 } as const;
 
@@ -112,7 +112,7 @@ const MobileNav = ({
         aria-controls="mobile-menu"
         aria-haspopup="true"
         onClick={onOpenMenu}
-        color="inherit"
+        color="primary"
       >
         <MenuIcon />
       </IconButton>
@@ -153,11 +153,13 @@ const DesktopNav = ({ pages }: DesktopNavProps) => (
         component={Link}
         to={page.path}
         sx={{
-          color: 'white',
+          color: 'primary.main',
           textDecoration: 'none',
           textTransform: 'none',
           fontSize: '1rem',
           '&:hover': {
+            color: 'primary.dark',
+            backgroundColor: 'transparent',
             textDecoration: 'underline',
           },
         }}
@@ -229,7 +231,7 @@ function ResponsiveNavBar() {
   );
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: 'white' }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters sx={{ minHeight: { xs: 56, sm: 64 } }}>
           {isMobile ? mobileLayout : desktopLayout}

@@ -17,10 +17,10 @@ function Root() {
       <Box
         sx={{
           position: 'relative',
-          minHeight: '95vh',
+          minHeight: '94vh',
           display: 'flex',
           alignItems: 'center',
-          background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://res.cloudinary.com/dlhzbr2to/image/upload/v1759077624/hero_drfjce.webp')`,
+          background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/dlhzbr2to/image/upload/v1759077624/hero_drfjce.webp')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -43,7 +43,6 @@ function Root() {
                 fontWeight: 'bold',
                 fontSize: { xs: '2.5rem', sm: '3.5rem', md: '4rem' },
                 textShadow: '2px 2px 4px rgba(0,0,0,0.7)',
-                letterSpacing: '0.02em',
               }}
             >
               MEOW PC STORE
@@ -91,10 +90,11 @@ function Root() {
                 sx={{
                   borderColor: 'white',
                   color: 'white',
+                  transition: 'all 0.3s ease',
                   '&:hover': {
-                    borderColor: 'white',
+                    color: 'primary.main',
+                    borderColor: 'primary.main',
                   },
-                  transition: 'all 0.3s ease-in-out',
                 }}
               >
                 Order a PC to your liking
@@ -103,11 +103,6 @@ function Root() {
           </Stack>
         </Container>
       </Box>
-
-      {/* Rest of your content will go here */}
-      <Container maxWidth="sm" sx={{ py: 4 }}>
-        <Typography variant="h5">Welcome to Meow PC Store!</Typography>
-      </Container>
     </>
   );
 }
