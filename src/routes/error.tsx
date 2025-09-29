@@ -1,14 +1,4 @@
-import React, { useEffect } from 'react';
-import {
-  Button,
-  Container,
-  Divider,
-  Stack,
-  Typography,
-  CircularProgress,
-  Alert,
-  Link as MaterialLink,
-} from '@mui/material';
+import { Container, Typography } from '@mui/material';
 
 function Error() {
   return (
