@@ -9,10 +9,13 @@ const HeroSection: React.FC = () => {
         minHeight: '94vh',
         display: 'flex',
         alignItems: 'center',
-        background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/dlhzbr2to/image/upload/v1759077624/hero_drfjce.webp')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
+        background: {
+          xs: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://res.cloudinary.com/dlhzbr2to/image/upload/v1759146568/hero_drfjce.webp')`,
+          sm: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0)), url('https://res.cloudinary.com/dlhzbr2to/image/upload/v1759147132/hero_right_vr4ep1.webp')`,
+        },
+        backgroundSize: { xs: 'cover', sm: 'cover' },
+        backgroundPosition: { xs: 'center', sm: 'center' },
+        backgroundRepeat: { xs: 'no-repeat', sm: 'no-repeat' },
         color: 'white',
       }}
     >
@@ -20,9 +23,8 @@ const HeroSection: React.FC = () => {
         <Stack
           spacing={2}
           sx={{
-            textAlign: 'center',
+            textAlign: { xs: 'center', sm: 'left' },
             maxWidth: '600px',
-            mx: 'auto',
           }}
         >
           <Typography
@@ -31,7 +33,6 @@ const HeroSection: React.FC = () => {
             sx={{
               fontWeight: 'bold',
               fontSize: { xs: '2.5rem', sm: '3.5rem', md: '4rem' },
-              textShadow: '2px 2px 4px rgba(0,0,0,0.7)',
             }}
           >
             MEOW PC STORE
@@ -43,7 +44,7 @@ const HeroSection: React.FC = () => {
             sx={{
               fontWeight: 500,
               fontSize: { xs: '1.1rem', sm: '1.3rem', md: '1.5rem' },
-              textShadow: '1px 1px 2px rgba(0,0,0,0.7)',
+
               lineHeight: 1.4,
             }}
           >
@@ -55,8 +56,8 @@ const HeroSection: React.FC = () => {
             spacing={3}
             sx={{
               mt: 4,
-              justifyContent: 'center',
               alignItems: 'center',
+              justifyContent: { xs: 'center', sm: 'flex-start' },
             }}
           >
             <Button variant="contained" size="large">
