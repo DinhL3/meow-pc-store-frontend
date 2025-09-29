@@ -2,6 +2,14 @@ import React from 'react';
 import { Button, Container, Stack, Typography, Box } from '@mui/material';
 
 const HeroSection: React.FC = () => {
+  const handleContextMenu = (e: React.MouseEvent) => {
+    e.preventDefault();
+  };
+
+  const handleDragStart = (e: React.DragEvent) => {
+    e.preventDefault();
+  };
+
   return (
     <Box
       sx={{
@@ -17,7 +25,25 @@ const HeroSection: React.FC = () => {
         backgroundPosition: { xs: 'center', sm: 'center' },
         backgroundRepeat: { xs: 'no-repeat', sm: 'no-repeat' },
         color: 'white',
+        userSelect: 'none',
+        pointerEvents: 'auto',
+        '&::before': {
+          content: '""',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          pointerEvents: 'none',
+          userSelect: 'none',
+          WebkitUserSelect: 'none',
+          MozUserSelect: 'none',
+          msUserSelect: 'none',
+        },
       }}
+      onContextMenu={handleContextMenu}
+      onDragStart={handleDragStart}
+      draggable={false}
     >
       <Container maxWidth="lg">
         <Stack
