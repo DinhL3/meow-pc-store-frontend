@@ -18,8 +18,8 @@ import logoImage from '../../assets/new-logo-sm.png';
 
 // Constants
 const LOGO_HEIGHT = {
-  mobile: '48px',
-  desktop: '52px',
+  mobile: '72px',
+  desktop: '80px',
 } as const;
 
 const BREAKPOINT = 'md';
@@ -73,6 +73,7 @@ const Logo = ({ isMobile, onNavigate }: LogoProps) => {
         display: 'flex',
         alignItems: 'center',
         textDecoration: 'none',
+        my: 0.5,
       }}
     >
       <img
@@ -112,7 +113,7 @@ const MobileNav = ({
         aria-controls="mobile-menu"
         aria-haspopup="true"
         onClick={onOpenMenu}
-        color="primary"
+        sx={{ color: 'white' }}
       >
         <MenuIcon />
       </IconButton>
@@ -153,12 +154,13 @@ const DesktopNav = ({ pages }: DesktopNavProps) => (
         component={Link}
         to={page.path}
         sx={{
-          color: 'primary.main',
+          color: 'white',
           textDecoration: 'none',
-          textTransform: 'none',
+          textTransform: 'uppercase',
+          fontWeight: 700,
           fontSize: '1rem',
           '&:hover': {
-            color: 'primary.dark',
+            textDecoration: 'underline',
             backgroundColor: 'transparent',
           },
         }}
@@ -222,15 +224,26 @@ function ResponsiveNavBar() {
     () => (
       <>
         <Logo isMobile={isMobile} onNavigate={handleNavigation} />
-        <Box sx={{ flexGrow: 1 }} />
-        <DesktopNav pages={PAGES} />
+        <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
+          <DesktopNav pages={PAGES} />
+        </Box>
+        <Box
+          sx={{ width: isMobile ? LOGO_HEIGHT.mobile : LOGO_HEIGHT.desktop }}
+        />
       </>
     ),
     [handleNavigation, isMobile]
   );
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'white' }}>
+    <AppBar
+      position="fixed"
+      sx={{
+        backgroundColor: 'transparent',
+        boxShadow: 'none',
+        zIndex: (theme) => theme.zIndex.drawer + 1,
+      }}
+    >
       <Container maxWidth="lg">
         <Toolbar disableGutters sx={{ minHeight: { xs: 56, sm: 64 } }}>
           {isMobile ? mobileLayout : desktopLayout}

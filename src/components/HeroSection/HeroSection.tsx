@@ -14,12 +14,12 @@ const HeroSection: React.FC = () => {
     <Box
       sx={{
         position: 'relative',
-        minHeight: '94vh',
+        minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
         background: {
-          xs: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://res.cloudinary.com/dlhzbr2to/image/upload/v1759146568/hero_drfjce.webp')`,
-          sm: `linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.0) 60%), url('https://res.cloudinary.com/dlhzbr2to/image/upload/v1759147132/hero_right_vr4ep1.webp')`,
+          xs: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/dlhzbr2to/image/upload/v1759146568/hero_drfjce.webp')`,
+          sm: `linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.35) 40%, rgba(0, 0, 0, 0.0) 70%), url('https://res.cloudinary.com/dlhzbr2to/image/upload/v1759147132/hero_right_vr4ep1.webp')`,
         },
         backgroundSize: { xs: 'cover', sm: 'cover' },
         backgroundPosition: { xs: 'center', sm: 'center' },
@@ -61,7 +61,7 @@ const HeroSection: React.FC = () => {
               fontSize: { xs: '2.5rem', sm: '3.5rem', md: '4rem' },
             }}
           >
-            MEOW PC STORE
+            AFFORDABLE PREMIUM PC
           </Typography>
 
           <Typography
@@ -74,7 +74,7 @@ const HeroSection: React.FC = () => {
               lineHeight: 1.4,
             }}
           >
-            Beautiful, powerful and high-quality PCs at an affordable price
+            Aesthetic, powerful and high-quality PCs at an affordable price
           </Typography>
 
           <Stack
@@ -86,7 +86,14 @@ const HeroSection: React.FC = () => {
               justifyContent: { xs: 'center', sm: 'flex-start' },
             }}
           >
-            <Button variant="contained" size="large">
+            <Button
+              variant="contained"
+              size="large"
+              sx={{
+                backgroundColor: 'primary.light',
+                fontWeight: 700,
+              }}
+            >
               Browse our PCs
             </Button>
 
@@ -106,6 +113,7 @@ const HeroSection: React.FC = () => {
               sx={{
                 borderColor: 'white',
                 color: 'white',
+                fontWeight: 700,
                 transition: 'all 0.3s ease',
                 '&:hover': {
                   color: 'primary.light',
