@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import ResponsiveNavBar from './components/NavBar/ResponsiveNavBar';
+import ResponsiveNavBar from './components/Navigation/ResponsiveNavBar';
 
 function Layout() {
   return (
