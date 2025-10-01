@@ -11,7 +11,7 @@ import {
   MenuItem,
   Button,
 } from '@mui/material';
-import { Menu as MenuIcon } from '@mui/icons-material';
+import { Menu as MenuIcon, Language } from '@mui/icons-material';
 import { useMediaQuery, useTheme } from '@mui/material';
 
 import logoImage from '../../assets/new-logo-sm.png';
@@ -30,6 +30,11 @@ const PAGES = [
   { label: 'About', path: '/about' },
 ] as const;
 
+const LANGUAGES = [
+  { code: 'en', label: 'English' },
+  { code: 'fi', label: 'Suomi' },
+] as const;
+
 // Types
 interface LogoProps {
   isMobile: boolean;
@@ -46,6 +51,10 @@ interface MobileNavProps {
 
 interface DesktopNavProps {
   pages: typeof PAGES;
+}
+
+interface LanguagePickerProps {
+  isMobile?: boolean;
 }
 
 // Custom hook
@@ -157,11 +166,10 @@ const DesktopNav = ({ pages }: DesktopNavProps) => (
           color: 'white',
           textDecoration: 'none',
           textTransform: 'none',
-          fontWeight: 700,
+          fontWeight: 600,
           fontSize: '1rem',
           '&:hover': {
-            textDecoration: 'underline',
-            backgroundColor: 'transparent',
+            backgroundColor: 'rgba(255, 255, 255, 0.1)',
           },
         }}
       >
@@ -170,6 +178,72 @@ const DesktopNav = ({ pages }: DesktopNavProps) => (
     ))}
   </Box>
 );
+
+const LanguagePicker = ({ isMobile = false }: LanguagePickerProps) => {
+  const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
+  const [selectedLang, setSelectedLang] = useState('en');
+
+  const handleOpen = useCallback((event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+  }, []);
+
+  const handleClose = useCallback(() => {
+    setAnchorEl(null);
+  }, []);
+
+  const handleLanguageChange = useCallback(
+    (code: string) => {
+      setSelectedLang(code);
+      // Add your i18n language change logic here
+      handleClose();
+    },
+    [handleClose]
+  );
+
+  const currentLanguageLabel = isMobile
+    ? selectedLang.toUpperCase()
+    : LANGUAGES.find((lang) => lang.code === selectedLang)?.label?.toString();
+
+  return (
+    <>
+      <Button
+        onClick={handleOpen}
+        sx={{
+          color: 'white',
+          textTransform: 'none',
+          minWidth: 'auto',
+          display: 'flex',
+          alignItems: 'center',
+          fontWeight: 600,
+          '&:hover': {
+            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+          },
+        }}
+        aria-label="Select language"
+        startIcon={<Language />}
+      >
+        {currentLanguageLabel}
+      </Button>
+      <Menu
+        anchorEl={anchorEl}
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+        transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+      >
+        {LANGUAGES.map((lang) => (
+          <MenuItem
+            key={lang.code}
+            onClick={() => handleLanguageChange(lang.code)}
+            selected={selectedLang === lang.code}
+          >
+            {lang.label}
+          </MenuItem>
+        ))}
+      </Menu>
+    </>
+  );
+};
 
 // Main component
 function ResponsiveNavBar() {
@@ -200,15 +274,21 @@ function ResponsiveNavBar() {
   const mobileLayout = useMemo(
     () => (
       <>
-        <Logo isMobile={isMobile} onNavigate={handleNavigation} />
-        <Box sx={{ flexGrow: 1 }} />
-        <MobileNav
-          pages={PAGES}
-          anchorEl={anchorElNav}
-          onOpenMenu={handleOpenNavMenu}
-          onCloseMenu={handleCloseNavMenu}
-          onNavigate={handleNavigation}
-        />
+        <Box sx={{ width: 48, display: 'flex', justifyContent: 'flex-start' }}>
+          <MobileNav
+            pages={PAGES}
+            anchorEl={anchorElNav}
+            onOpenMenu={handleOpenNavMenu}
+            onCloseMenu={handleCloseNavMenu}
+            onNavigate={handleNavigation}
+          />
+        </Box>
+        <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
+          <Logo isMobile={isMobile} onNavigate={handleNavigation} />
+        </Box>
+        <Box sx={{ width: 48, display: 'flex', justifyContent: 'flex-end' }}>
+          <LanguagePicker isMobile={isMobile} />
+        </Box>
       </>
     ),
     [
@@ -227,9 +307,9 @@ function ResponsiveNavBar() {
         <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
           <DesktopNav pages={PAGES} />
         </Box>
-        <Box
-          sx={{ width: isMobile ? LOGO_HEIGHT.mobile : LOGO_HEIGHT.desktop }}
-        />
+        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+          <LanguagePicker />
+        </Box>
       </>
     ),
     [handleNavigation, isMobile]

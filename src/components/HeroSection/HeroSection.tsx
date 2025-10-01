@@ -47,7 +47,6 @@ const HeroSection: React.FC = () => {
     >
       <Container maxWidth="lg">
         <Stack
-          spacing={2}
           sx={{
             textAlign: { xs: 'center', md: 'left' },
             maxWidth: '600px',
@@ -71,7 +70,6 @@ const HeroSection: React.FC = () => {
             sx={{
               fontWeight: 'normal',
               fontSize: { xs: '1.1rem', sm: '1.3rem', md: '1.5rem' },
-              lineHeight: 1.4,
             }}
           >
             Powerful performance, quality parts, built to last. <br />
@@ -92,7 +90,7 @@ const HeroSection: React.FC = () => {
               size="large"
               sx={{
                 backgroundColor: 'primary.light',
-                fontWeight: 700,
+                fontWeight: 600,
                 textTransform: 'none',
                 fontSize: '1.1rem',
               }}
@@ -119,7 +117,7 @@ const HeroSection: React.FC = () => {
                 borderColor: 'white',
                 color: 'white',
                 textTransform: 'none',
-                fontWeight: 700,
+                fontWeight: 600,
                 fontSize: '1.1rem',
                 transition: 'all 0.3s ease',
                 '&:hover': {
