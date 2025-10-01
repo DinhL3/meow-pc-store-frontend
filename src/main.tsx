@@ -8,10 +8,11 @@ import './i18n/config.js';
 
 import './index.css';
 
-import '@fontsource/inter/300.css';
-import '@fontsource/inter/400.css';
-import '@fontsource/inter/500.css';
-import '@fontsource/inter/700.css';
+import '@fontsource/lato/100.css';
+import '@fontsource/lato/300.css';
+import '@fontsource/lato/400.css';
+import '@fontsource/lato/700.css';
+import '@fontsource/lato/900.css';
 
 import Layout from './Layout.tsx';
 import About from './routes/about.tsx';

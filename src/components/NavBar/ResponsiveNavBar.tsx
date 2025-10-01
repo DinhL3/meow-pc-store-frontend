@@ -25,8 +25,8 @@ const LOGO_HEIGHT = {
 const BREAKPOINT = 'md';
 
 const PAGES = [
-  { label: 'Buy PC', path: '/buy-pc' },
-  { label: 'Customize your own', path: '/custom-order' },
+  { label: 'Browse PCs', path: '/buy-pc' },
+  { label: 'Build Your PC', path: '/custom-order' },
   { label: 'About', path: '/about' },
 ] as const;
 
@@ -156,7 +156,7 @@ const DesktopNav = ({ pages }: DesktopNavProps) => (
         sx={{
           color: 'white',
           textDecoration: 'none',
-          textTransform: 'uppercase',
+          textTransform: 'none',
           fontWeight: 700,
           fontSize: '1rem',
           '&:hover': {
