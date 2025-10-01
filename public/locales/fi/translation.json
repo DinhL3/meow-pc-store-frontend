@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "browsePCs": "Selaa tietokoneita",
+    "buildYourPC": "Rakenna oma PC",
+    "about": "Tietoa"
+  },
+  "logo": {
+    "alt": "Yrityksen logo"
+  },
+  "language": {
+    "select": "Valitse kieli"
+  },
+  "hero": {
+    "title": "Kaunis tietokone edulliseen hintaan.",
+    "subtitle": "Tehokas suorituskyky, laadukkaat osat, rakennettu kestämään.",
+    "subtitleLine2": "Säästä aikaa, ei stressiä, ja saat tietokoneen joka näyttää hienolta pöydälläsi.",
+    "browsePCsButton": "Selaa tietokoneita",
+    "or": "tai",
+    "buildPCButton": "Rakenna juuri sellainen PC kuin haluat"
+  }
+}

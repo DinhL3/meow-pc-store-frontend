@@ -1,7 +1,10 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button, Container, Stack, Typography, Box } from '@mui/material';
 
 const HeroSection: React.FC = () => {
+  const { t } = useTranslation();
+
   const handleContextMenu = (e: React.MouseEvent) => {
     e.preventDefault();
   };
@@ -45,12 +48,12 @@ const HeroSection: React.FC = () => {
       onDragStart={handleDragStart}
       draggable={false}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Stack
           spacing={2}
           sx={{
             textAlign: { xs: 'center', md: 'left' },
-            maxWidth: '600px',
+            maxWidth: '800px',
             mx: { xs: 'auto', md: 0 },
           }}
         >
@@ -62,7 +65,7 @@ const HeroSection: React.FC = () => {
               fontSize: { xs: '2.5rem', sm: '3rem', md: '4rem' },
             }}
           >
-            Beautiful PC at an affordable price.
+            {t('hero.title')}
           </Typography>
 
           <Typography
@@ -73,8 +76,8 @@ const HeroSection: React.FC = () => {
               fontSize: { xs: '1.1rem', sm: '1.3rem', md: '1.5rem' },
             }}
           >
-            Powerful performance, quality parts, built to last. <br />
-            Save time, no stress, and get a PC that looks great on your desk.
+            {t('hero.subtitle')} <br />
+            {t('hero.subtitleLine2')}
           </Typography>
 
           <Stack
@@ -95,7 +98,7 @@ const HeroSection: React.FC = () => {
                 fontSize: '1.1rem',
               }}
             >
-              Browse PCs
+              {t('hero.browsePCsButton')}
             </Button>
 
             <Typography
@@ -107,7 +110,7 @@ const HeroSection: React.FC = () => {
                 display: { xs: 'none', md: 'block' },
               }}
             >
-              or
+              {t('hero.or')}
             </Typography>
 
             <Button
@@ -126,7 +129,7 @@ const HeroSection: React.FC = () => {
                 },
               }}
             >
-              Build the exact PC you want
+              {t('hero.buildPCButton')}
             </Button>
           </Stack>
         </Stack>

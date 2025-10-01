@@ -1,12 +1,13 @@
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button, Menu, MenuItem } from '@mui/material';
 import { Language } from '@mui/icons-material';
 import { LANGUAGES } from './constants';
 import type { LanguagePickerProps } from './types';
 
 export const LanguagePicker = ({ isMobile = false }: LanguagePickerProps) => {
+  const { i18n, t } = useTranslation();
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
-  const [selectedLang, setSelectedLang] = useState('en');
 
   const handleOpen = useCallback((event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -18,16 +19,15 @@ export const LanguagePicker = ({ isMobile = false }: LanguagePickerProps) => {
 
   const handleLanguageChange = useCallback(
     (code: string) => {
-      setSelectedLang(code);
-      // Add your i18n language change logic here
+      i18n.changeLanguage(code);
       handleClose();
     },
-    [handleClose]
+    [i18n, handleClose]
   );
 
   const currentLanguageLabel = isMobile
-    ? selectedLang.toUpperCase()
-    : LANGUAGES.find((lang) => lang.code === selectedLang)?.label?.toString();
+    ? i18n.language.toUpperCase()
+    : LANGUAGES.find((lang) => lang.code === i18n.language)?.label;
 
   return (
     <>
@@ -44,7 +44,7 @@ export const LanguagePicker = ({ isMobile = false }: LanguagePickerProps) => {
             backgroundColor: 'rgba(255, 255, 255, 0.1)',
           },
         }}
-        aria-label="Select language"
+        aria-label={t('language.select')}
         startIcon={<Language />}
       >
         {currentLanguageLabel}
@@ -60,7 +60,7 @@ export const LanguagePicker = ({ isMobile = false }: LanguagePickerProps) => {
           <MenuItem
             key={lang.code}
             onClick={() => handleLanguageChange(lang.code)}
-            selected={selectedLang === lang.code}
+            selected={i18n.language === lang.code}
           >
             {lang.label}
           </MenuItem>

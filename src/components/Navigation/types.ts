@@ -1,5 +1,5 @@
 export interface Page {
-  label: string;
+  key: string; // Changed from label to key
   path: string;
 }
 

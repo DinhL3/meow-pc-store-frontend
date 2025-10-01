@@ -83,7 +83,7 @@ function ResponsiveNavBar() {
         zIndex: (theme) => theme.zIndex.drawer + 1,
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ minHeight: { xs: 56, sm: 64 } }}>
           {isMobile ? mobileLayout : desktopLayout}
         </Toolbar>
