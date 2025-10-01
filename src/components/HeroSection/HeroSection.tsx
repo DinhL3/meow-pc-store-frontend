@@ -47,6 +47,7 @@ const HeroSection: React.FC = () => {
     >
       <Container maxWidth="lg">
         <Stack
+          spacing={2}
           sx={{
             textAlign: { xs: 'center', md: 'left' },
             maxWidth: '600px',
@@ -78,9 +79,8 @@ const HeroSection: React.FC = () => {
 
           <Stack
             direction={{ xs: 'column', md: 'row' }}
-            spacing={3}
+            spacing={2}
             sx={{
-              mt: 4,
               alignItems: 'center',
               justifyContent: { xs: 'center', md: 'flex-start' },
             }}
@@ -90,7 +90,7 @@ const HeroSection: React.FC = () => {
               size="large"
               sx={{
                 backgroundColor: 'primary.light',
-                fontWeight: 600,
+                fontWeight: 500,
                 textTransform: 'none',
                 fontSize: '1.1rem',
               }}
@@ -103,7 +103,7 @@ const HeroSection: React.FC = () => {
               sx={{
                 color: 'white',
                 fontSize: '1.1rem',
-                fontWeight: 'bold',
+                fontWeight: 500,
                 display: { xs: 'none', md: 'block' },
               }}
             >
@@ -117,7 +117,7 @@ const HeroSection: React.FC = () => {
                 borderColor: 'white',
                 color: 'white',
                 textTransform: 'none',
-                fontWeight: 600,
+                fontWeight: 500,
                 fontSize: '1.1rem',
                 transition: 'all 0.3s ease',
                 '&:hover': {
