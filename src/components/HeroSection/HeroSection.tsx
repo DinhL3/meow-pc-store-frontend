@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button, Container, Stack, Typography, Box } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
   const { t } = useTranslation();
@@ -89,6 +90,8 @@ const HeroSection: React.FC = () => {
             }}
           >
             <Button
+              component={Link}
+              to={'/products'}
               variant="contained"
               size="large"
               sx={{

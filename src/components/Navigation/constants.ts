@@ -6,7 +6,7 @@ export const LOGO_HEIGHT = {
 export const BREAKPOINT = 'md';
 
 export const PAGES = [
-  { key: 'browsePCs', path: '/buy-pc' },
+  { key: 'browsePCs', path: '/products' },
   { key: 'buildYourPC', path: '/custom-order' },
   { key: 'about', path: '/about' },
 ] as const;

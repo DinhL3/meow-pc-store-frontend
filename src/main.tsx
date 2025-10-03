@@ -22,6 +22,7 @@ import Layout from './Layout.tsx';
 import About from './routes/about.tsx';
 import Error from './routes/error.tsx';
 import Root from './routes/root.tsx';
+import Products from './routes/products.tsx';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About />,
+      },
+      {
+        path: 'products',
+        element: <Products />,
       },
     ],
   },

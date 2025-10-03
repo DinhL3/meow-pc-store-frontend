@@ -12,9 +12,8 @@ export const mockPCProducts: Product[] = [
       fi: 'Tehokas pelitietokone, jossa on AMD Ryzen 7 5700X3D -prosessori ja NVIDIA RTX 4070 -näytönohjain. Täydellinen 1440p-pelaamiseen ja sisällöntuotantoon erinomaisella hinta-laatusuhteella.',
     },
     images: [
-      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759523861/main_cbwrjr.jpg',
-      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759523863/side_cciv9q.jpg',
-      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759523864/back_d9gkoa.jpg',
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759533999/night-kitten-1-main_bdwzi3.webp',
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759533998/night-kitten-1-side_kuxb0t.webp',
       'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759524096/hwinfo64_rayvkh.png',
       'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759524099/timespy_su7isn.png',
     ],
