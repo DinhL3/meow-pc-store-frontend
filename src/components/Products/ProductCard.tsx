@@ -28,7 +28,6 @@ const ProductCard = ({ product }: ProductCardProps) => {
           height="250"
           image={product.images[0]}
           alt={product.name}
-          sx={{ objectFit: 'cover' }}
           sx={{
             objectFit: 'cover',
             transform: 'scale(1.1)',
@@ -43,7 +42,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         >
           <Typography
             gutterBottom
-            variant="h5"
+            variant="h6"
             component="div"
             sx={{ fontWeight: 400 }}
           >

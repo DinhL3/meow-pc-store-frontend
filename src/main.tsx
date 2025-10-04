@@ -18,6 +18,16 @@ import '@fontsource/poppins/700.css';
 import '@fontsource/poppins/800.css';
 import '@fontsource/poppins/900.css';
 
+import '@fontsource/Inter/100.css';
+import '@fontsource/Inter/200.css';
+import '@fontsource/Inter/300.css';
+import '@fontsource/Inter/400.css';
+import '@fontsource/Inter/500.css';
+import '@fontsource/Inter/600.css';
+import '@fontsource/Inter/700.css';
+import '@fontsource/Inter/800.css';
+import '@fontsource/Inter/900.css';
+
 import Layout from './Layout.tsx';
 import About from './routes/about.tsx';
 import Error from './routes/error.tsx';

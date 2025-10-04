@@ -5,7 +5,7 @@ export const mockPCProducts: Product[] = [
     id: '1',
     name: 'Night Kitten I',
     tags: ['Ryzen 7 5700X3D', 'RTX 4070'],
-    price: 1249,
+    price: 1199,
     currency: 'EUR',
     description: {
       en: 'A powerful gaming PC featuring AMD Ryzen 7 5700X3D processor and NVIDIA RTX 4070 graphics card. Perfect for 1440p gaming and content creation with excellent performance-to-price ratio.',
@@ -24,7 +24,7 @@ export const mockPCProducts: Product[] = [
     id: '2',
     name: 'Panther I',
     tags: ['Ryzen 9 5900X', 'RX 7800 XT'],
-    price: 1249,
+    price: 1199,
     currency: 'EUR',
     description: {
       en: 'High-performance workstation built around the AMD Ryzen 9 5900X and Radeon RX 7800 XT. Excellent for multitasking, streaming, and AAA gaming at high settings.',
