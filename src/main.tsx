@@ -8,8 +8,6 @@ import './i18n/config.js';
 
 import './index.css';
 
-import '@fontsource-variable/inter';
-import '@fontsource-variable/nunito-sans';
 import '@fontsource/poppins/100.css';
 import '@fontsource/poppins/200.css';
 import '@fontsource/poppins/300.css';

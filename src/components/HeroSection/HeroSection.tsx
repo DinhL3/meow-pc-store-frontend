@@ -62,7 +62,7 @@ const HeroSection: React.FC = () => {
             variant="h2"
             component="h1"
             sx={{
-              fontWeight: '700',
+              fontWeight: '500',
               fontSize: { xs: '2.5rem', sm: '3rem', md: '4rem' },
             }}
           >
@@ -96,7 +96,7 @@ const HeroSection: React.FC = () => {
               size="large"
               sx={{
                 backgroundColor: 'primary.light',
-                fontWeight: 500,
+                fontWeight: 400,
                 textTransform: 'none',
                 fontSize: '1.1rem',
               }}
@@ -109,7 +109,7 @@ const HeroSection: React.FC = () => {
               sx={{
                 color: 'white',
                 fontSize: '1.1rem',
-                fontWeight: 500,
+                fontWeight: 400,
                 display: { xs: 'none', md: 'block' },
               }}
             >
@@ -123,7 +123,7 @@ const HeroSection: React.FC = () => {
                 borderColor: 'white',
                 color: 'white',
                 textTransform: 'none',
-                fontWeight: 500,
+                fontWeight: 400,
                 fontSize: '1.1rem',
                 transition: 'all 0.3s ease',
                 '&:hover': {

@@ -41,7 +41,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             gutterBottom
             variant="h6"
             component="div"
-            sx={{ fontWeight: 700 }}
+            sx={{ fontWeight: 400 }}
           >
             {product.name}
           </Typography>

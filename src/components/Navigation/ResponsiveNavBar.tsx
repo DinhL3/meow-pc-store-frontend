@@ -66,7 +66,12 @@ function ResponsiveNavBar() {
   const desktopLayout = useMemo(
     () => (
       <>
-        <Logo isMobile={isMobile} onNavigate={handleNavigation} />
+        {/* compact whenever we're not on home */}
+        <Logo
+          isMobile={isMobile}
+          onNavigate={handleNavigation}
+          compact={!isHomePage}
+        />
         <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
           <DesktopNav pages={PAGES} />
         </Box>
@@ -75,7 +80,7 @@ function ResponsiveNavBar() {
         </Box>
       </>
     ),
-    [handleNavigation, isMobile]
+    [handleNavigation, isHomePage, isMobile]
   );
 
   return (

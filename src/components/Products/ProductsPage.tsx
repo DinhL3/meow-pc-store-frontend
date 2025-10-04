@@ -11,7 +11,7 @@ const ProductsPage = () => {
       <Box sx={{ mt: 3, mb: 1 }}>
         <Typography
           variant="h4"
-          fontWeight="700"
+          fontWeight="300"
           component="h1"
           color="grey.800"
           textAlign="center"

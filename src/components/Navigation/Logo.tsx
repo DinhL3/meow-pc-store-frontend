@@ -6,7 +6,7 @@ import logoImage from '../../assets/new-logo-sm.png';
 import { LOGO_HEIGHT } from './constants';
 import type { LogoProps } from './types';
 
-export const Logo = ({ isMobile, onNavigate }: LogoProps) => {
+export const Logo = ({ isMobile, onNavigate, compact }: LogoProps) => {
   const { t } = useTranslation();
 
   const handleLogoClick = useCallback(
@@ -16,6 +16,12 @@ export const Logo = ({ isMobile, onNavigate }: LogoProps) => {
     },
     [onNavigate]
   );
+
+  const finalHeight = compact
+    ? 56
+    : isMobile
+    ? LOGO_HEIGHT.mobile
+    : LOGO_HEIGHT.desktop;
 
   return (
     <Box
@@ -33,10 +39,11 @@ export const Logo = ({ isMobile, onNavigate }: LogoProps) => {
         src={logoImage}
         alt={t('logo.alt')}
         style={{
-          height: isMobile ? LOGO_HEIGHT.mobile : LOGO_HEIGHT.desktop,
+          height: finalHeight,
           width: 'auto',
           objectFit: 'contain',
           display: 'block',
+          transition: 'height 200ms ease', // smooth shrink/grow
         }}
       />
     </Box>

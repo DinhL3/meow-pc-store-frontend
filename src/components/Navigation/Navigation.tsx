@@ -84,7 +84,7 @@ export const DesktopNav = ({ pages }: DesktopNavProps) => {
             color: 'white',
             textDecoration: 'none',
             textTransform: 'none',
-            fontWeight: 500,
+            fontWeight: 400,
             fontSize: '1rem',
             '&:hover': {
               backgroundColor: 'rgba(255, 255, 255, 0.1)',
