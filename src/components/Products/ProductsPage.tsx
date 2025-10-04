@@ -13,7 +13,6 @@ const ProductsPage = () => {
           variant="h4"
           fontWeight="300"
           component="h1"
-          color="grey.800"
           textAlign="center"
         >
           Pre-built Gaming PCs
