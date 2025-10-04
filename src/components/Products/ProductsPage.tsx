@@ -7,21 +7,26 @@ import ProductCard from './ProductCard';
 
 const ProductsPage = () => {
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
-      <Box sx={{ mb: 4 }}>
-        <Typography variant="h3" component="h1" gutterBottom>
-          Our PCs
-        </Typography>
-        <Typography variant="subtitle1" color="text.secondary">
-          Explore our custom-built gaming PCs
+    <Container maxWidth="lg">
+      <Box sx={{ mb: 2 }}>
+        <Typography
+          variant="h3"
+          fontWeight="500"
+          component="h1"
+          color="primary.dark"
+          textAlign="center"
+          gutterBottom
+        >
+          Pre-built Gaming PCs
         </Typography>
       </Box>
 
       <Box
         sx={{
           display: 'flex',
+          justifyContent: 'center',
           flexWrap: 'wrap',
-          gap: 3,
+          gap: 1,
         }}
       >
         {mockPCProducts.map((product) => (

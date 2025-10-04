@@ -17,19 +17,11 @@ const ProductCard = ({ product }: ProductCardProps) => {
     <Card
       sx={{
         maxWidth: 345,
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
+        boxShadow: 'none',
+        borderRadius: 2,
       }}
     >
-      <CardActionArea
-        sx={{
-          flexGrow: 1,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'stretch',
-        }}
-      >
+      <CardActionArea>
         <CardMedia
           component="img"
           height="250"
@@ -37,17 +29,32 @@ const ProductCard = ({ product }: ProductCardProps) => {
           alt={product.name}
           sx={{ objectFit: 'cover' }}
         />
-        <CardContent sx={{ flexGrow: 1 }}>
-          <Typography gutterBottom variant="h5" component="div">
+        <CardContent
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            sx={{ fontWeight: 600 }}
+          >
             {product.name}
           </Typography>
-          <Stack direction="row" spacing={1} sx={{ mb: 2, flexWrap: 'wrap' }}>
+          <Stack direction="row" spacing={1} sx={{ mb: 1, flexWrap: 'wrap' }}>
             {product.tags.slice(0, 2).map((tag, index) => (
               <Chip key={index} label={tag} size="small" />
             ))}
           </Stack>
           <Typography variant="h6" color="primary" fontWeight="bold">
-            {product.price} {product.currency}
+            {new Intl.NumberFormat('fi-FI', {
+              style: 'currency',
+              currency: product.currency,
+              maximumFractionDigits: 0,
+            }).format(product.price)}
           </Typography>
         </CardContent>
       </CardActionArea>
