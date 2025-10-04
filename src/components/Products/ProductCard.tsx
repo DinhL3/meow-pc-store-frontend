@@ -29,6 +29,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
           image={product.images[0]}
           alt={product.name}
           sx={{ objectFit: 'cover' }}
+          sx={{
+            objectFit: 'cover',
+            transform: 'scale(1.1)',
+          }}
         />
         <CardContent
           sx={{
