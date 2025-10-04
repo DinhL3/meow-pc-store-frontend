@@ -38,9 +38,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
         >
           <Typography
             gutterBottom
-            variant="h5"
+            variant="h6"
             component="div"
-            sx={{ fontWeight: 600 }}
+            sx={{ fontWeight: 700 }}
           >
             {product.name}
           </Typography>
@@ -49,7 +49,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
               <Chip key={index} label={tag} size="small" />
             ))}
           </Stack>
-          <Typography variant="h6" color="primary" fontWeight="bold">
+          <Typography variant="h6" color="primary" fontWeight="500">
             {new Intl.NumberFormat('fi-FI', {
               style: 'currency',
               currency: product.currency,

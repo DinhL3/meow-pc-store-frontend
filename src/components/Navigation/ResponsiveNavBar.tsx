@@ -1,5 +1,5 @@
 import { useState, useCallback, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { AppBar, Box, Toolbar, Container } from '@mui/material';
 import { Logo } from './Logo';
 import { MobileNav, DesktopNav } from './Navigation';
@@ -9,8 +9,12 @@ import { PAGES } from './constants';
 
 function ResponsiveNavBar() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [anchorElNav, setAnchorElNav] = useState<HTMLElement | null>(null);
   const isMobile = useIsMobile();
+
+  // Check if we're on the home page
+  const isHomePage = location.pathname === '/' || location.pathname === '/home';
 
   const handleOpenNavMenu = useCallback(
     (event: React.MouseEvent<HTMLElement>) => {
@@ -76,11 +80,12 @@ function ResponsiveNavBar() {
 
   return (
     <AppBar
-      position="fixed"
+      position={isHomePage ? 'fixed' : 'sticky'}
       sx={{
-        backgroundColor: 'transparent',
-        boxShadow: 'none',
+        backgroundColor: isHomePage ? 'transparent' : 'grey.800',
+        boxShadow: isHomePage ? 'none' : 1,
         zIndex: (theme) => theme.zIndex.drawer + 1,
+        transition: 'background-color 0.3s ease',
       }}
     >
       <Container maxWidth="xl">

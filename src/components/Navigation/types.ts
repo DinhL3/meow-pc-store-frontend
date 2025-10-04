@@ -11,6 +11,7 @@ export interface Language {
 export interface LogoProps {
   isMobile: boolean;
   onNavigate: (path: string) => void;
+  isCompact?: boolean;
 }
 
 export interface MobileNavProps {

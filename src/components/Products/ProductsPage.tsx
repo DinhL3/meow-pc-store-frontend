@@ -8,14 +8,13 @@ import ProductCard from './ProductCard';
 const ProductsPage = () => {
   return (
     <Container maxWidth="lg">
-      <Box sx={{ mb: 2 }}>
+      <Box sx={{ mt: 3, mb: 0 }}>
         <Typography
-          variant="h3"
-          fontWeight="500"
+          variant="h4"
+          fontWeight="700"
           component="h1"
-          color="primary.dark"
+          color="grey.800"
           textAlign="center"
-          gutterBottom
         >
           Pre-built Gaming PCs
         </Typography>
