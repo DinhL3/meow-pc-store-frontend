@@ -31,9 +31,8 @@ export const mockPCProducts: Product[] = [
       fi: 'Korkean suorituskyvyn työasema, joka perustuu AMD Ryzen 9 5900X:ään ja Radeon RX 7800 XT:hen. Erinomainen moniajon, suoratoiston ja AAA-pelien pelaamiseen korkeilla asetuksilla.',
     },
     images: [
-      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759524602/main_fdrxf5.jpg',
-      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759524602/side_r8knc4.jpg',
-      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759524601/back_z2hyht.jpg',
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759537353/panther-1-main_uct7rp.webp',
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759537351/panther-1-side_m0on3k.webp',
       'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759524601/HWinfo_xqpr0n.png',
       'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759524602/3dmark_hn0gfr.png',
     ],
