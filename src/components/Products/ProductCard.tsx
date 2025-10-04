@@ -19,6 +19,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         maxWidth: 345,
         boxShadow: 'none',
         borderRadius: 2,
+        background: 'transparent',
       }}
     >
       <CardActionArea>

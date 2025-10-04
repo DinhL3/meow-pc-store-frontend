@@ -7,7 +7,7 @@ import ProductCard from './ProductCard';
 
 const ProductsPage = () => {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{ background: 'transparent' }}>
       <Box sx={{ mt: 3, mb: 0 }}>
         <Typography
           variant="h4"
