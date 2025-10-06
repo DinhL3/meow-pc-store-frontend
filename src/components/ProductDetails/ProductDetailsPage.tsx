@@ -1,15 +1,11 @@
-import { Container, Box, Stack, Typography, Button, Chip } from '@mui/material';
+import { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Container, Box, Stack, Typography, Button } from '@mui/material';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/thumbs';
+import { Pagination, Navigation, Thumbs, FreeMode } from 'swiper/modules';
+import type { Swiper as SwiperType } from 'swiper';
 
 import { mockPCProducts } from '../Products/product.mock';
-import { Pagination, Navigation, Thumbs, FreeMode } from 'swiper/modules';
-import { useState } from 'react';
-import type { Swiper as SwiperType } from 'swiper';
 
 const ProductDetailsPage = () => {
   const { productId } = useParams<{ productId: string }>();
@@ -38,14 +34,16 @@ const ProductDetailsPage = () => {
         <Box sx={{ flex: 1, maxWidth: { xs: '100%', md: '50%' } }}>
           {/* Main Swiper */}
           <Swiper
-            style={{
-              width: '100%',
-              height: 'auto',
-              marginBottom: '12px',
-              borderRadius: '8px',
-              '--swiper-navigation-color': '#669BBC',
-              '--swiper-pagination-color': '#669BBC',
-            }}
+            style={
+              {
+                width: '100%',
+                height: 'auto',
+                marginBottom: '12px',
+                borderRadius: '8px',
+                '--swiper-navigation-color': '#669BBC',
+                '--swiper-pagination-color': '#669BBC',
+              } as React.CSSProperties
+            }
             spaceBetween={10}
             navigation={true}
             thumbs={{
