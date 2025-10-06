@@ -1,11 +1,16 @@
-import { useState } from 'react';
-import { useParams } from 'react-router-dom';
 import { Container, Box, Stack, Typography, Button } from '@mui/material';
+import { useParams } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, Thumbs, FreeMode } from 'swiper/modules';
-import type { Swiper as SwiperType } from 'swiper';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/thumbs';
 
 import { mockPCProducts } from '../Products/product.mock';
+import { Pagination, Navigation, Thumbs, FreeMode } from 'swiper/modules';
+import { useState } from 'react';
+import type { Swiper as SwiperType } from 'swiper';
 
 const ProductDetailsPage = () => {
   const { productId } = useParams<{ productId: string }>();
