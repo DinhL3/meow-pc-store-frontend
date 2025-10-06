@@ -35,7 +35,7 @@ export const Logo = ({ isMobile, onNavigate, compact }: LogoProps) => {
       }}
     >
       <img
-        src="https://res.cloudinary.com/dlhzbr2to/image/upload/v1759713209/logo_dark_blue_transparent_bg_devmay.png"
+        src="https://res.cloudinary.com/dlhzbr2to/image/upload/v1759780477/logo_cerulean_transparent_s2geby.png"
         alt={t('logo.alt')}
         style={{
           height: finalHeight,

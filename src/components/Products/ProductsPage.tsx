@@ -11,7 +11,7 @@ const ProductsPage = () => {
           fontWeight="600"
           component="h1"
           textAlign="center"
-          color="#003049"
+          color="navy.main"
         >
           Pre-built Gaming PCs
         </Typography>

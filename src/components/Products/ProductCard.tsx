@@ -51,7 +51,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             gutterBottom
             variant="h5"
             component="div"
-            color="#003049"
+            color="navy.main"
             sx={{ fontWeight: 500 }}
           >
             {product.name}
@@ -62,11 +62,17 @@ const ProductCard = ({ product }: ProductCardProps) => {
                 key={index}
                 label={tag}
                 size="small"
-                sx={{ color: '#003049' }}
+                variant="outlined"
+                sx={{
+                  color: 'navy.main',
+                  borderColor: 'oceanBlue.main',
+                  borderWidth: 1,
+                  borderStyle: 'solid',
+                }}
               />
             ))}
           </Stack>
-          <Typography variant="h6" color="#780000" fontWeight="500">
+          <Typography variant="h6" color="oceanBlue" fontWeight="500">
             {new Intl.NumberFormat('fi-FI', {
               style: 'currency',
               currency: product.currency,

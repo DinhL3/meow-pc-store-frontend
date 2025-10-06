@@ -95,7 +95,7 @@ const HeroSection: React.FC = () => {
               variant="contained"
               size="large"
               sx={{
-                backgroundColor: '#669BBC',
+                backgroundColor: 'oceanBlue.main',
                 fontWeight: 400,
                 textTransform: 'none',
                 fontSize: '1.1rem',
@@ -120,7 +120,7 @@ const HeroSection: React.FC = () => {
               variant="contained"
               size="large"
               sx={{
-                backgroundColor: '#003049',
+                backgroundColor: 'navy.main',
                 textTransform: 'none',
                 fontWeight: 400,
                 fontSize: '1.1rem',

@@ -45,8 +45,8 @@ const ProductDetailsPage = () => {
                 height: 'auto',
                 marginBottom: '12px',
                 borderRadius: '8px',
-                '--swiper-navigation-color': '#669BBC',
-                '--swiper-pagination-color': '#669BBC',
+                '--swiper-navigation-color': 'oceanBlue.main',
+                '--swiper-pagination-color': 'oceanBlue.main',
               } as React.CSSProperties
             }
             spaceBetween={10}
@@ -117,7 +117,7 @@ const ProductDetailsPage = () => {
               variant="h4"
               component="h1"
               fontWeight={500}
-              color="#003049"
+              color="navy.main"
               sx={{
                 fontSize: { xs: '1.75rem', sm: '2.125rem' },
               }}
@@ -128,7 +128,7 @@ const ProductDetailsPage = () => {
             <Typography
               variant="h3"
               component="p"
-              color="#669BBC"
+              color="oceanBlue"
               fontWeight={600}
               sx={{
                 fontSize: { xs: '2rem', sm: '2.5rem' },
@@ -149,25 +149,25 @@ const ProductDetailsPage = () => {
                 py: 1.5,
                 fontSize: '1rem',
                 fontWeight: 600,
-                backgroundColor: '#780000',
+                backgroundColor: 'coralRed.main',
               }}
             >
               Order
             </Button>
 
-            <Typography variant="h5" color="#003049">
+            <Typography variant="h5" color="navy.main">
               Description
             </Typography>
 
-            <Typography variant="body1" color="#003049">
+            <Typography variant="body1" color="navy.main">
               {product.description.en}
             </Typography>
 
-            <Typography variant="h5" color="#003049">
+            <Typography variant="h5" color="navy.main">
               Warranty Information
             </Typography>
 
-            <Typography variant="body1" color="#003049">
+            <Typography variant="body1" color="navy.main">
               All our PCs are covered by a 2-year full warranty in accordance
               with Finnish consumer protection law.
             </Typography>

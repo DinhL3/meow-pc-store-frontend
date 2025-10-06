@@ -87,7 +87,7 @@ function ResponsiveNavBar() {
     <AppBar
       position={isHomePage ? 'fixed' : 'sticky'}
       sx={{
-        backgroundColor: isHomePage ? 'transparent' : '#003049',
+        backgroundColor: isHomePage ? 'transparent' : 'navy.main',
         boxShadow: isHomePage ? 'none' : 1,
         zIndex: (theme) => theme.zIndex.drawer + 1,
         transition: 'background-color 0.3s ease',
