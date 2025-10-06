@@ -39,7 +39,7 @@ export const LanguagePicker = ({ isMobile = false }: LanguagePickerProps) => {
           minWidth: 'auto',
           display: 'flex',
           alignItems: 'center',
-          fontWeight: 600,
+          fontWeight: 500,
           '&:hover': {
             backgroundColor: 'rgba(255, 255, 255, 0.1)',
           },

@@ -1,19 +1,17 @@
-// ProductsPage.tsx
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import { Container, Typography, Box } from '@mui/material';
 import { mockPCProducts } from './product.mock';
 import ProductCard from './ProductCard';
 
 const ProductsPage = () => {
   return (
-    <Container maxWidth="lg" sx={{ background: 'transparent' }}>
+    <Container maxWidth="lg">
       <Box sx={{ mt: 3, mb: 1 }}>
         <Typography
           variant="h4"
-          fontWeight="300"
+          fontWeight="600"
           component="h1"
           textAlign="center"
+          color="#003049"
         >
           Pre-built Gaming PCs
         </Typography>
@@ -24,7 +22,7 @@ const ProductsPage = () => {
           display: 'flex',
           justifyContent: 'center',
           flexWrap: 'wrap',
-          gap: 1,
+          gap: 2,
         }}
       >
         {mockPCProducts.map((product) => (

@@ -2,30 +2,30 @@ import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
   typography: {
-    fontFamily: '"Inter", sans-serif',
+    fontFamily: '"Work Sans Variable", sans-serif',
     h1: {
-      fontFamily: '"Inter", sans-serif',
+      fontFamily: '"Work Sans Variable", sans-serif',
     },
     h2: {
-      fontFamily: '"Inter", sans-serif',
+      fontFamily: '"Work Sans Variable", sans-serif',
     },
     h3: {
-      fontFamily: '"Inter", sans-serif',
+      fontFamily: '"Work Sans Variable", sans-serif',
     },
     h4: {
-      fontFamily: '"Inter", sans-serif',
+      fontFamily: '"Work Sans Variable", sans-serif',
     },
     h5: {
-      fontFamily: '"Inter", sans-serif',
+      fontFamily: '"Work Sans Variable", sans-serif',
     },
     h6: {
-      fontFamily: '"Inter", sans-serif',
+      fontFamily: '"Work Sans Variable", sans-serif',
     },
     body1: {
-      fontFamily: '"Inter", sans-serif',
+      fontFamily: '"Work Sans Variable", sans-serif',
     },
     body2: {
-      fontFamily: '"Inter", sans-serif',
+      fontFamily: '"Work Sans Variable", sans-serif',
     },
   },
 });

@@ -28,11 +28,14 @@ import '@fontsource/inter/700.css';
 import '@fontsource/inter/800.css';
 import '@fontsource/inter/900.css';
 
+import '@fontsource-variable/work-sans';
+
 import Layout from './Layout.tsx';
 import About from './routes/about.tsx';
 import Error from './routes/error.tsx';
 import Root from './routes/root.tsx';
 import Products from './routes/products.tsx';
+import ProductDetails from './routes/product-details.tsx';
 
 const router = createBrowserRouter([
   {
@@ -51,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: 'products',
         element: <Products />,
+      },
+      {
+        path: 'products/:productId',
+        element: <ProductDetails />,
       },
     ],
   },

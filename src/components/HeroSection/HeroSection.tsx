@@ -95,7 +95,7 @@ const HeroSection: React.FC = () => {
               variant="contained"
               size="large"
               sx={{
-                backgroundColor: 'primary.light',
+                backgroundColor: '#669BBC',
                 fontWeight: 400,
                 textTransform: 'none',
                 fontSize: '1.1rem',
@@ -117,19 +117,13 @@ const HeroSection: React.FC = () => {
             </Typography>
 
             <Button
-              variant="outlined"
+              variant="contained"
               size="large"
               sx={{
-                borderColor: 'white',
-                color: 'white',
+                backgroundColor: '#003049',
                 textTransform: 'none',
                 fontWeight: 400,
                 fontSize: '1.1rem',
-                transition: 'all 0.3s ease',
-                '&:hover': {
-                  color: 'primary.light',
-                  borderColor: 'primary.light',
-                },
               }}
             >
               {t('hero.buildPCButton')}

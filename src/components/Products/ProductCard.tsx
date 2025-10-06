@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
+import { useNavigate } from 'react-router-dom';
 import type { Product } from './product.types';
 
 interface ProductCardProps {
@@ -13,16 +14,22 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate(`/products/${product.id}`);
+  };
+
   return (
     <Card
       sx={{
         maxWidth: 345,
         boxShadow: 'none',
         borderRadius: 2,
-        background: 'transparent',
+        // background: '#f1faee',
       }}
     >
-      <CardActionArea>
+      <CardActionArea onClick={handleCardClick}>
         <CardMedia
           component="img"
           height="250"
@@ -42,18 +49,24 @@ const ProductCard = ({ product }: ProductCardProps) => {
         >
           <Typography
             gutterBottom
-            variant="h6"
+            variant="h5"
             component="div"
-            sx={{ fontWeight: 400 }}
+            color="#003049"
+            sx={{ fontWeight: 500 }}
           >
             {product.name}
           </Typography>
           <Stack direction="row" spacing={1} sx={{ mb: 1, flexWrap: 'wrap' }}>
             {product.tags.slice(0, 2).map((tag, index) => (
-              <Chip key={index} label={tag} size="small" />
+              <Chip
+                key={index}
+                label={tag}
+                size="small"
+                sx={{ color: '#003049' }}
+              />
             ))}
           </Stack>
-          <Typography variant="h6" color="primary" fontWeight="500">
+          <Typography variant="h6" color="#780000" fontWeight="500">
             {new Intl.NumberFormat('fi-FI', {
               style: 'currency',
               currency: product.currency,
