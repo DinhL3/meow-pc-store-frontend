@@ -3,6 +3,9 @@ import { mockPCProducts } from './product.mock';
 import ProductCard from './ProductCard';
 
 const ProductsPage = () => {
+  // Filter out products that are not visible
+  const visibleProducts = mockPCProducts.filter((product) => product.isVisible);
+
   return (
     <Container maxWidth="lg">
       <Box sx={{ mt: 3, mb: 1 }}>
@@ -25,7 +28,7 @@ const ProductsPage = () => {
           gap: 2,
         }}
       >
-        {mockPCProducts.map((product) => (
+        {visibleProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </Box>

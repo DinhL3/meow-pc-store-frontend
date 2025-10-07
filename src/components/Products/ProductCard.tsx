@@ -1,4 +1,3 @@
-// ProductCard.tsx
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -72,13 +71,19 @@ const ProductCard = ({ product }: ProductCardProps) => {
               />
             ))}
           </Stack>
-          <Typography variant="h6" color="oceanBlue" fontWeight="500">
-            {new Intl.NumberFormat('fi-FI', {
-              style: 'currency',
-              currency: product.currency,
-              maximumFractionDigits: 0,
-            }).format(product.price)}
-          </Typography>
+          {product.isAvailable ? (
+            <Typography variant="h6" color="oceanBlue" fontWeight="500">
+              {new Intl.NumberFormat('fi-FI', {
+                style: 'currency',
+                currency: product.currency,
+                maximumFractionDigits: 0,
+              }).format(product.price)}
+            </Typography>
+          ) : (
+            <Typography variant="h6" color="oceanBlue" fontWeight="500">
+              Out of stock
+            </Typography>
+          )}
         </CardContent>
       </CardActionArea>
     </Card>

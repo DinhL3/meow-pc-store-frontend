@@ -9,6 +9,8 @@ export interface Product {
     fi: string;
   };
   images: string[];
+  isAvailable: boolean;
+  isVisible: boolean;
   createdAt: string;
   updatedAt: string;
 }

@@ -18,7 +18,8 @@ const ProductDetailsPage = () => {
 
   const product = mockPCProducts.find((p) => p.id === productId);
 
-  if (!product) {
+  // If product is not visible, treat as not found
+  if (!product || !product.isVisible) {
     return (
       <Container maxWidth="lg" sx={{ mt: 4 }}>
         <Typography variant="h5">Product not found</Typography>
@@ -45,8 +46,8 @@ const ProductDetailsPage = () => {
                 height: 'auto',
                 marginBottom: '12px',
                 borderRadius: '8px',
-                '--swiper-navigation-color': 'oceanBlue.main',
-                '--swiper-pagination-color': 'oceanBlue.main',
+                '--swiper-navigation-color': '#457B9D',
+                '--swiper-pagination-color': '#457B9D',
               } as React.CSSProperties
             }
             spaceBetween={10}
@@ -125,21 +126,35 @@ const ProductDetailsPage = () => {
               {product.name}
             </Typography>
 
-            <Typography
-              variant="h3"
-              component="p"
-              color="oceanBlue"
-              fontWeight={600}
-              sx={{
-                fontSize: { xs: '2rem', sm: '2.5rem' },
-              }}
-            >
-              {new Intl.NumberFormat('fi-FI', {
-                style: 'currency',
-                currency: product.currency,
-                maximumFractionDigits: 0,
-              }).format(product.price)}
-            </Typography>
+            {product.isAvailable ? (
+              <Typography
+                variant="h3"
+                component="p"
+                color="oceanBlue"
+                fontWeight={600}
+                sx={{
+                  fontSize: { xs: '2rem', sm: '2.5rem' },
+                }}
+              >
+                {new Intl.NumberFormat('fi-FI', {
+                  style: 'currency',
+                  currency: product.currency,
+                  maximumFractionDigits: 0,
+                }).format(product.price)}
+              </Typography>
+            ) : (
+              <Typography
+                variant="h3"
+                component="p"
+                color="oceanBlue"
+                fontWeight={500}
+                sx={{
+                  fontSize: { xs: '1.5rem', sm: '2rem' },
+                }}
+              >
+                Out of stock
+              </Typography>
+            )}
 
             <Button
               variant="contained"
@@ -152,7 +167,7 @@ const ProductDetailsPage = () => {
                 backgroundColor: 'coralRed.main',
               }}
             >
-              Order
+              {product.isAvailable ? 'Order' : 'Order similar'}
             </Button>
 
             <Typography variant="h5" color="navy.main">
