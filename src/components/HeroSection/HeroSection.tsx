@@ -63,6 +63,7 @@ const HeroSection: React.FC = () => {
             component="h1"
             sx={{
               fontWeight: '500',
+              lineHeight: 1,
               fontSize: { xs: '2.5rem', sm: '3rem', md: '4rem' },
             }}
           >

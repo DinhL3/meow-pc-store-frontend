@@ -1,6 +1,11 @@
 import { Container, Box, Stack, Typography, Button } from '@mui/material';
 import { useParams } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
+import { FaSignalMessenger } from 'react-icons/fa6';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -11,10 +16,12 @@ import { mockPCProducts } from '../Products/product.mock';
 import { Pagination, Navigation, Thumbs, FreeMode } from 'swiper/modules';
 import { useState } from 'react';
 import type { Swiper as SwiperType } from 'swiper';
+import { CustomModal } from '../../components/shared/CustomModal';
 
 const ProductDetailsPage = () => {
   const { productId } = useParams<{ productId: string }>();
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
+  const [orderModalOpen, setOrderModalOpen] = useState(false);
 
   const product = mockPCProducts.find((p) => p.id === productId);
 
@@ -160,6 +167,7 @@ const ProductDetailsPage = () => {
               variant="contained"
               size="large"
               fullWidth
+              onClick={() => setOrderModalOpen(true)}
               sx={{
                 py: 1.5,
                 fontSize: '1rem',
@@ -189,6 +197,82 @@ const ProductDetailsPage = () => {
           </Stack>
         </Box>
       </Box>
+
+      {/* Order Modal */}
+      <CustomModal
+        open={orderModalOpen}
+        onClose={() => setOrderModalOpen(false)}
+        title="How to order 📦"
+        maxWidth={600}
+      >
+        <Stack spacing={3}>
+          <Typography variant="body1" color="navy.main">
+            The fastest way to order this PC is to send me a message:
+          </Typography>
+
+          <Stack spacing={2}>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
+              <PhoneIcon sx={{ color: 'oceanBlue.main', fontSize: 28 }} />
+              <Typography variant="body1" fontWeight={600} color="navy.main">
+                <strong>Phone number:</strong> +358 40 858 9471
+              </Typography>
+            </Box>
+
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
+              <WhatsAppIcon sx={{ color: '#25d366', fontSize: 28 }} />
+              <Typography variant="body1" color="navy.main">
+                WhatsApp
+              </Typography>
+            </Box>
+
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
+              <TelegramIcon sx={{ color: '#0088cc', fontSize: 28 }} />
+              <Typography variant="body1" color="navy.main">
+                Telegram
+              </Typography>
+            </Box>
+
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
+              <Box
+                sx={{
+                  width: 28,
+                  height: 28,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: '#3b45fd',
+                }}
+              >
+                <FaSignalMessenger size={28} />
+              </Box>
+              <Typography variant="body1" color="navy.main">
+                Signal
+              </Typography>
+            </Box>
+
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 1.5,
+                pt: 1,
+                borderTop: '1px solid',
+                borderColor: 'powderBlue.main',
+              }}
+            >
+              <EmailIcon sx={{ color: 'oceanBlue.main', fontSize: 28 }} />
+              <Typography variant="body1" color="navy.main">
+                <strong>Email:</strong> contact@meowpc.fi
+              </Typography>
+            </Box>
+          </Stack>
+
+          <Typography variant="body2" color="oceanBlue.main" sx={{ pt: 1 }}>
+            ⏰ I am available almost 24/7 and will try to reply as soon as
+            possible!
+          </Typography>
+        </Stack>
+      </CustomModal>
     </Container>
   );
 };
