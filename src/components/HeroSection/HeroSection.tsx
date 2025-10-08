@@ -98,7 +98,7 @@ const HeroSection: React.FC = () => {
                 backgroundColor: 'oceanBlue.main',
                 fontWeight: 400,
                 textTransform: 'none',
-                fontSize: '1.1rem',
+                fontSize: { xs: '1rem', md: '1.1rem' },
               }}
             >
               {t('hero.browsePCsButton')}
@@ -108,7 +108,7 @@ const HeroSection: React.FC = () => {
               variant="body1"
               sx={{
                 color: 'white',
-                fontSize: '1.1rem',
+                fontSize: { xs: '1rem', md: '1.1rem' },
                 fontWeight: 400,
                 display: { xs: 'none', md: 'block' },
               }}
@@ -123,7 +123,7 @@ const HeroSection: React.FC = () => {
                 backgroundColor: 'navy.main',
                 textTransform: 'none',
                 fontWeight: 400,
-                fontSize: '1.1rem',
+                fontSize: { xs: '1rem', md: '1.1rem' },
               }}
             >
               {t('hero.buildPCButton')}

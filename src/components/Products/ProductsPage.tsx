@@ -7,7 +7,7 @@ const ProductsPage = () => {
   const visibleProducts = mockPCProducts.filter((product) => product.isVisible);
 
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{ pb: 10 }}>
       <Box sx={{ mt: 3, mb: 1 }}>
         <Typography
           variant="h4"
