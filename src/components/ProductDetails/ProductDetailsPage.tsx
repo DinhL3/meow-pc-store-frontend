@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
 import { FaSignalMessenger } from 'react-icons/fa6';
 
 import 'swiper/css';
@@ -212,9 +211,8 @@ const ProductDetailsPage = () => {
 
           <Stack spacing={2}>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
-              <PhoneIcon sx={{ color: 'oceanBlue.main', fontSize: 28 }} />
               <Typography variant="body1" fontWeight={600} color="navy.main">
-                <strong>Phone number:</strong> +358 40 858 9471
+                +358408589471 - I'm available on:
               </Typography>
             </Box>
 

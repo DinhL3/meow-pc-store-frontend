@@ -1,7 +1,26 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Button, Container, Stack, Typography, Box } from '@mui/material';
+import {
+  Button,
+  Container,
+  Stack,
+  Typography,
+  Box,
+  IconButton,
+} from '@mui/material';
 import { Link } from 'react-router-dom';
+
+// TikTok Icon Component (using SVG)
+const TikTokIcon: React.FC<{ sx?: any }> = ({ sx }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    style={{ width: '100%', height: '100%' }}
+    aria-label="TikTok"
+  >
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+  </svg>
+);
 
 const HeroSection: React.FC = () => {
   const { t } = useTranslation();
@@ -130,6 +149,48 @@ const HeroSection: React.FC = () => {
               {t('hero.buildPCButton')}
             </Button>
           </Stack>
+
+          {/* TikTok Button */}
+          <Box
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: { xs: 'center', md: 'flex-start' },
+              gap: 1.5,
+              mt: 2,
+            }}
+          >
+            <IconButton
+              component="a"
+              href="https://www.tiktok.com/@meowpc.fi"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow us on TikTok"
+              sx={{
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                color: 'white',
+                width: 48,
+                height: 48,
+                transition: 'all 0.3s ease',
+                '&:hover': {
+                  backgroundColor: '#000000',
+                  transform: 'scale(1.1)',
+                },
+              }}
+            >
+              <TikTokIcon sx={{ fontSize: 28 }} />
+            </IconButton>
+
+            <Typography
+              variant="body2"
+              sx={{
+                color: 'rgba(255, 255, 255, 0.9)',
+                fontSize: '0.95rem',
+              }}
+            >
+              Follow us on TikTok
+            </Typography>
+          </Box>
         </Stack>
       </Container>
     </Box>

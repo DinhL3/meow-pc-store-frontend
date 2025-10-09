@@ -7,7 +7,7 @@ export const BREAKPOINT = 'md';
 
 export const PAGES = [
   { key: 'browsePCs', path: '/products' },
-  { key: 'buildYourPC', path: '/custom-order' },
+  { key: 'buildYourPC', path: '/custom-build' },
   { key: 'about', path: '/about' },
 ] as const;
 

@@ -8,25 +8,25 @@ import './i18n/config.js';
 
 import './index.css';
 
-import '@fontsource/poppins/100.css';
-import '@fontsource/poppins/200.css';
-import '@fontsource/poppins/300.css';
-import '@fontsource/poppins/400.css';
-import '@fontsource/poppins/500.css';
-import '@fontsource/poppins/600.css';
-import '@fontsource/poppins/700.css';
-import '@fontsource/poppins/800.css';
-import '@fontsource/poppins/900.css';
+// import '@fontsource/poppins/100.css';
+// import '@fontsource/poppins/200.css';
+// import '@fontsource/poppins/300.css';
+// import '@fontsource/poppins/400.css';
+// import '@fontsource/poppins/500.css';
+// import '@fontsource/poppins/600.css';
+// import '@fontsource/poppins/700.css';
+// import '@fontsource/poppins/800.css';
+// import '@fontsource/poppins/900.css';
 
-import '@fontsource/inter/100.css';
-import '@fontsource/inter/200.css';
-import '@fontsource/inter/300.css';
-import '@fontsource/inter/400.css';
-import '@fontsource/inter/500.css';
-import '@fontsource/inter/600.css';
-import '@fontsource/inter/700.css';
-import '@fontsource/inter/800.css';
-import '@fontsource/inter/900.css';
+// import '@fontsource/inter/100.css';
+// import '@fontsource/inter/200.css';
+// import '@fontsource/inter/300.css';
+// import '@fontsource/inter/400.css';
+// import '@fontsource/inter/500.css';
+// import '@fontsource/inter/600.css';
+// import '@fontsource/inter/700.css';
+// import '@fontsource/inter/800.css';
+// import '@fontsource/inter/900.css';
 
 import '@fontsource-variable/work-sans';
 
@@ -36,6 +36,7 @@ import Error from './routes/error.tsx';
 import Root from './routes/root.tsx';
 import Products from './routes/products.tsx';
 import ProductDetails from './routes/product-details.tsx';
+import CustomBuild from './routes/custom-build.tsx';
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
       {
         path: 'products/:productId',
         element: <ProductDetails />,
+      },
+      {
+        path: 'custom-build',
+        element: <CustomBuild />,
       },
     ],
   },
