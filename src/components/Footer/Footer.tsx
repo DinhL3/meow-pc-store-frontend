@@ -16,10 +16,11 @@ export default function Footer() {
         zIndex: 1000,
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Typography variant="body2" color="white" align="center">
-          🚧 This website is currently under construction. We apologize for any
-          missing features or functionality. Thank you for your patience!
+          🚧 This website is currently under construction by the company's best
+          (and only) web developer, me. I apologize for any missing features or
+          functionality. Thank you for your patience!
         </Typography>
       </Container>
     </Box>
