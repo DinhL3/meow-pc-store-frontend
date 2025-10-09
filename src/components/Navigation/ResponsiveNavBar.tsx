@@ -47,7 +47,12 @@ function ResponsiveNavBar() {
           />
         </Box>
         <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
-          <Logo isMobile={isMobile} onNavigate={handleNavigation} />
+          {/* Compact on non-home, big on root */}
+          <Logo
+            isMobile={isMobile}
+            onNavigate={handleNavigation}
+            compact={!isHomePage}
+          />
         </Box>
         <Box sx={{ width: 48, display: 'flex', justifyContent: 'flex-end' }}>
           <LanguagePicker isMobile={isMobile} />
@@ -60,6 +65,7 @@ function ResponsiveNavBar() {
       handleOpenNavMenu,
       handleCloseNavMenu,
       isMobile,
+      isHomePage, // <-- add this
     ]
   );
 

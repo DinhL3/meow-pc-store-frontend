@@ -17,7 +17,7 @@ export const Logo = ({ isMobile, onNavigate, compact }: LogoProps) => {
   );
 
   const finalHeight = compact
-    ? 56
+    ? 48
     : isMobile
     ? LOGO_HEIGHT.mobile
     : LOGO_HEIGHT.desktop;

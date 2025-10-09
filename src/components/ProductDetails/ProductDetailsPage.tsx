@@ -35,7 +35,7 @@ const ProductDetailsPage = () => {
   }
 
   return (
-    <Container maxWidth="lg" sx={{ pt: 2 }}>
+    <Container maxWidth="lg" sx={{ py: 2 }}>
       <Box
         sx={{
           display: 'flex',
