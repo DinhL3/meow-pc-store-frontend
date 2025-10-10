@@ -137,6 +137,8 @@ const HeroSection: React.FC = () => {
             </Typography>
 
             <Button
+              component={Link}
+              to={'/custom-build'}
               variant="contained"
               size="large"
               sx={{
