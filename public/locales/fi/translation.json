@@ -16,6 +16,46 @@
     "subtitleLine2": "Säästä aikaa, ei stressiä, ja saat tietokoneen joka näyttää hienolta pöydälläsi.",
     "browsePCsButton": "Selaa tietokoneita",
     "or": "tai",
-    "buildPCButton": "Rakenna juuri sellainen PC kuin haluat"
+    "buildPCButton": "Rakenna juuri sellainen PC kuin haluat",
+    "followTikTok": "Seuraa meitä TikTokissa"
+  },
+  "banner": {
+    "title": "Sivusto rakenteilla 🚧",
+    "message": "Tämä sivusto on parhaillaan rakenteilla yrityksen parhaan (ja ainoan) web-kehittäjän, eli minun, toimesta. Pahoittelen puuttuvia ominaisuuksia. Kiitos kärsivällisyydestäsi!"
+  },
+  "products": {
+    "title": "Valmiit pelitietokoneet",
+    "outOfStock": "Loppuunmyyty"
+  },
+  "productDetails": {
+    "notFound": "Tuotetta ei löytynyt",
+    "outOfStock": "Loppuunmyyty",
+    "orderButton": "Tilaa",
+    "orderSimilarButton": "Tilaa vastaava",
+    "descriptionTitle": "Kuvaus",
+    "warrantyTitle": "Takuutiedot",
+    "warrantyText": "Kaikki tietokoneemme on katettu 2 vuoden täydellä takuulla Suomen kuluttajansuojalain mukaisesti.",
+    "imageAlt": "Kuva"
+  },
+  "orderModal": {
+    "title": "Kuinka tilata 📦",
+    "intro": "Nopein tapa tilata tämä tietokone on lähettää minulle viesti:",
+    "phoneLabel": "+358408589471 - Tavoitat minut:",
+    "email": "Sähköposti:",
+    "availability": "⏰ Olen tavoitettavissa lähes 24/7 ja vastaan viesteihin mahdollisimman pian!"
+  },
+  "customBuild": {
+    "title": "Hanki juuri sellainen PC kuin haluat",
+    "intro": "Oli sinulla selkeä visio tai vain karkea idea, olen täällä auttamassa. Kerro minulle tarpeistasi: etsitkö sulavaa 1440p-pelikokemusta Ultra-asetuksilla, kilpailullista esports-suorituskykyä vai työasemaa videon editointiin? Haluatko RGB-valot jotka loistavat, vai siistin stealth-koneen? Mieluummin kompakti PC pöydällesi, vai täysikokoinen torni monilla laajennuspaikoilla?",
+    "callToAction": "Lähetä minulle viesti ja jutellaan siitä, mitä etsit.",
+    "whatYouGet": "Mitä saat:",
+    "benefit1": "PC rakennettuna ja valmiina viikon sisällä",
+    "benefit2": "Windows 11 Pro asennettu ja aktivoitu",
+    "benefit3": "Täysi suorituskykytestaus huippusuorituskyvyn varmistamiseksi",
+    "benefit4": "Sinun tarvitsee vain noutaa se ja alkaa käyttää",
+    "contactTitle": "Lähetä viesti numeroon +358408589471",
+    "availableOn": "Olen tavoitettavissa:",
+    "email": "Sähköposti:",
+    "availability": "⏰ Olen tavoitettavissa lähes 24/7 ja vastaan viesteihin mahdollisimman pian!"
   }
 }

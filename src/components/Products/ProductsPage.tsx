@@ -1,8 +1,11 @@
 import { Container, Typography, Box } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 import { mockPCProducts } from './product.mock';
 import ProductCard from './ProductCard';
 
 const ProductsPage = () => {
+  const { t } = useTranslation();
+
   // Filter out products that are not visible
   const visibleProducts = mockPCProducts.filter((product) => product.isVisible);
 
@@ -16,7 +19,7 @@ const ProductsPage = () => {
           textAlign="center"
           color="navy.main"
         >
-          Pre-built Gaming PCs
+          {t('products.title')}
         </Typography>
       </Box>
 

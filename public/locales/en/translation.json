@@ -16,6 +16,46 @@
     "subtitleLine2": "Save time, no stress, and get a PC that looks great on your desk.",
     "browsePCsButton": "Browse PCs",
     "or": "or",
-    "buildPCButton": "Build the exact PC you want"
+    "buildPCButton": "Build the exact PC you want",
+    "followTikTok": "Follow us on TikTok"
+  },
+  "banner": {
+    "title": "Website Under Construction 🚧",
+    "message": "This website is currently under construction by the company's best (and only) web developer, me. I apologize for any missing features or functionality. Thank you for your patience!"
+  },
+  "products": {
+    "title": "Pre-built Gaming PCs",
+    "outOfStock": "Out of stock"
+  },
+  "productDetails": {
+    "notFound": "Product not found",
+    "outOfStock": "Out of stock",
+    "orderButton": "Order",
+    "orderSimilarButton": "Order similar",
+    "descriptionTitle": "Description",
+    "warrantyTitle": "Warranty Information",
+    "warrantyText": "All our PCs are covered by a 2-year full warranty in accordance with Finnish consumer protection law.",
+    "imageAlt": "Image"
+  },
+  "orderModal": {
+    "title": "How to order 📦",
+    "intro": "The fastest way to order this PC is to send me a message:",
+    "phoneLabel": "+358408589471 - I'm available on:",
+    "email": "Email:",
+    "availability": "⏰ I am available almost 24/7 and will try to reply as soon as possible!"
+  },
+  "customBuild": {
+    "title": "Get the exact PC you want",
+    "intro": "Whether you have a clear vision or just a rough idea, I'm here to help. Tell me about your needs: are you looking for silky-smooth 1440p gaming at Ultra settings, competitive esports performance, or a workstation for video editing? Want RGB lights that shine, or a clean stealth build? Prefer a compact PC to fit on your desk, or a full tower with many expansion slots?",
+    "callToAction": "Send me a message and let's have a chat about what you're looking for.",
+    "whatYouGet": "What you get:",
+    "benefit1": "Your PC built and ready within a week",
+    "benefit2": "Windows 11 Pro installed and activated",
+    "benefit3": "Full benchmark testing to ensure peak performance",
+    "benefit4": "All you have to do is pick it up and start using it",
+    "contactTitle": "Send a message to +358408589471",
+    "availableOn": "I'm available on:",
+    "email": "Email:",
+    "availability": "⏰ I am available almost 24/7 and will try to reply as soon as possible!"
   }
 }

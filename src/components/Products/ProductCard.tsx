@@ -6,6 +6,7 @@ import CardActionArea from '@mui/material/CardActionArea';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import type { Product } from './product.types';
 
 interface ProductCardProps {
@@ -13,6 +14,7 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const handleCardClick = () => {
@@ -81,7 +83,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             </Typography>
           ) : (
             <Typography variant="h6" color="oceanBlue" fontWeight="500">
-              Out of stock
+              {t('products.outOfStock')}
             </Typography>
           )}
         </CardContent>

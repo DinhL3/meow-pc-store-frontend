@@ -1,5 +1,6 @@
 import { Container, Box, Stack, Typography, Button } from '@mui/material';
 import { useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import TelegramIcon from '@mui/icons-material/Telegram';
@@ -19,16 +20,20 @@ import { CustomModal } from '../../components/shared/CustomModal';
 
 const ProductDetailsPage = () => {
   const { productId } = useParams<{ productId: string }>();
+  const { t, i18n } = useTranslation();
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const [orderModalOpen, setOrderModalOpen] = useState(false);
 
   const product = mockPCProducts.find((p) => p.id === productId);
 
+  // Get current language (default to 'en' if not 'fi')
+  const currentLang = i18n.language.startsWith('fi') ? 'fi' : 'en';
+
   // If product is not visible, treat as not found
   if (!product || !product.isVisible) {
     return (
       <Container maxWidth="lg" sx={{ mt: 4 }}>
-        <Typography variant="h5">Product not found</Typography>
+        <Typography variant="h5">{t('productDetails.notFound')}</Typography>
       </Container>
     );
   }
@@ -70,7 +75,9 @@ const ProductDetailsPage = () => {
                 <Box
                   component="img"
                   src={image}
-                  alt={`${product.name} - Image ${index + 1}`}
+                  alt={`${product.name} - ${t('productDetails.imageAlt')} ${
+                    index + 1
+                  }`}
                   sx={{
                     width: '100%',
                     height: 'auto',
@@ -98,7 +105,7 @@ const ProductDetailsPage = () => {
                 <Box
                   component="img"
                   src={image}
-                  alt={`Thumbnail ${index + 1}`}
+                  alt={`${t('productDetails.imageAlt')} ${index + 1}`}
                   sx={{
                     width: '100%',
                     height: { xs: '60px', sm: '80px' },
@@ -124,6 +131,7 @@ const ProductDetailsPage = () => {
               variant="h4"
               component="h1"
               fontWeight={500}
+              lineHeight={1}
               color="navy.main"
               sx={{
                 fontSize: { xs: '1.75rem', sm: '2.125rem' },
@@ -158,7 +166,7 @@ const ProductDetailsPage = () => {
                   fontSize: { xs: '1.5rem', sm: '2rem' },
                 }}
               >
-                Out of stock
+                {t('productDetails.outOfStock')}
               </Typography>
             )}
 
@@ -174,24 +182,25 @@ const ProductDetailsPage = () => {
                 backgroundColor: 'coralRed.main',
               }}
             >
-              {product.isAvailable ? 'Order' : 'Order similar'}
+              {product.isAvailable
+                ? t('productDetails.orderButton')
+                : t('productDetails.orderSimilarButton')}
             </Button>
 
             <Typography variant="h5" color="navy.main">
-              Description
+              {t('productDetails.descriptionTitle')}
             </Typography>
 
             <Typography variant="body1" color="navy.main">
-              {product.description.en}
+              {product.description[currentLang]}
             </Typography>
 
             <Typography variant="h5" color="navy.main">
-              Warranty Information
+              {t('productDetails.warrantyTitle')}
             </Typography>
 
             <Typography variant="body1" color="navy.main">
-              All our PCs are covered by a 2-year full warranty in accordance
-              with Finnish consumer protection law.
+              {t('productDetails.warrantyText')}
             </Typography>
           </Stack>
         </Box>
@@ -201,18 +210,18 @@ const ProductDetailsPage = () => {
       <CustomModal
         open={orderModalOpen}
         onClose={() => setOrderModalOpen(false)}
-        title="How to order 📦"
+        title={t('orderModal.title')}
         maxWidth={600}
       >
         <Stack spacing={3}>
           <Typography variant="body1" color="navy.main">
-            The fastest way to order this PC is to send me a message:
+            {t('orderModal.intro')}
           </Typography>
 
           <Stack spacing={2}>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
               <Typography variant="body1" fontWeight={600} color="navy.main">
-                +358408589471 - I'm available on:
+                {t('orderModal.phoneLabel')}
               </Typography>
             </Box>
 
@@ -260,14 +269,13 @@ const ProductDetailsPage = () => {
             >
               <EmailIcon sx={{ color: 'oceanBlue.main', fontSize: 28 }} />
               <Typography variant="body1" color="navy.main">
-                <strong>Email:</strong> contact@meowpc.fi
+                <strong>{t('orderModal.email')}</strong> contact@meowpc.fi
               </Typography>
             </Box>
           </Stack>
 
           <Typography variant="body2" color="oceanBlue.main" sx={{ pt: 1 }}>
-            ⏰ I am available almost 24/7 and will try to reply as soon as
-            possible!
+            {t('orderModal.availability')}
           </Typography>
         </Stack>
       </CustomModal>

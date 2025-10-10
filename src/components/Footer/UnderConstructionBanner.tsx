@@ -1,7 +1,9 @@
 import { Alert, AlertTitle, Collapse } from '@mui/material';
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function UnderConstructionBanner() {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -34,10 +36,8 @@ export default function UnderConstructionBanner() {
           },
         }}
       >
-        <AlertTitle>Website Under Construction 🚧</AlertTitle>
-        This website is currently under construction by the company's best (and
-        only) web developer, me. I apologize for any missing features or
-        functionality. Thank you for your patience!
+        <AlertTitle>{t('banner.title')}</AlertTitle>
+        {t('banner.message')}
       </Alert>
     </Collapse>
   );

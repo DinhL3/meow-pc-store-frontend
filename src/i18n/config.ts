@@ -8,8 +8,8 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: 'en',
-    lng: 'en',
+    fallbackLng: 'fi',
+    lng: 'fi',
     debug: process.env.NODE_ENV === 'development',
 
     interpolation: {
