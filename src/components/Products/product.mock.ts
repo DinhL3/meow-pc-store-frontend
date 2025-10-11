@@ -26,11 +26,83 @@ export const mockPCProducts: Product[] = [
     id: 'panther-1',
     name: 'Panther I',
     tags: ['Ryzen 9 5900X', 'RX 7800 XT'],
-    price: 1199,
+    price: 1149,
     currency: 'EUR',
     description: {
       en: 'High-performance workstation built around the AMD Ryzen 9 5900X and Radeon RX 7800 XT. Excellent for multitasking, streaming, and AAA gaming at high settings.',
       fi: 'Korkean suorituskyvyn työasema, joka perustuu AMD Ryzen 9 5900X:ään ja Radeon RX 7800 XT:hen. Erinomainen moniajon, suoratoiston ja AAA-pelien pelaamiseen korkeilla asetuksilla.',
+    },
+    components: {
+      fi: {
+        title: 'Komponentit',
+        items: [
+          {
+            label: 'CPU',
+            value: 'AMD Ryzen 9 5900X (12 ydintä, 24 säiettä, ylikellotettava)',
+          },
+          { label: 'GPU', value: 'Sapphire PULSE AMD Radeon™ RX 7800 XT 16GB' },
+          {
+            label: 'Muisti',
+            value: 'Crucial Ballistix 32GB (2x16GB) 3600 MHz DDR4',
+          },
+          { label: 'Tallennustila', value: 'WD Blue SN5000 2TB NVMe SSD' },
+          { label: 'Virtalähde', value: 'Corsair RM650e | 80 Plus Gold' },
+          { label: 'Emolevy', value: 'Asus TUF Gaming B550-Plus' },
+          {
+            label: 'CPU-jäähdytin',
+            value: 'Thermalright Assassin X 120 Refined SE ARGB',
+          },
+          {
+            label: 'Lämpötahna',
+            value:
+              "Arctic MX-6 (Tom's Hardware -lehden mukaan vuoden 2025 paras lämpötahna)",
+          },
+          {
+            label: 'Kotelo',
+            value:
+              'Montech XR TG. Koko: 450 × 230 × 455 mm (pituus × leveys × korkeus)',
+          },
+          {
+            label: 'Langaton yhteys',
+            value:
+              'Wifi 6 & Bluetooth 5.2 | TP-Link Archer TX55E AX3000 PCIe-kortti',
+          },
+        ],
+      },
+      en: {
+        title: 'Components',
+        items: [
+          {
+            label: 'CPU',
+            value: 'AMD Ryzen 9 5900X (12 cores, 24 threads, overclockable)',
+          },
+          { label: 'GPU', value: 'Sapphire PULSE AMD Radeon™ RX 7800 XT 16GB' },
+          {
+            label: 'Memory',
+            value: 'Crucial Ballistix 32GB (2x16GB) 3600 MHz DDR4',
+          },
+          { label: 'Storage', value: 'WD Blue SN5000 2TB NVMe SSD' },
+          { label: 'Power Supply', value: 'Corsair RM650e | 80 Plus Gold' },
+          { label: 'Motherboard', value: 'Asus TUF Gaming B550-Plus' },
+          {
+            label: 'CPU Cooler',
+            value: 'Thermalright Assassin X 120 Refined SE ARGB',
+          },
+          {
+            label: 'Thermal Paste',
+            value: "Arctic MX-6 (Tom's Hardware's best thermal paste of 2025)",
+          },
+          {
+            label: 'Case',
+            value: 'Montech XR TG. Size: 450 × 230 × 455 mm (L × W × H)',
+          },
+          {
+            label: 'Wireless',
+            value:
+              'Wifi 6 & Bluetooth 5.2 | TP-Link Archer TX55E AX3000 PCIe card',
+          },
+        ],
+      },
     },
     images: [
       'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759537353/panther-1-main_uct7rp.webp',
@@ -41,7 +113,7 @@ export const mockPCProducts: Product[] = [
     isAvailable: true,
     isVisible: true,
     createdAt: '2025-09-20T14:30:00Z',
-    updatedAt: '2025-09-20T14:30:00Z',
+    updatedAt: '2025-10-11T23:19:00Z',
   },
   {
     id: 'snow-kitten-1',
