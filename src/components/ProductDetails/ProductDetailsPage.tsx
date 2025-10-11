@@ -1,10 +1,23 @@
-import { Container, Box, Stack, Typography, Button } from '@mui/material';
+import {
+  Container,
+  Box,
+  Stack,
+  Typography,
+  Button,
+  Divider,
+  List,
+  ListItem,
+  ListItemText,
+} from '@mui/material';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import EmailIcon from '@mui/icons-material/Email';
+import DescriptionIcon from '@mui/icons-material/Description';
+import SettingsIcon from '@mui/icons-material/Settings';
+import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 import { FaSignalMessenger } from 'react-icons/fa6';
 
 import 'swiper/css';
@@ -37,6 +50,9 @@ const ProductDetailsPage = () => {
       </Container>
     );
   }
+
+  // Get components for current language
+  const components = product.components?.[currentLang];
 
   return (
     <Container maxWidth="lg" sx={{ py: 2 }}>
@@ -187,17 +203,79 @@ const ProductDetailsPage = () => {
                 : t('productDetails.orderSimilarButton')}
             </Button>
 
-            <Typography variant="h5" color="navy.main">
-              {t('productDetails.descriptionTitle')}
-            </Typography>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mt: 1 }}>
+              <DescriptionIcon sx={{ color: 'navy.main', fontSize: 28 }} />
+              <Typography variant="h5" color="navy.main">
+                {t('productDetails.descriptionTitle')}
+              </Typography>
+            </Box>
 
             <Typography variant="body1" color="navy.main">
               {product.description[currentLang]}
             </Typography>
 
-            <Typography variant="h5" color="navy.main">
-              {t('productDetails.warrantyTitle')}
-            </Typography>
+            {/* Components List */}
+            {components && (
+              <Box sx={{ mt: 2 }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                  <SettingsIcon sx={{ color: 'navy.main', fontSize: 28 }} />
+                  <Typography variant="h5" color="navy.main">
+                    {components.title}
+                  </Typography>
+                </Box>
+                <List disablePadding sx={{ mt: 2 }}>
+                  {components.items.map((item, index) => (
+                    <ListItem
+                      key={index}
+                      disableGutters
+                      sx={{
+                        py: 0.5,
+                        flexDirection: { xs: 'column', sm: 'row' },
+                        alignItems: { xs: 'flex-start', sm: 'flex-start' },
+                      }}
+                    >
+                      <ListItemText
+                        primary={
+                          <Box
+                            sx={{
+                              display: 'flex',
+                              flexDirection: { xs: 'column', sm: 'row' },
+                              gap: { xs: 0.5, sm: 2 },
+                            }}
+                          >
+                            <Typography
+                              component="span"
+                              variant="body2"
+                              sx={{
+                                fontWeight: 600,
+                                minWidth: { sm: '140px' },
+                                color: 'navy.main',
+                              }}
+                            >
+                              {item.label}:
+                            </Typography>
+                            <Typography
+                              component="span"
+                              variant="body2"
+                              color="navy.main"
+                            >
+                              {item.value}
+                            </Typography>
+                          </Box>
+                        }
+                      />
+                    </ListItem>
+                  ))}
+                </List>
+              </Box>
+            )}
+
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mt: 1 }}>
+              <VerifiedUserIcon sx={{ color: 'navy.main', fontSize: 28 }} />
+              <Typography variant="h5" color="navy.main">
+                {t('productDetails.warrantyTitle')}
+              </Typography>
+            </Box>
 
             <Typography variant="body1" color="navy.main">
               {t('productDetails.warrantyText')}

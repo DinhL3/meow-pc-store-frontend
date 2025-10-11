@@ -53,6 +53,74 @@ export const mockPCProducts: Product[] = [
       en: 'The Meow PC™ Snow Kitten is a stylish, compact, and powerful gaming PC built entirely with brand-new components. The Ryzen 5 7500F and RX 9060 XT 16G offer the best price-to-performance on the market, while the AM5 platform ensures easy future upgrades. Enjoy smooth 1440p gaming at High to Ultra settings with the latest FSR 4 support. It also comes with Windows 11 Pro pre-installed, a generous 32GB of fast DDR5 RAM, a 2TB NVMe SSD for large AAA titles, and a high-quality Phanteks power supply with 8-year manufacturer warranty.',
       fi: 'Meow PC™ Snow Kitten on tyylikäs, kompakti ja tehokas pelitietokone, koottu täysin uusista komponenteista. Ryzen 5 7500F ja RX 9060 XT 16G tarjoavat markkinoiden parasta hinta–suorituskykyä, AM5-alusta mahdollistaa tulevat päivitykset, ja 1440p-pelaaminen onnistuu High–Ultra -asetuksilla uusimmalla FSR 4 -tuella. Mukana myös Windows 11 Pro, nopeat 32 GB DDR5 -muistia, 2 TB NVMe SSD tilaa isoille AAA-peleille sekä laadukas Phanteksin virtalähde (8 vuoden valmistajan takuu).',
     },
+    components: {
+      fi: {
+        title: 'Komponentit',
+        items: [
+          { label: 'CPU', value: 'AMD Ryzen 5 7500F (6 ydintä/ 12 säiettä)' },
+          {
+            label: 'GPU',
+            value: 'SAPPHIRE PURE AMD Radeon™ RX 9060 XT 16GB OC',
+          },
+          {
+            label: 'Muisti',
+            value: 'Kingston Fury Beast 32GB DDR5 6000 MHz CL36',
+          },
+          { label: 'Tallennustila', value: 'WD Blue SN5000 2TB NVMe SSD' },
+          {
+            label: 'Emolevy',
+            value: 'Gigabyte B650M Gaming Plus WiFi (Rev 1.1)',
+          },
+          { label: 'Virtalähde', value: 'Phanteks AMP GH750 | 80 Plus Gold' },
+          { label: 'Kotelo', value: 'DeepCool CH260 WH' },
+          {
+            label: 'CPU-jäähdytin',
+            value: 'Thermalright Assassin Spirit 120 EVO White ARGB',
+          },
+          {
+            label: 'Lämpötahna',
+            value:
+              "Arctic MX-6 (Tom's Hardware -lehden mukaan vuoden 2025 paras lämpötahna)",
+          },
+          {
+            label: 'Kotelotuulettimet',
+            value: '3x Thermalright TL-C12CW-S ARGB',
+          },
+          { label: 'Langaton yhteys', value: 'Wifi 6E & Bluetooth 5.3' },
+        ],
+      },
+      en: {
+        title: 'Components',
+        items: [
+          { label: 'CPU', value: 'AMD Ryzen 5 7500F (6 cores/ 12 threads)' },
+          {
+            label: 'GPU',
+            value: 'SAPPHIRE PURE AMD Radeon™ RX 9060 XT 16GB OC',
+          },
+          {
+            label: 'Memory',
+            value: 'Kingston Fury Beast 32GB DDR5 6000 MHz CL36',
+          },
+          { label: 'Storage', value: 'WD Blue SN5000 2TB NVMe SSD' },
+          {
+            label: 'Motherboard',
+            value: 'Gigabyte B650M Gaming Plus WiFi (Rev 1.1)',
+          },
+          { label: 'Power Supply', value: 'Phanteks AMP GH750 | 80 Plus Gold' },
+          { label: 'Case', value: 'DeepCool CH260 WH' },
+          {
+            label: 'CPU Cooler',
+            value: 'Thermalright Assassin Spirit 120 EVO White ARGB',
+          },
+          {
+            label: 'Thermal Paste',
+            value: "Arctic MX-6 (Tom's Hardware's best thermal paste of 2025)",
+          },
+          { label: 'Case Fans', value: '3x Thermalright TL-C12CW-S ARGB' },
+          { label: 'Wireless', value: 'Wifi 6E & Bluetooth 5.3' },
+        ],
+      },
+    },
     images: [
       'https://res.cloudinary.com/dlhzbr2to/image/upload/v1760146722/snow-kitten-1-main_zg2ujm.webp',
       'https://res.cloudinary.com/dlhzbr2to/image/upload/v1760146722/snow-kitten-1-side_mc9hhb.webp',
