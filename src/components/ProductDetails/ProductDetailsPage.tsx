@@ -124,7 +124,7 @@ const ProductDetailsPage = () => {
         </Box>
 
         {/* Right Half - Product Info */}
-        <Box sx={{ flex: 1, maxWidth: { xs: '100%', md: '50%' } }}>
+        <Box pt={1} sx={{ flex: 1, maxWidth: { xs: '100%', md: '50%' } }}>
           <Stack spacing={2.5}>
             {/* Product Name */}
             <Typography
