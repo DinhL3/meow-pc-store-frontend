@@ -2,7 +2,7 @@ import type { Product } from './product.types';
 
 export const mockPCProducts: Product[] = [
   {
-    id: '1',
+    id: 'night-kitten-1',
     name: 'Night Kitten I',
     tags: ['Ryzen 7 5700X3D', 'RTX 4070'],
     price: 1199,
@@ -23,7 +23,7 @@ export const mockPCProducts: Product[] = [
     updatedAt: '2025-09-15T10:00:00Z',
   },
   {
-    id: '2',
+    id: 'panther-1',
     name: 'Panther I',
     tags: ['Ryzen 9 5900X', 'RX 7800 XT'],
     price: 1199,
@@ -42,5 +42,24 @@ export const mockPCProducts: Product[] = [
     isVisible: true,
     createdAt: '2025-09-20T14:30:00Z',
     updatedAt: '2025-09-20T14:30:00Z',
+  },
+  {
+    id: 'snow-kitten-1',
+    name: 'Snow Kitten I',
+    tags: ['Ryzen 5 7500F', 'RX 9060 XT'],
+    price: 1349,
+    currency: 'EUR',
+    description: {
+      en: 'The Meow PC™ Snow Kitten is a stylish, compact, and powerful gaming PC built entirely with brand-new components. The Ryzen 5 7500F and RX 9060 XT 16G offer the best price-to-performance on the market, while the AM5 platform ensures easy future upgrades. Enjoy smooth 1440p gaming at High to Ultra settings with the latest FSR 4 support. It also comes with Windows 11 Pro pre-installed, a generous 32GB of fast DDR5 RAM, a 2TB NVMe SSD for large AAA titles, and a high-quality Phanteks power supply with 8-year manufacturer warranty.',
+      fi: 'Meow PC™ Snow Kitten on tyylikäs, kompakti ja tehokas pelitietokone, koottu täysin uusista komponenteista. Ryzen 5 7500F ja RX 9060 XT 16G tarjoavat markkinoiden parasta hinta–suorituskykyä, AM5-alusta mahdollistaa tulevat päivitykset, ja 1440p-pelaaminen onnistuu High–Ultra -asetuksilla uusimmalla FSR 4 -tuella. Mukana myös Windows 11 Pro, nopeat 32 GB DDR5 -muistia, 2 TB NVMe SSD tilaa isoille AAA-peleille sekä laadukas Phanteksin virtalähde (8 vuoden valmistajan takuu).',
+    },
+    images: [
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1760146722/snow-kitten-1-main_zg2ujm.webp',
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1760146722/snow-kitten-1-side_mc9hhb.webp',
+    ],
+    isAvailable: true,
+    isVisible: true,
+    createdAt: '2025-10-11T04:49:00Z',
+    updatedAt: '2025-10-11T04:49:00Z',
   },
 ];
