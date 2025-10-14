@@ -196,6 +196,7 @@ export const mockPCProducts: Product[] = [
     images: [
       'https://res.cloudinary.com/dlhzbr2to/image/upload/v1760146722/snow-kitten-1-main_zg2ujm.webp',
       'https://res.cloudinary.com/dlhzbr2to/image/upload/v1760146722/snow-kitten-1-side_mc9hhb.webp',
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1760472117/snow-kitten-1-time-spy_vmjlrm.png',
     ],
     isAvailable: true,
     isVisible: true,
