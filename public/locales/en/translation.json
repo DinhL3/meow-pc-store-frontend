@@ -39,7 +39,7 @@
   },
   "orderModal": {
     "title": "How to order 📦",
-    "intro": "The fastest way to order this PC is to send me a message:",
+    "intro": "The fastest way to order this PC is to send me a message. I don't have a delivery system set up yet, so the machine can only be picked up in Tampere.",
     "phoneLabel": "+358408589471 - I'm available on:",
     "email": "Email:",
     "availability": "⏰ I am available almost 24/7 and will try to reply as soon as possible!"
@@ -52,7 +52,7 @@
     "benefit1": "Your PC built and ready within a week",
     "benefit2": "Windows 11 Pro installed and activated",
     "benefit3": "Full benchmark testing to ensure peak performance",
-    "benefit4": "All you have to do is pick it up and start using it",
+    "benefit4": "All you have to do is pick up the machine in Tampere and start using it",
     "contactTitle": "Send a message to +358408589471",
     "availableOn": "I'm available on:",
     "email": "Email:",
