@@ -203,4 +203,87 @@ export const mockPCProducts: Product[] = [
     createdAt: '2025-10-11T04:49:00Z',
     updatedAt: '2025-10-11T04:49:00Z',
   },
+  {
+    id: 'void-lynx',
+    name: 'Void Lynx',
+    tags: ['Ryzen 5 7500F', 'RX 9070'],
+    price: 1499,
+    currency: 'EUR',
+    description: {
+      en: 'The MeowPC™ Void Lynx is a stylish and powerful gaming PC built entirely with brand-new components. The Ryzen 5 7500F offers the best price-to-performance on the market, while the AM5 platform ensures easy future upgrades. Experience exceptional gaming at 1440p Ultra settings or 4K High settings with the RX 9070, featuring the latest FSR 4 support. It also comes with Windows 11 Pro pre-installed, a generous 32GB of fast DDR5 RAM, a 2TB NVMe SSD for large AAA titles, and a high-quality Corsair power supply with 7-year manufacturer warranty.',
+      fi: 'MeowPC™ Void Lynx on tyylikäs ja tehokas pelitietokone, koottu täysin uusista komponenteista. Ryzen 5 7500F ja RX 9070 tarjoavat erinomaista suorituskykyä, AM5-alusta mahdollistaa tulevat päivitykset, ja pelaaminen onnistuu 1440p Ultra- tai 4K High -asetuksilla uusimmalla FSR 4 -tuella. Mukana myös Windows 11 Pro, nopeat 32 GB DDR5 -muistia, 2 TB NVMe SSD tilaa isoille AAA-peleille sekä laadukas Corsairin virtalähde (7 vuoden valmistajan takuu).',
+    },
+    components: {
+      fi: {
+        title: 'Komponentit',
+        items: [
+          { label: 'CPU', value: 'AMD Ryzen 5 7500F (6 ydintä/ 12 säiettä)' },
+          {
+            label: 'GPU',
+            value: 'PowerColor Reaper AMD Radeon™ RX 9070 16GB GDDR6',
+          },
+          {
+            label: 'Muisti',
+            value: 'Corsair Vengeance 32GB DDR5 6000 MHz CL36',
+          },
+          { label: 'Tallennustila', value: 'WD Blue SN5000 2TB NVMe SSD' },
+          {
+            label: 'Emolevy',
+            value: 'ASUS TUF GAMING B650M-PLUS WIFI',
+          },
+          { label: 'Virtalähde', value: 'Corsair RM650e | 80 Plus Gold' },
+          { label: 'Kotelo', value: 'DeepCool MATREXX 40 3FS' },
+          {
+            label: 'CPU-jäähdytin',
+            value: 'Thermalright Assassin X 120 Refined SE ARGB',
+          },
+          {
+            label: 'Lämpötahna',
+            value:
+              "Arctic MX-6 (Tom's Hardware -lehden mukaan vuoden 2025 paras lämpötahna)",
+          },
+          { label: 'Langaton yhteys', value: 'Wifi 6 & Bluetooth 5.2' },
+        ],
+      },
+      en: {
+        title: 'Components',
+        items: [
+          { label: 'CPU', value: 'AMD Ryzen 5 7500F (6 cores/ 12 threads)' },
+          {
+            label: 'GPU',
+            value: 'PowerColor Reaper AMD Radeon™ RX 9070 16GB GDDR6',
+          },
+          {
+            label: 'Memory',
+            value: 'Corsair Vengeance 32GB DDR5 6000 MHz CL36',
+          },
+          { label: 'Storage', value: 'WD Blue SN5000 2TB NVMe SSD' },
+          {
+            label: 'Motherboard',
+            value: 'ASUS TUF GAMING B650M-PLUS WIFI',
+          },
+          { label: 'Power Supply', value: 'Corsair RM650e | 80 Plus Gold' },
+          { label: 'Case', value: 'DeepCool MATREXX 40 3FS CH260 WH' },
+          {
+            label: 'CPU Cooler',
+            value: 'Thermalright Assassin X 120 Refined SE ARGB',
+          },
+          {
+            label: 'Thermal Paste',
+            value: "Arctic MX-6 (Tom's Hardware's best thermal paste of 2025)",
+          },
+          { label: 'Wireless', value: 'Wifi 6 & Bluetooth 5.2' },
+        ],
+      },
+    },
+    images: [
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1760649675/void-lynx-main_rsh2vb.webp',
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1760649674/void-lynx-side_e4xqmu.webp',
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1760649697/void-lynx-timespy-extreme_wlrqve.png',
+    ],
+    isAvailable: true,
+    isVisible: true,
+    createdAt: '2025-10-17T00:26:00Z',
+    updatedAt: '2025-10-17T00:26:00Z',
+  },
 ];
