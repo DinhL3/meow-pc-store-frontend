@@ -263,7 +263,7 @@ export const mockPCProducts: Product[] = [
             value: 'ASUS TUF GAMING B650M-PLUS WIFI',
           },
           { label: 'Power Supply', value: 'Corsair RM650e | 80 Plus Gold' },
-          { label: 'Case', value: 'DeepCool MATREXX 40 3FS CH260 WH' },
+          { label: 'Case', value: 'DeepCool MATREXX 40 3FS' },
           {
             label: 'CPU Cooler',
             value: 'Thermalright Assassin X 120 Refined SE ARGB',
