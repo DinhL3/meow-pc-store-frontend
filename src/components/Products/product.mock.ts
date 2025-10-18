@@ -110,7 +110,7 @@ export const mockPCProducts: Product[] = [
       'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759524601/HWinfo_xqpr0n.png',
       'https://res.cloudinary.com/dlhzbr2to/image/upload/v1759524602/3dmark_hn0gfr.png',
     ],
-    isAvailable: true,
+    isAvailable: false,
     isVisible: true,
     createdAt: '2025-09-20T14:30:00Z',
     updatedAt: '2025-10-11T23:19:00Z',
