@@ -2,9 +2,6 @@
   publish = "dist"
   command = "npm run build"
 
-[[plugins]]
-  package = "netlify-plugin-prerender-spa"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
