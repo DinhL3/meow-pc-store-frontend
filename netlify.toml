@@ -5,20 +5,6 @@
 [[plugins]]
   package = "netlify-plugin-prerender-spa"
 
-  [plugins.inputs]
-    # Main routes
-    routes = [
-      "/",
-      "/about",
-      "/products",
-      "/custom-build",
-      # Product detail pages
-      "/products/night-kitten-1",
-      "/products/panther-1",
-      "/products/snow-kitten-1",
-      "/products/void-lynx"
-    ]
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
