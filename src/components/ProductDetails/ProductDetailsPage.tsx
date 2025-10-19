@@ -24,7 +24,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/thumbs';
 
-import { mockPCProducts } from '../Products/product.mock';
+import { mockPCProducts } from '../../data/product.mock';
 import { Pagination, Navigation, Thumbs, FreeMode } from 'swiper/modules';
 import { useState } from 'react';
 import type { Swiper as SwiperType } from 'swiper';

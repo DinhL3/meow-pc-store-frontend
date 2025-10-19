@@ -7,7 +7,7 @@ import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import type { Product } from './product.types';
+import type { Product } from '../../data/product.types';
 
 interface ProductCardProps {
   product: Product;

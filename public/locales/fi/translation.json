@@ -10,6 +10,31 @@
   "language": {
     "select": "Valitse kieli"
   },
+  "seo": {
+    "defaultTitle": "Pelitietokone Tampere | Räätälöidyt Gaming PC:t | Meow PC Store",
+    "defaultDescription": "Uudet pelitietokoneet ja räätälöidyt gaming PC:t Tampereella. Laadukkaat komponentit (RTX 4070, Ryzen 7000), ammattitaitoinen kokoaminen, 2v takuu. Nouto Tampereelta.",
+    "defaultKeywords": "pelitietokone, pelitietokone tampere, räätälöity pelitietokone, uusi pelitietokone, pelitietokoneet, gaming pc, pelikone, valmis pelitietokone",
+    "home": {
+      "title": "Pelitietokone Tampere | Uudet Gaming PC:t & Räätälöidyt Pelikoneet",
+      "description": "Tyylikkäät uudet pelitietokoneet laadukkaista osista. Valmis pelitietokone tai räätälöity gaming PC juuri sinulle. Ammattitaitoinen kokoaminen, 2v takuu. Nouto Tampereelta.",
+      "keywords": "uusi pelitietokone, pelitietokone tampere, räätälöity pelitietokone, uudet pelitietokoneet, gaming pc, valmis pelikone"
+    },
+    "products": {
+      "title": "Uudet Valmiit Pelitietokoneet",
+      "description": "Selaa uusia valmiita pelitietokoneita. AMD Ryzen -prosessorit, NVIDIA RTX & AMD Radeon -näytönohjaimet. Kaikki uusista komponenteista, 2v takuu.",
+      "keywords": "uusi pelitietokone, valmis pelitietokone, uudet pelitietokoneet, gaming pc, rtx 4070, rx 7800 xt, rx 9060 xt, pelikone"
+    },
+    "customBuild": {
+      "title": "Räätälöity Pelitietokone | Custom Gaming PC Tampere",
+      "description": "Tilaa räätälöity uusi pelitietokone juuri sinun tarpeisiin. Ammattitaitoinen PC-kokoamispalvelu Tampereella. Kerro tarpeesi, rakennamme unelmakoneen viikossa uusista osista.",
+      "keywords": "räätälöity pelitietokone, custom gaming pc, pelitietokoneen kokoaminen, tilaustyö pelitietokone, yksilöllinen pelikone, uusi pelitietokone"
+    },
+    "about": {
+      "title": "Tietoa meistä | Pelitietokone Tampere",
+      "description": "Tutustu Meow PC Storeen - paikallinen pelitietokone-asiantuntija Tampereella. Laatukokoonpanot uusista osista, asiantunteva palvelu ja asiakastyytyväisyystakuu.",
+      "keywords": "pelitietokone tampere, gaming pc myynti, pc kauppa tampere, tietokoneen kokoaminen"
+    }
+  },
   "hero": {
     "title": "Tyylikkäät ja tehokkaat PC:t",
     "subtitle": "Laadukkaat osat, rakennettu kestämään, ammattitaidolla koottu sinulle.",

@@ -1,6 +1,6 @@
 import { Container, Typography, Box } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import { mockPCProducts } from './product.mock';
+import { mockPCProducts } from '../../data/product.mock';
 import ProductCard from './ProductCard';
 
 const ProductsPage = () => {

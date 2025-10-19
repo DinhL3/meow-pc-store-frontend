@@ -10,6 +10,31 @@
   "language": {
     "select": "Select language"
   },
+  "seo": {
+    "defaultTitle": "Gaming PC Tampere | Custom Builds | Meow PC Store",
+    "defaultDescription": "New gaming PCs and custom builds in Tampere. Quality components (RTX 4070, Ryzen 7000), professional assembly, 2-year warranty. Pickup in Tampere.",
+    "defaultKeywords": "gaming pc, gaming pc tampere, custom gaming pc, new gaming pc, gaming computer, custom pc build, pre-built gaming pc",
+    "home": {
+      "title": "Gaming PC Tampere | Custom Builds Finland",
+      "description": "Stylish new gaming PCs built with quality parts. Pre-built gaming PC or custom build just for you. Professional assembly, 2-year warranty. Pickup in Tampere.",
+      "keywords": "new gaming pc, gaming pc tampere, custom gaming pc, pre-built gaming pc, gaming computer finland"
+    },
+    "products": {
+      "title": "New Pre-built Gaming PCs",
+      "description": "Browse new pre-built gaming PCs. AMD Ryzen processors, NVIDIA RTX & AMD Radeon graphics cards. All new components, 2-year warranty.",
+      "keywords": "new gaming pc, pre-built gaming pc, rtx 4070, rx 7800 xt, rx 9060 xt, amd gaming pc, nvidia gaming pc"
+    },
+    "customBuild": {
+      "title": "Custom Gaming PC Builds | Custom PC Service Tampere",
+      "description": "Order a custom gaming PC built to your exact needs. Professional PC building service in Tampere. Tell us your needs, we'll build your dream machine within a week from new parts.",
+      "keywords": "custom gaming pc, custom pc build, pc building service, bespoke gaming pc, tailored pc build, new gaming pc"
+    },
+    "about": {
+      "title": "About Us | Gaming PC Tampere",
+      "description": "Meet Meow PC Store - local gaming PC specialist in Tampere. Quality builds from new parts, expert service, and customer satisfaction guaranteed.",
+      "keywords": "gaming pc tampere, pc store tampere, computer builder finland"
+    }
+  },
   "hero": {
     "title": "Stylish, Powerful PCs",
     "subtitle": "Quality parts, built to last, professionally assembled for you.",
