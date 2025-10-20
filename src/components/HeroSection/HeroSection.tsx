@@ -9,7 +9,7 @@ import {
   IconButton,
 } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { FaTiktok } from 'react-icons/fa';
+import { FaTiktok, FaYoutube, FaInstagram } from 'react-icons/fa';
 
 const HeroSection: React.FC = () => {
   const { t } = useTranslation();
@@ -141,37 +141,16 @@ const HeroSection: React.FC = () => {
             </Button>
           </Stack>
 
-          {/* TikTok Button */}
+          {/* Social Media Section */}
           <Box
             sx={{
               display: 'flex',
-              alignItems: 'center',
-              justifyContent: { xs: 'center', md: 'flex-start' },
+              flexDirection: 'column',
+              alignItems: { xs: 'center', md: 'flex-start' },
               gap: 1.5,
               mt: 2,
             }}
           >
-            <IconButton
-              component="a"
-              href="https://www.tiktok.com/@meowpc.fi"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={t('hero.followTikTok')}
-              sx={{
-                backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                color: 'white',
-                width: 48,
-                height: 48,
-                transition: 'all 0.3s ease',
-                '&:hover': {
-                  backgroundColor: '#000000',
-                  transform: 'scale(1.1)',
-                },
-              }}
-            >
-              <FaTiktok />
-            </IconButton>
-
             <Typography
               variant="body2"
               sx={{
@@ -179,8 +158,79 @@ const HeroSection: React.FC = () => {
                 fontSize: '0.95rem',
               }}
             >
-              {t('hero.followTikTok')}
+              {t('hero.watchVideos')}
             </Typography>
+
+            <Box
+              sx={{
+                display: 'flex',
+                gap: 1.5,
+              }}
+            >
+              <IconButton
+                component="a"
+                href="https://www.tiktok.com/@meowpc.fi"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+                sx={{
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  color: 'white',
+                  width: 48,
+                  height: 48,
+                  transition: 'all 0.3s ease',
+                  '&:hover': {
+                    backgroundColor: '#000000',
+                    transform: 'scale(1.1)',
+                  },
+                }}
+              >
+                <FaTiktok />
+              </IconButton>
+
+              <IconButton
+                component="a"
+                href="https://www.youtube.com/@meowpcfi"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                sx={{
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  color: 'white',
+                  width: 48,
+                  height: 48,
+                  transition: 'all 0.3s ease',
+                  '&:hover': {
+                    backgroundColor: '#FF0000',
+                    transform: 'scale(1.1)',
+                  },
+                }}
+              >
+                <FaYoutube />
+              </IconButton>
+
+              <IconButton
+                component="a"
+                href="https://www.instagram.com/meowpc.fi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                sx={{
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  color: 'white',
+                  width: 48,
+                  height: 48,
+                  transition: 'all 0.3s ease',
+                  '&:hover': {
+                    background:
+                      'linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)',
+                    transform: 'scale(1.1)',
+                  },
+                }}
+              >
+                <FaInstagram />
+              </IconButton>
+            </Box>
           </Box>
         </Stack>
       </Container>
