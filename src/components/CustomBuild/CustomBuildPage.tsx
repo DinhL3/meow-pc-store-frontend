@@ -7,6 +7,7 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
+  Link,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { FaSignalMessenger } from 'react-icons/fa6';
@@ -134,7 +135,17 @@ export default function CustomBuildPage() {
               >
                 <EmailIcon sx={{ color: 'oceanBlue.main', fontSize: 28 }} />
                 <Typography variant="body1" color="navy.main">
-                  <strong>{t('customBuild.email')}</strong> contact@meowpc.fi
+                  <strong>{t('customBuild.email')}</strong>{' '}
+                  <Link
+                    href="mailto:contact@meowpc.fi"
+                    sx={{
+                      color: 'oceanBlue.main',
+                      textDecoration: 'none',
+                      '&:hover': { textDecoration: 'underline' },
+                    }}
+                  >
+                    contact@meowpc.fi
+                  </Link>
                 </Typography>
               </Box>
             </Stack>

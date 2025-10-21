@@ -7,6 +7,7 @@ import {
   List,
   ListItem,
   ListItemText,
+  Link,
 } from '@mui/material';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -346,7 +347,17 @@ const ProductDetailsPage = () => {
             >
               <EmailIcon sx={{ color: 'oceanBlue.main', fontSize: 28 }} />
               <Typography variant="body1" color="navy.main">
-                <strong>{t('orderModal.email')}</strong> contact@meowpc.fi
+                <strong>{t('orderModal.email')}</strong>{' '}
+                <Link
+                  href="mailto:contact@meowpc.fi"
+                  sx={{
+                    color: 'oceanBlue.main',
+                    textDecoration: 'none',
+                    '&:hover': { textDecoration: 'underline' },
+                  }}
+                >
+                  contact@meowpc.fi
+                </Link>
               </Typography>
             </Box>
           </Stack>
