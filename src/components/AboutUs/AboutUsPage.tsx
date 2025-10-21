@@ -5,6 +5,7 @@ import {
   Pets,
   Security,
   HandshakeOutlined,
+  WavingHand,
 } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
 
@@ -44,7 +45,7 @@ const AboutUsPage = () => {
           sx={{
             p: 4,
             mb: 4,
-            bgcolor: 'navy.main',
+            bgcolor: 'powderBlue.main',
             display: 'flex',
             flexDirection: { xs: 'column', md: 'row' },
             justifyContent: 'center',
@@ -63,17 +64,26 @@ const AboutUsPage = () => {
             }}
           />
           <Box>
-            <Typography
-              variant="h5"
-              component="h2"
-              fontWeight={500}
-              color="cream"
-              gutterBottom
+            <Box
+              sx={{
+                display: 'flex',
+                mb: 1,
+                gap: 1,
+              }}
             >
-              {t('about.whoIAm.greeting')}
-            </Typography>
+              <WavingHand sx={{ fontSize: 32, color: 'navy.main' }} />
+              <Typography
+                variant="h5"
+                component="h2"
+                fontWeight={500}
+                color="navy"
+                gutterBottom
+              >
+                {t('about.whoIAm.greeting')}
+              </Typography>
+            </Box>
 
-            <Typography variant="body1" color="cream">
+            <Typography variant="body1" color="navy">
               {t('about.whoIAm.description')}
             </Typography>
           </Box>
