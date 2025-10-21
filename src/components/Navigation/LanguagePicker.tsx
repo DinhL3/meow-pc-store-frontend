@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Button, Menu, MenuItem } from '@mui/material';
+import { Button, Menu, MenuItem, Typography } from '@mui/material';
 import { Language } from '@mui/icons-material';
 import { LANGUAGES } from './constants';
 import type { LanguagePickerProps } from './types';
@@ -62,7 +62,9 @@ export const LanguagePicker = ({ isMobile = false }: LanguagePickerProps) => {
             onClick={() => handleLanguageChange(lang.code)}
             selected={i18n.language === lang.code}
           >
-            {lang.label}
+            <Typography color="navy" component="span">
+              {lang.label}
+            </Typography>
           </MenuItem>
         ))}
       </Menu>

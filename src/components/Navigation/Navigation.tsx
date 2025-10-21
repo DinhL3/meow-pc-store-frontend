@@ -62,7 +62,9 @@ export const MobileNav = ({
             key={page.path}
             onClick={() => handleMenuItemClick(page.path)}
           >
-            <Typography component="span">{t(`nav.${page.key}`)}</Typography>
+            <Typography color="navy" component="span">
+              {t(`nav.${page.key}`)}
+            </Typography>
           </MenuItem>
         ))}
       </Menu>
