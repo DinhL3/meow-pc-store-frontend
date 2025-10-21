@@ -1,28 +1,16 @@
-import React from 'react';
+import { Box, Container, Typography, Paper, Avatar } from '@mui/material';
 import {
-  Box,
-  Container,
-  Typography,
-  Paper,
-  Avatar,
-  Divider,
-  Card,
-  CardContent,
-  Link,
-} from '@mui/material';
-import {
-  Verified,
   Schedule,
-  Build,
   LocationOn,
-  Email,
   Pets,
   Security,
-  Recycling,
   HandshakeOutlined,
 } from '@mui/icons-material';
+import { useTranslation } from 'react-i18next';
 
 const AboutUsPage = () => {
+  const { t } = useTranslation();
+
   return (
     <Box sx={{ py: 4 }}>
       <Container maxWidth="md">
@@ -43,10 +31,10 @@ const AboutUsPage = () => {
               mb: 1,
             }}
           >
-            About Meow PC Store
+            {t('about.pageTitle')}
           </Typography>
           <Typography variant="h5" color="oceanBlue">
-            Stylish PCs crafted with care
+            {t('about.pageSubtitle')}
           </Typography>
         </Box>
 
@@ -82,127 +70,21 @@ const AboutUsPage = () => {
               color="cream"
               gutterBottom
             >
-              Hi, I'm Dinh
+              {t('about.whoIAm.greeting')}
             </Typography>
 
             <Typography variant="body1" color="cream">
-              I'm a software engineer based in Tampere with a deep passion for
-              building excellent PCs. It must look good on your desk, perform
-              flawlessly, and stand the test of time - something that you are
-              proud to own.
+              {t('about.whoIAm.description')}
             </Typography>
           </Box>
         </Paper>
 
-        {/* <Box sx={{ mb: 6 }}>
-          <Typography
-            variant="h4"
-            component="h2"
-            sx={{
-              color: 'navy.main',
-              fontWeight: 600,
-              mb: 4,
-              textAlign: 'center',
-            }}
-          >
-            Why choose Meow PC Store?
-          </Typography>
-
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: { xs: 'column', md: 'row' },
-              gap: 3,
-              mb: 4,
-            }}
-          >
-            <Card
-              sx={{
-                flex: 1,
-                bgcolor: 'powderBlue.main',
-                boxShadow: 2,
-              }}
-            >
-              <CardContent>
-                <Schedule sx={{ fontSize: 40, color: 'navy.main' }} />
-                <Typography
-                  variant="h6"
-                  gutterBottom
-                  color="navy"
-                  fontWeight={600}
-                >
-                  Save Massive Time & Hassle
-                </Typography>
-                <Typography variant="body2" color="navy">
-                  Building a PC is an awesome hobby, but it demands hours of
-                  research, assembly, software installation, and
-                  troubleshooting. Let me handle all of that so you can skip
-                  straight to enjoying your new machine.
-                </Typography>
-              </CardContent>
-            </Card>
-
-            <Card
-              sx={{
-                flex: 1,
-                bgcolor: 'powderBlue.main',
-                boxShadow: 2,
-              }}
-            >
-              <CardContent>
-                <Build sx={{ fontSize: 40, color: 'navy.main' }} />
-                <Typography
-                  variant="h6"
-                  gutterBottom
-                  color="navy"
-                  fontWeight={600}
-                >
-                  Expert Craftsmanship
-                </Typography>
-                <Typography variant="body2" color="navy">
-                  With my software engineering background and years of PC
-                  building experience, I bring technical precision to every
-                  build. Clean cable management, optimal airflow, thorough
-                  testing—every detail matters.
-                </Typography>
-              </CardContent>
-            </Card>
-
-            <Card
-              sx={{
-                flex: 1,
-                bgcolor: 'powderBlue.main',
-                boxShadow: 2,
-              }}
-            >
-              <CardContent>
-                <Verified sx={{ fontSize: 40, color: 'navy.main' }} />
-                <Typography
-                  variant="h6"
-                  gutterBottom
-                  color="navy"
-                  fontWeight={600}
-                >
-                  Quality Guaranteed
-                </Typography>
-                <Typography variant="body2" color="navy">
-                  Only genuine, brand-new components from reputable suppliers.
-                  No shortcuts, no compromises. Each PC is tested with various
-                  benchmark softwares before it reaches you.
-                </Typography>
-              </CardContent>
-            </Card>
-          </Box>
-        </Box> */}
-
-        {/* My Approach */}
         <Paper
-          elevation={0}
+          elevation={1}
           sx={{
             p: 4,
             mb: 4,
-            bgcolor: 'white',
-            borderLeft: '4px solid',
+            bgcolor: 'cream.main',
             borderColor: 'oceanBlue.main',
           }}
         >
@@ -211,55 +93,28 @@ const AboutUsPage = () => {
             component="h2"
             sx={{ color: 'navy.main', fontWeight: 600, mb: 3 }}
           >
-            Why choose Meow PC Store?
+            {t('about.whyChoose.title')}
           </Typography>
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
-              <HandshakeOutlined sx={{ color: 'coralRed.main', mt: 0.5 }} />
+              <Schedule sx={{ color: 'coralRed.main', mt: 0.5 }} />
               <Box>
-                <Typography
-                  variant="h6"
-                  sx={{ color: 'navy.main', fontWeight: 600 }}
-                >
-                  Customer First
+                <Typography variant="h6" color="navy" fontWeight={600}>
+                  {t('about.whyChoose.saveTime.title')}
                 </Typography>
-                <Typography variant="body2">
-                  I take time to understand your needs: gaming, content
-                  creation, workstation, or all of the above. Your PC should
-                  match your goals perfectly.
+                <Typography variant="body2" color="navy">
+                  {t('about.whyChoose.saveTime.description')}
                 </Typography>
               </Box>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
               <HandshakeOutlined sx={{ color: 'coralRed.main', mt: 0.5 }} />
               <Box>
-                <Typography
-                  variant="h6"
-                  sx={{ color: 'navy.main', fontWeight: 600 }}
-                >
-                  Customer First
+                <Typography variant="h6" color="navy" fontWeight={600}>
+                  {t('about.whyChoose.customerFirst.title')}
                 </Typography>
-                <Typography variant="body2">
-                  I take time to understand your needs: gaming, content
-                  creation, workstation, or all of the above. Your PC should
-                  match your goals perfectly.
-                </Typography>
-              </Box>
-            </Box>
-
-            <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
-              <Build sx={{ color: 'coralRed.main', mt: 0.5 }} />
-              <Box>
-                <Typography
-                  variant="h6"
-                  sx={{ color: 'navy.main', fontWeight: 600 }}
-                >
-                  Premium Components
-                </Typography>
-                <Typography variant="body2">
-                  I source components from trusted suppliers, ensuring
-                  authenticity and reliability. Every part is selected for
-                  performance, compatibility, and longevity.
+                <Typography variant="body2" color="navy">
+                  {t('about.whyChoose.customerFirst.description')}
                 </Typography>
               </Box>
             </Box>
@@ -267,33 +122,11 @@ const AboutUsPage = () => {
             <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
               <Security sx={{ color: 'coralRed.main', mt: 0.5 }} />
               <Box>
-                <Typography
-                  variant="h6"
-                  sx={{ color: 'navy.main', fontWeight: 600 }}
-                >
-                  Thorough Testing
+                <Typography variant="h6" color="navy" fontWeight={600}>
+                  {t('about.whyChoose.builtToLast.title')}
                 </Typography>
-                <Typography variant="body2">
-                  Before delivery, each system runs through stress tests,
-                  temperature monitoring, and stability checks. You receive a PC
-                  that's ready to perform from day one.
-                </Typography>
-              </Box>
-            </Box>
-
-            <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
-              <Recycling sx={{ color: 'coralRed.main', mt: 0.5 }} />
-              <Box>
-                <Typography
-                  variant="h6"
-                  sx={{ color: 'navy.main', fontWeight: 600 }}
-                >
-                  Built to Last
-                </Typography>
-                <Typography variant="body2">
-                  Sustainability matters. I design builds with upgrade paths in
-                  mind, helping reduce e-waste and extending your PC's lifespan
-                  for years to come.
+                <Typography variant="body2" color="navy">
+                  {t('about.whyChoose.builtToLast.description')}
                 </Typography>
               </Box>
             </Box>
@@ -314,44 +147,13 @@ const AboutUsPage = () => {
           <Box sx={{ display: 'flex', alignItems: 'center', mb: 2, gap: 1 }}>
             <LocationOn sx={{ fontSize: 32 }} />
             <Typography variant="h5" sx={{ fontWeight: 600 }}>
-              Proudly Based in Tampere, Finland
+              {t('about.localAdvantage.title')}
             </Typography>
           </Box>
           <Typography variant="body1">
-            Serving the Pirkanmaa region with local pickup options available.
-            Meet me face-to-face, see your build in person, and support a local
-            business. No shipping damage, no waiting, just quality service close
-            to home.
+            {t('about.localAdvantage.description')}
           </Typography>
         </Paper>
-
-        {/* Warranty Section */}
-        {/* <Paper
-          elevation={1}
-          sx={{
-            p: 4,
-            mb: 4,
-            bgcolor: 'white',
-            borderLeft: '2px solid',
-            borderColor: 'coralRed.main',
-          }}
-        >
-          <Box sx={{ display: 'flex', alignItems: 'center', mb: 3, gap: 2 }}>
-            <Security sx={{ fontSize: 40, color: 'coralRed.main' }} />
-            <Typography
-              variant="h4"
-              component="h2"
-              sx={{ color: 'navy.main', fontWeight: 600 }}
-            >
-              2-Year Warranty
-            </Typography>
-          </Box>
-          <Typography variant="body1" sx={{ fontSize: '1rem' }}>
-            All PCs from Meow PC Store are covered by a comprehensive 2-year
-            warranty in accordance with Finnish consumer law. Your investment is
-            protected, and I stand behind every build I create.
-          </Typography>
-        </Paper> */}
 
         {/* The Story Behind the Name */}
         <Box
@@ -372,18 +174,14 @@ const AboutUsPage = () => {
                 variant="h5"
                 sx={{ color: 'navy.main', fontWeight: 600 }}
               >
-                The Story Behind "Meow"
+                {t('about.meowStory.title')}
               </Typography>
             </Box>
             <Typography variant="body1" color="navy">
-              A few years ago, I rescued a tiny, spicy basement kitten, who I
-              named Meo. This little guy brought a lot luck and joy during a
-              difficult period of my life. The name "Meow PC Store" is a way for
-              me to remember him, reminding me to bring joy to my customers,
-              just like he did to me.
+              {t('about.meowStory.description')}
             </Typography>
             <Typography variant="caption" color="oceanBlue">
-              He is now a big, fat cat, living happily with his owner.
+              {t('about.meowStory.caption')}
             </Typography>
           </Box>
           <Box

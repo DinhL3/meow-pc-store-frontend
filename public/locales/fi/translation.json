@@ -82,5 +82,37 @@
     "availableOn": "Olen tavoitettavissa:",
     "email": "Sähköposti:",
     "availability": "⏰ Olen tavoitettavissa lähes 24/7 ja vastaan viesteihin mahdollisimman pian! Palvelu suomeksi ja englanniksi."
+  },
+  "about": {
+    "pageTitle": "Tietoa Meow PC Storesta",
+    "pageSubtitle": "Tyylikkäät ja laadukkaat PC:t Tampereelta, Suomesta",
+    "whoIAm": {
+      "greeting": "Moro, olen Dinh",
+      "description": "Olen Tampereella toimiva ohjelmistokehittäjä, jolla on syvä intohimo erinomaisten PC:iden rakentamiseen. Sen täytyy näyttää hyvältä pöydälläsi, toimia moitteettomasti ja kestää aikaa - jotain, josta olet ylpeä omistajana."
+    },
+    "whyChoose": {
+      "title": "Miksi valita Meow PC Store?",
+      "saveTime": {
+        "title": "Säästä aikaa ja vaivaa",
+        "description": "PC:n rakentaminen voi olla hauskaa, mutta se vaatii tunteja tutkimusta, kokoamista, ohjelmistojen asennusta ja ongelmanratkaisua. Annan minun hoitaa kaikki nämä, jotta voit hypätä suoraan nauttimaan uudesta koneestasi."
+      },
+      "customerFirst": {
+        "title": "Sinä olet etusijalla",
+        "description": "Käytän aikaa ymmärtääkseni mitä tarvitset - olipa kyse pelaamisesta, työstä tai sisällön luomisesta. Nopeat vastaukset tekstillä tai sähköpostilla, joustavat noutoajat ja muut toiveet. Siksi asiakkaat antavat minulle huippuarvostelut Torissa ja Google Mapsissa."
+      },
+      "builtToLast": {
+        "title": "Rakennettu kestämään",
+        "description": "Vain uusia, laadukkaita osia luotettavilta toimittajilta - ei oikoteitä. Jokainen PC käy läpi täydelliset rasitustestit ja vakaudentarkistukset ennen toimitusta. Lisäksi saat 2 vuoden takuun jokaiseen kokoonpanoon Suomen kuluttajansuojalain mukaisesti."
+      }
+    },
+    "localAdvantage": {
+      "title": "Tampereelta käsin, palvelemassa koko Suomea",
+      "description": "Vaikka toimin Pirkanmaan alueella, asiakkaat matkustavat Helsingistä, Vaasasta, Jyväskylästä ja kauempaakin noutamaan PC:itään. Tapaa kasvotusten, tarkasta kokoonpanosi henkilökohtaisesti ja vie se turvallisesti kotiin ilman kuljetusvaurioita. Joustavat noutoajat jotka sopivat aikatauluusi ja tuet samalla paikallista yritystä."
+    },
+    "meowStory": {
+      "title": "Tarina nimen takana",
+      "description": "Muutama vuosi sitten pelastin pienen, pirteän kellarikissanpennun, jolle annoin nimeksi Meo. Tämä pieni kaveri toi paljon onnea ja iloa elämäni vaikeaan vaiheeseen. Nimi \"Meow PC Store\" on tapa muistaa häntä, muistuttaen minua tuomaan iloa asiakkailleni, aivan kuten hän toi minulle.",
+      "caption": "Hän on nykyään iso, lihava kissa, joka elää onnellisesti omistajansa kanssa."
+    }
   }
 }

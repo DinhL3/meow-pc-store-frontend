@@ -55,7 +55,7 @@ const ProductDetailsPage = () => {
   const components = product.components?.[currentLang];
 
   return (
-    <Container maxWidth="lg" sx={{ py: 2 }}>
+    <Container maxWidth="lg" sx={{ pt: 3, pb: 4 }}>
       <Box
         sx={{
           display: 'flex',

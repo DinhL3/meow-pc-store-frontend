@@ -82,5 +82,37 @@
     "availableOn": "I'm available on:",
     "email": "Email:",
     "availability": "⏰ I am available almost 24/7 and will try to reply as soon as possible! Service in Finnish and English."
+  },
+  "about": {
+    "pageTitle": "About Meow PC Store",
+    "pageSubtitle": "Stylish, high-quality PCs from Tampere, Finland",
+    "whoIAm": {
+      "greeting": "Hi, I'm Dinh",
+      "description": "I'm a software engineer based in Tampere with a deep passion for building excellent PCs. It must look good on your desk, perform flawlessly, and stand the test of time - something that you are proud to own."
+    },
+    "whyChoose": {
+      "title": "Why choose Meow PC Store?",
+      "saveTime": {
+        "title": "Save Time and Hassle",
+        "description": "Building a PC can be fun, but it demands hours of research, assembly, software installation, and troubleshooting. Let me handle all of that so you can skip straight to enjoying your new machine."
+      },
+      "customerFirst": {
+        "title": "You Come First",
+        "description": "I take time to understand what you need - whether it's for gaming, work, or creating content. Fast replies via text or email, flexible pickup times, and other requests. That's why customers give me top ratings on Tori and Google Maps."
+      },
+      "builtToLast": {
+        "title": "Built to Last",
+        "description": "Only new, quality parts from trusted suppliers - no shortcuts. Every PC runs through full stress tests and stability checks before delivery. Plus, you get a 2-year warranty on every build, following Finnish Consumer Protection Act."
+      }
+    },
+    "localAdvantage": {
+      "title": "Based in Tampere, Serving All of Finland",
+      "description": "Although based in Pirkanmaa region, customers travel from Helsinki, Vaasa, Jyväskylä, and beyond to pick up their PCs. Meet face-to-face, inspect your build in person, and get it home safely without shipping damage. Flexible pickup times that work with your schedule and support local business."
+    },
+    "meowStory": {
+      "title": "The Story Behind \"Meow\"",
+      "description": "A few years ago, I rescued a tiny, spicy basement kitten, who I named Meo. This little guy brought a lot luck and joy during a difficult period of my life. The name \"Meow PC Store\" is a way for me to remember him, reminding me to bring joy to my customers, just like he did to me.",
+      "caption": "He is now a big, fat cat, living happily with his owner."
+    }
   }
 }
