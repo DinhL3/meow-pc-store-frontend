@@ -112,7 +112,7 @@ const AboutUsPage = () => {
                 <Typography variant="h6" color="navy" fontWeight={600}>
                   {t('about.whyChoose.saveTime.title')}
                 </Typography>
-                <Typography variant="body2" color="navy">
+                <Typography variant="body1" color="navy">
                   {t('about.whyChoose.saveTime.description')}
                 </Typography>
               </Box>
@@ -123,7 +123,7 @@ const AboutUsPage = () => {
                 <Typography variant="h6" color="navy" fontWeight={600}>
                   {t('about.whyChoose.customerFirst.title')}
                 </Typography>
-                <Typography variant="body2" color="navy">
+                <Typography variant="body1" color="navy">
                   {t('about.whyChoose.customerFirst.description')}
                 </Typography>
               </Box>
@@ -135,7 +135,7 @@ const AboutUsPage = () => {
                 <Typography variant="h6" color="navy" fontWeight={600}>
                   {t('about.whyChoose.builtToLast.title')}
                 </Typography>
-                <Typography variant="body2" color="navy">
+                <Typography variant="body1" color="navy">
                   {t('about.whyChoose.builtToLast.description')}
                 </Typography>
               </Box>
