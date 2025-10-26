@@ -1,7 +1,6 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import { Box } from '@mui/material';
 import ResponsiveNavBar from './components/Navigation/ResponsiveNavBar';
-import UnderConstructionBanner from './components/Footer/UnderConstructionBanner';
 import Footer from './components/Footer/Footer';
 
 function Layout() {
@@ -17,7 +16,6 @@ function Layout() {
       }}
     >
       <ResponsiveNavBar />
-      <UnderConstructionBanner />
       <Box
         component="main"
         sx={{
