@@ -286,4 +286,100 @@ export const mockPCProducts: Product[] = [
     createdAt: '2025-10-17T00:26:00Z',
     updatedAt: '2025-10-17T00:26:00Z',
   },
+  {
+    id: 'tempest-lynx',
+    name: 'Tempest Lynx',
+    tags: ['Ryzen 5 9600X', 'RTX 5070'],
+    price: 1799,
+    currency: 'EUR',
+    description: {
+      en: 'The MeowPC™ Tempest Lynx is a stylish all-white, powerful PC built entirely with brand-new components. Featuring the Ryzen 5 9600X with among the fastest single-core performance available, this system excels at both gaming and productivity tasks. The RTX 5070 GPU delivers exceptional performance for creative work, AI applications, and content creation, while also providing outstanding 1440p Ultra gaming with the latest DLSS 4 support. The AM5 platform ensures easy future upgrades. Comes with Windows 11 Pro pre-installed, a generous 32GB of fast DDR5 RAM, a 2TB NVMe SSD for large projects and AAA titles, and a high-quality Phanteks power supply with 8-year manufacturer warranty. Includes a free copy of ARC Raiders',
+      fi: 'MeowPC™ Tempest Lynx on tyylikäs, täysin valkoinen ja tehokas tietokone, joka on koottu pelkästään uusista komponenteista. Ryzen 5 9600X -prosessori tarjoaa markkinoiden nopeimpiin kuuluvan yksiydinsuorituskyvyn, joten järjestelmä loistaa sekä pelaamisessa että tuottavuustehtävissä. RTX 5070 -näytönohjain tarjoaa erinomaisen suorituskyvyn luovaan työhön, tekoälysovelluksiin ja sisällöntuotantoon – ja samalla huippuluokan 1440p Ultra-pelaamisen uusimman DLSS 4 -tuella. AM5-alusta takaa vaivattomat tulevat päivitykset. Tietokoneessa on valmiiksi asennettu Windows 11 Pro, 32 Gt nopeaa DDR5-muistia, 2 Tt NVMe-SSD suurille projekteille ja AAA-peleille sekä laadukas Phanteks-virtalähde 8 vuoden valmistajan takuulla. Sisältää ilmaisen kopion ARC Raiders -pelistä.',
+    },
+    components: {
+      fi: {
+        title: 'Komponentit',
+        items: [
+          { label: 'CPU', value: 'AMD Ryzen 9 9600X (6 ydintä/ 12 säiettä)' },
+          {
+            label: 'GPU',
+            value: 'INNO3D GeForce RTX™ 5070 TWIN X2 12GB GDDR7',
+          },
+          {
+            label: 'Muisti',
+            value: 'Crucial Pro Overclocking 32GB DDR5 6000 MHz CL36',
+          },
+          { label: 'Tallennustila', value: 'WD Black SN770 2TB NVMe SSD' },
+          {
+            label: 'Emolevy',
+            value: 'MSI B850M GAMING PLUS WIFI6E',
+          },
+          { label: 'Virtalähde', value: 'Phanteks AMP GH 750W | 80 Plus Gold' },
+          {
+            label: 'Kotelo',
+            value:
+              'NZXT H3 Flow (PC Gamer -lehden mukaan vuoden 2025 paras m-ATX kotelo)',
+          },
+          {
+            label: 'CPU-jäähdytin',
+            value: 'Thermalright Assassin X 120 Refined SE White ARGB',
+          },
+          {
+            label: 'Lämpötahna',
+            value:
+              "Arctic MX-6 (Tom's Hardware -lehden mukaan vuoden 2025 paras lämpötahna)",
+          },
+          {
+            label: 'Kotelotuulettimet',
+            value: '3x Thermalright TL-C12CW-S ARGB',
+          },
+          { label: 'Langaton yhteys', value: 'Wifi 6E & Bluetooth 5.3' },
+        ],
+      },
+      en: {
+        title: 'Components',
+        items: [
+          { label: 'CPU', value: 'AMD Ryzen 9 9600X (6 cores/ 12 threads)' },
+          {
+            label: 'GPU',
+            value: 'INNO3D GeForce RTX™ 5070 TWIN X2 12GB GDDR7',
+          },
+          {
+            label: 'Memory',
+            value: 'Crucial Pro Overclocking 32GB DDR5 6000 MHz CL36',
+          },
+          { label: 'Storage', value: 'WD Black SN770 2TB NVMe SSD' },
+          {
+            label: 'Motherboard',
+            value: 'MSI B850M GAMING PLUS WIFI6E',
+          },
+          {
+            label: 'Power Supply',
+            value: 'Phanteks AMP GH 750W | 80 Plus Gold',
+          },
+          {
+            label: 'Case',
+            value: "NZXT H3 Flow (PC Gamer's best m-ATX case of 2025)",
+          },
+          {
+            label: 'CPU Cooler',
+            value: 'Thermalright Assassin X 120 Refined SE White ARGB',
+          },
+          {
+            label: 'Thermal Paste',
+            value: "Arctic MX-6 (Tom's Hardware's best thermal paste of 2025)",
+          },
+          { label: 'Case Fans', value: '3x Thermalright TL-C12CW-S ARGB' },
+          { label: 'Wireless', value: 'Wifi 6E & Bluetooth 5.3' },
+        ],
+      },
+    },
+    images: [
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1761491828/nzxt_h3_flow_yqonzr.webp',
+    ],
+    isAvailable: true,
+    isVisible: true,
+    createdAt: '2025-10-26T16:48:00Z',
+    updatedAt: '2025-10-26T16:48:00Z',
+  },
 ];

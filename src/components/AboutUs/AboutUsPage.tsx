@@ -3,9 +3,9 @@ import {
   Schedule,
   LocationOn,
   Pets,
-  Security,
   HandshakeOutlined,
   WavingHand,
+  VerifiedUser,
 } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
 
@@ -130,7 +130,7 @@ const AboutUsPage = () => {
             </Box>
 
             <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
-              <Security sx={{ color: 'coralRed.main', mt: 0.5 }} />
+              <VerifiedUser sx={{ color: 'coralRed.main', mt: 0.5 }} />
               <Box>
                 <Typography variant="h6" color="navy" fontWeight={600}>
                   {t('about.whyChoose.builtToLast.title')}
