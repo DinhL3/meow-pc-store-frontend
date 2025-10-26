@@ -19,11 +19,13 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import SettingsIcon from '@mui/icons-material/Settings';
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 import { FaSignalMessenger } from 'react-icons/fa6';
+import Lightbox from 'yet-another-react-lightbox';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/thumbs';
+import 'yet-another-react-lightbox/styles.css';
 
 import { mockPCProducts } from '../../data/product.mock';
 import { Pagination, Navigation, Thumbs, FreeMode } from 'swiper/modules';
@@ -36,6 +38,8 @@ const ProductDetailsPage = () => {
   const { t, i18n } = useTranslation();
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const [orderModalOpen, setOrderModalOpen] = useState(false);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
 
   const product = mockPCProducts.find((p) => p.id === productId);
 
@@ -53,6 +57,18 @@ const ProductDetailsPage = () => {
 
   // Get components for current language
   const components = product.components?.[currentLang];
+
+  // Prepare slides for lightbox
+  const lightboxSlides = product.images.map((image) => ({
+    src: image,
+    alt: product.name,
+  }));
+
+  // Handle image click to open lightbox
+  const handleImageClick = (index: number) => {
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  };
 
   return (
     <Container maxWidth="lg" sx={{ pt: 3, pb: 4 }}>
@@ -94,12 +110,18 @@ const ProductDetailsPage = () => {
                   alt={`${product.name} - ${t('productDetails.imageAlt')} ${
                     index + 1
                   }`}
+                  onClick={() => handleImageClick(index)}
                   sx={{
                     width: '100%',
                     height: 'auto',
                     maxHeight: { xs: '300px', sm: '400px', md: '500px' },
                     objectFit: 'contain',
                     borderRadius: '8px',
+                    cursor: 'pointer',
+                    transition: 'opacity 0.2s',
+                    '&:hover': {
+                      opacity: 0.9,
+                    },
                   }}
                 />
               </SwiperSlide>
@@ -122,6 +144,7 @@ const ProductDetailsPage = () => {
                   component="img"
                   src={image}
                   alt={`${t('productDetails.imageAlt')} ${index + 1}`}
+                  onClick={() => handleImageClick(index)}
                   sx={{
                     width: '100%',
                     height: { xs: '60px', sm: '80px' },
@@ -283,6 +306,20 @@ const ProductDetailsPage = () => {
           </Stack>
         </Box>
       </Box>
+
+      {/* Lightbox */}
+      <Lightbox
+        open={lightboxOpen}
+        close={() => setLightboxOpen(false)}
+        index={lightboxIndex}
+        slides={lightboxSlides}
+        carousel={{ preload: 2 }}
+        animation={{ fade: 250 }}
+        styles={{
+          container: { backgroundColor: 'rgba(255, 255, 255, 1)' },
+          button: { filter: 'none', color: '#457B9D' },
+        }}
+      />
 
       {/* Order Modal */}
       <CustomModal
