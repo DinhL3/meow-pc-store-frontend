@@ -288,7 +288,7 @@ export const mockPCProducts: Product[] = [
   },
   {
     id: 'tempest-lynx',
-    name: 'Tempest Lynx (+ ARC Raiders)',
+    name: 'Tempest Lynx & ARC Raiders',
     tags: ['Ryzen 5 9600X', 'RTX 5070'],
     price: 1799,
     currency: 'EUR',

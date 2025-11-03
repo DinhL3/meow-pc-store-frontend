@@ -24,7 +24,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
   return (
     <Card
       sx={{
-        maxWidth: 345,
+        maxWidth: 275,
         boxShadow: 'none',
         borderRadius: 2,
         // background: '#f1faee',
