@@ -12,26 +12,26 @@
   },
   "seo": {
     "defaultTitle": "Gaming PC Tampere | Custom Builds | Meow PC Store",
-    "defaultDescription": "New gaming PCs and custom builds in Tampere. Quality components (RTX 4070, Ryzen 7000), professional assembly, 3-year warranty. Pickup in Tampere.",
-    "defaultKeywords": "gaming pc, gaming pc tampere, custom gaming pc, new gaming pc, gaming computer, custom pc build, pre-built gaming pc",
+    "defaultDescription": "New gaming PCs and custom builds in Tampere. Quality components (RTX 4070, Ryzen 7000), professional assembly, 3-year warranty. Personal delivery or pickup in Tampere.",
+    "defaultKeywords": "gaming pc, gaming pc tampere, custom gaming pc, new gaming pc, gaming computer, custom pc build, pre-built gaming pc, pc delivery",
     "home": {
       "title": "Gaming PC Tampere | Custom Builds Finland",
-      "description": "Stylish new gaming PCs built with quality parts. Pre-built gaming PC or custom build just for you. Professional assembly, 3-year warranty. Pickup in Tampere.",
-      "keywords": "new gaming pc, gaming pc tampere, custom gaming pc, pre-built gaming pc, gaming computer finland"
+      "description": "Stylish new gaming PCs built with quality parts. Pre-built gaming PC or custom build just for you. Professional assembly, 3-year warranty. Personal delivery or pickup in Tampere.",
+      "keywords": "new gaming pc, gaming pc tampere, custom gaming pc, pre-built gaming pc, gaming computer finland, pc delivery"
     },
     "products": {
       "title": "New Pre-built Gaming PCs",
-      "description": "Browse new pre-built gaming PCs. AMD Ryzen processors, NVIDIA RTX & AMD Radeon graphics cards. All new components, 3-year warranty.",
+      "description": "Browse new pre-built gaming PCs. AMD Ryzen processors, NVIDIA RTX & AMD Radeon graphics cards. All new components, 3-year warranty. Personal delivery available.",
       "keywords": "new gaming pc, pre-built gaming pc, rtx 4070, rx 7800 xt, rx 9060 xt, amd gaming pc, nvidia gaming pc"
     },
     "customBuild": {
       "title": "Custom Gaming PC Builds | Custom PC Service Tampere",
-      "description": "Order a custom gaming PC built to your exact needs. Professional PC building service in Tampere. Tell us your needs, we'll build your dream machine within a week from new parts.",
-      "keywords": "custom gaming pc, custom pc build, pc building service, bespoke gaming pc, tailored pc build, new gaming pc"
+      "description": "Order a custom gaming PC built to your exact needs. Professional PC building service in Tampere. Tell us your needs, we'll build your dream machine within a week from new parts. Personal delivery to your door.",
+      "keywords": "custom gaming pc, custom pc build, pc building service, bespoke gaming pc, tailored pc build, new gaming pc, pc delivery"
     },
     "about": {
       "title": "About Us | Gaming PC Tampere",
-      "description": "Meet Meow PC Store - local gaming PC specialist in Tampere. Quality builds from new parts, expert service, and customer satisfaction guaranteed.",
+      "description": "Meet Meow PC Store - local gaming PC specialist in Tampere. Quality builds from new parts, expert service, personal delivery, and customer satisfaction guaranteed.",
       "keywords": "gaming pc tampere, pc store tampere, computer builder finland"
     }
   },
@@ -64,7 +64,7 @@
   },
   "orderModal": {
     "title": "How to order 📦",
-    "intro": "The fastest way to order this PC is to send me a message. The machine can be picked up in Tampere, where you can confirm it is working by running a benchmark.",
+    "intro": "The fastest way to order this PC is to send me a message. The machine can be picked up in Tampere, where you can confirm it is working by running a benchmark. Or, choose premium home delivery - I'll personally bring your PC directly to your door in my own vehicle (price based on distance).",
     "phoneLabel": "+358408589471 - I'm available on:",
     "email": "Email:",
     "availability": "⏰ I am available almost 24/7 and will try to reply as soon as possible! Service in Finnish and English."
@@ -77,7 +77,7 @@
     "benefit1": "Your PC built and ready within a week",
     "benefit2": "Windows 11 Pro installed",
     "benefit3": "Full benchmark testing to ensure peak performance",
-    "benefit4": "All you have to do is pick up the machine in Tampere and start using it",
+    "benefit4": "Choose pickup in Tampere or premium home delivery to your door",
     "contactTitle": "Send a message to +358408589471",
     "availableOn": "I'm available on:",
     "email": "Email:",
@@ -98,7 +98,7 @@
       },
       "customerFirst": {
         "title": "You Come First",
-        "description": "I take time to understand what you need - whether it's for gaming, work, or creating content. Fast replies via text or email, flexible pickup times, and other requests. That's why customers give me top ratings on Tori and Google Maps."
+        "description": "I take time to understand what you need - whether it's for gaming, work, or creating content. Fast replies via text or email, flexible pickup times, and now premium home delivery for ultimate convenience. That's why customers give me top ratings on Google Maps."
       },
       "builtToLast": {
         "title": "Built to Last",
@@ -106,8 +106,8 @@
       }
     },
     "localAdvantage": {
-      "title": "Based in Tampere, Serving All of Finland",
-      "description": "Although based in Pirkanmaa region, customers travel from Helsinki, Vaasa, Jyväskylä, and beyond to pick up their PCs. Meet face-to-face, inspect your build in person, and get it home safely without shipping damage. Flexible pickup times that work with your schedule and support local business."
+      "title": "Based in Tampere, Delivering Across Finland",
+      "description": "While based in Pirkanmaa region, I serve customers throughout Finland. Choose to meet face-to-face in Tampere with flexible pickup times, or opt for premium home delivery where I personally bring your PC directly to your door - carefully transported in my own vehicle, not by a shipping company. Whether you're in Helsinki, Vaasa, Jyväskylä, or anywhere in between, your PC arrives safe and ready to use. Support local business with personal service you can trust."
     },
     "meowStory": {
       "title": "The Story Behind \"Meow\"",
