@@ -1,14 +1,4 @@
-import {
-  Container,
-  Box,
-  Stack,
-  Typography,
-  Button,
-  List,
-  ListItem,
-  ListItemText,
-  Link,
-} from '@mui/material';
+import { Container, Box, Stack, Typography, Button, List, ListItem, ListItemText, Link } from '@mui/material';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -34,14 +24,16 @@ import type { Swiper as SwiperType } from 'swiper';
 import { CustomModal } from '../../components/shared/CustomModal';
 
 const ProductDetailsPage = () => {
-  const { productId } = useParams<{ productId: string }>();
+  const { productId } = useParams<{
+    productId: string;
+  }>();
   const { t, i18n } = useTranslation();
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const [orderModalOpen, setOrderModalOpen] = useState(false);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
-  const product = mockPCProducts.find((p) => p.id === productId);
+  const product = mockPCProducts.find(p => p.id === productId);
 
   // Get current language (default to 'en' if not 'fi')
   const currentLang = i18n.language.startsWith('fi') ? 'fi' : 'en';
@@ -59,7 +51,7 @@ const ProductDetailsPage = () => {
   const components = product.components?.[currentLang];
 
   // Prepare slides for lightbox
-  const lightboxSlides = product.images.map((image) => ({
+  const lightboxSlides = product.images.map(image => ({
     src: image,
     alt: product.name,
   }));
@@ -75,12 +67,20 @@ const ProductDetailsPage = () => {
       <Box
         sx={{
           display: 'flex',
-          flexDirection: { xs: 'column', md: 'row' },
+          flexDirection: {
+            xs: 'column',
+            md: 'row',
+          },
           gap: { xs: 3, md: 6 },
         }}
       >
         {/* Left Half - Image Carousel */}
-        <Box sx={{ flex: 1, maxWidth: { xs: '100%', md: '50%' } }}>
+        <Box
+          sx={{
+            flex: 1,
+            maxWidth: { xs: '100%', md: '50%' },
+          }}
+        >
           {/* Main Swiper */}
           <Swiper
             style={
@@ -96,8 +96,7 @@ const ProductDetailsPage = () => {
             spaceBetween={10}
             navigation={true}
             thumbs={{
-              swiper:
-                thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+              swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
             }}
             modules={[Navigation, Pagination, Thumbs]}
             pagination={{ clickable: true }}
@@ -107,14 +106,16 @@ const ProductDetailsPage = () => {
                 <Box
                   component="img"
                   src={image}
-                  alt={`${product.name} - ${t('productDetails.imageAlt')} ${
-                    index + 1
-                  }`}
+                  alt={`${product.name} - ${t('productDetails.imageAlt')} ${index + 1}`}
                   onClick={() => handleImageClick(index)}
                   sx={{
                     width: '100%',
                     height: 'auto',
-                    maxHeight: { xs: '300px', sm: '400px', md: '500px' },
+                    maxHeight: {
+                      xs: '300px',
+                      sm: '400px',
+                      md: '500px',
+                    },
                     objectFit: 'contain',
                     borderRadius: '8px',
                     cursor: 'pointer',
@@ -147,7 +148,10 @@ const ProductDetailsPage = () => {
                   onClick={() => handleImageClick(index)}
                   sx={{
                     width: '100%',
-                    height: { xs: '60px', sm: '80px' },
+                    height: {
+                      xs: '60px',
+                      sm: '80px',
+                    },
                     objectFit: 'cover',
                     borderRadius: '4px',
                     opacity: 0.6,
@@ -163,7 +167,13 @@ const ProductDetailsPage = () => {
         </Box>
 
         {/* Right Half - Product Info */}
-        <Box pt={1} sx={{ flex: 1, maxWidth: { xs: '100%', md: '50%' } }}>
+        <Box
+          pt={1}
+          sx={{
+            flex: 1,
+            maxWidth: { xs: '100%', md: '50%' },
+          }}
+        >
           <Stack spacing={2.5}>
             {/* Product Name */}
             <Typography
@@ -173,7 +183,10 @@ const ProductDetailsPage = () => {
               lineHeight={1}
               color="navy.main"
               sx={{
-                fontSize: { xs: '1.75rem', sm: '2.125rem' },
+                fontSize: {
+                  xs: '1.75rem',
+                  sm: '2.125rem',
+                },
               }}
             >
               {product.name}
@@ -186,7 +199,10 @@ const ProductDetailsPage = () => {
                 color="oceanBlue"
                 fontWeight={600}
                 sx={{
-                  fontSize: { xs: '2rem', sm: '2.5rem' },
+                  fontSize: {
+                    xs: '2rem',
+                    sm: '2.5rem',
+                  },
                 }}
               >
                 {new Intl.NumberFormat('fi-FI', {
@@ -202,7 +218,10 @@ const ProductDetailsPage = () => {
                 color="oceanBlue"
                 fontWeight={500}
                 sx={{
-                  fontSize: { xs: '1.5rem', sm: '2rem' },
+                  fontSize: {
+                    xs: '1.5rem',
+                    sm: '2rem',
+                  },
                 }}
               >
                 {t('productDetails.outOfStock')}
@@ -221,13 +240,23 @@ const ProductDetailsPage = () => {
                 backgroundColor: 'coralRed.main',
               }}
             >
-              {product.isAvailable
-                ? t('productDetails.orderButton')
-                : t('productDetails.orderSimilarButton')}
+              {product.isAvailable ? t('productDetails.orderButton') : t('productDetails.orderSimilarButton')}
             </Button>
 
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mt: 1 }}>
-              <DescriptionIcon sx={{ color: 'navy.main', fontSize: 28 }} />
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 1,
+                mt: 1,
+              }}
+            >
+              <DescriptionIcon
+                sx={{
+                  color: 'navy.main',
+                  fontSize: 28,
+                }}
+              />
               <Typography variant="h5" color="navy.main">
                 {t('productDetails.descriptionTitle')}
               </Typography>
@@ -240,8 +269,19 @@ const ProductDetailsPage = () => {
             {/* Components List */}
             {components && (
               <Box sx={{ mt: 2 }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                  <SettingsIcon sx={{ color: 'navy.main', fontSize: 28 }} />
+                <Box
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 1,
+                  }}
+                >
+                  <SettingsIcon
+                    sx={{
+                      color: 'navy.main',
+                      fontSize: 28,
+                    }}
+                  />
                   <Typography variant="h5" color="navy.main">
                     {components.title}
                   </Typography>
@@ -253,8 +293,14 @@ const ProductDetailsPage = () => {
                       disableGutters
                       sx={{
                         py: 0.5,
-                        flexDirection: { xs: 'column', sm: 'row' },
-                        alignItems: { xs: 'flex-start', sm: 'flex-start' },
+                        flexDirection: {
+                          xs: 'column',
+                          sm: 'row',
+                        },
+                        alignItems: {
+                          xs: 'flex-start',
+                          sm: 'flex-start',
+                        },
                       }}
                     >
                       <ListItemText
@@ -262,8 +308,14 @@ const ProductDetailsPage = () => {
                           <Box
                             sx={{
                               display: 'flex',
-                              flexDirection: { xs: 'column', sm: 'row' },
-                              gap: { xs: 0.5, sm: 2 },
+                              flexDirection: {
+                                xs: 'column',
+                                sm: 'row',
+                              },
+                              gap: {
+                                xs: 0.5,
+                                sm: 2,
+                              },
                             }}
                           >
                             <Typography
@@ -271,17 +323,15 @@ const ProductDetailsPage = () => {
                               variant="body2"
                               sx={{
                                 fontWeight: 600,
-                                minWidth: { sm: '140px' },
+                                minWidth: {
+                                  sm: '140px',
+                                },
                                 color: 'navy.main',
                               }}
                             >
                               {item.label}:
                             </Typography>
-                            <Typography
-                              component="span"
-                              variant="body2"
-                              color="navy.main"
-                            >
+                            <Typography component="span" variant="body2" color="navy.main">
                               {item.value}
                             </Typography>
                           </Box>
@@ -293,8 +343,20 @@ const ProductDetailsPage = () => {
               </Box>
             )}
 
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mt: 1 }}>
-              <VerifiedUserIcon sx={{ color: 'navy.main', fontSize: 28 }} />
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 1,
+                mt: 1,
+              }}
+            >
+              <VerifiedUserIcon
+                sx={{
+                  color: 'navy.main',
+                  fontSize: 28,
+                }}
+              />
               <Typography variant="h5" color="navy.main">
                 {t('productDetails.warrantyTitle')}
               </Typography>
@@ -316,8 +378,13 @@ const ProductDetailsPage = () => {
         carousel={{ preload: 2 }}
         animation={{ fade: 250 }}
         styles={{
-          container: { backgroundColor: 'rgba(255, 255, 255, 1)' },
-          button: { filter: 'none', color: '#457B9D' },
+          container: {
+            backgroundColor: 'rgba(255, 255, 255, 1)',
+          },
+          button: {
+            filter: 'none',
+            color: '#457B9D',
+          },
         }}
       />
 
@@ -333,28 +400,86 @@ const ProductDetailsPage = () => {
             {t('orderModal.intro')}
           </Typography>
 
+          {/* Delivery Options */}
+          <Box>
+            <Typography variant="body1" fontWeight={600} color="navy.main" sx={{ mb: 1.5 }}>
+              {t('orderModal.deliveryTitle')}
+            </Typography>
+            <List disablePadding sx={{ pl: 2 }}>
+              <ListItem disableGutters sx={{ py: 0.5 }}>
+                <Typography variant="body1" color="navy.main">
+                  • {t('orderModal.deliveryOptions.pickup')}
+                </Typography>
+              </ListItem>
+              <ListItem disableGutters sx={{ py: 0.5 }}>
+                <Typography variant="body1" color="navy.main">
+                  • {t('orderModal.deliveryOptions.postnord')}
+                </Typography>
+              </ListItem>
+              <ListItem disableGutters sx={{ py: 0.5 }}>
+                <Typography variant="body1" color="navy.main">
+                  • {t('orderModal.deliveryOptions.premium')}
+                </Typography>
+              </ListItem>
+            </List>
+          </Box>
+
           <Stack spacing={2}>
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 1.5,
+              }}
+            >
               <Typography variant="body1" fontWeight={600} color="navy.main">
                 {t('orderModal.phoneLabel')}
               </Typography>
             </Box>
 
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
-              <WhatsAppIcon sx={{ color: '#25d366', fontSize: 28 }} />
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 1.5,
+              }}
+            >
+              <WhatsAppIcon
+                sx={{
+                  color: '#25d366',
+                  fontSize: 28,
+                }}
+              />
               <Typography variant="body1" color="navy.main">
                 WhatsApp
               </Typography>
             </Box>
 
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
-              <TelegramIcon sx={{ color: '#0088cc', fontSize: 28 }} />
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 1.5,
+              }}
+            >
+              <TelegramIcon
+                sx={{
+                  color: '#0088cc',
+                  fontSize: 28,
+                }}
+              />
               <Typography variant="body1" color="navy.main">
                 Telegram
               </Typography>
             </Box>
 
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 1.5,
+              }}
+            >
               <Box
                 sx={{
                   width: 28,
@@ -382,7 +507,12 @@ const ProductDetailsPage = () => {
                 borderColor: 'powderBlue.main',
               }}
             >
-              <EmailIcon sx={{ color: 'oceanBlue.main', fontSize: 28 }} />
+              <EmailIcon
+                sx={{
+                  color: 'oceanBlue.main',
+                  fontSize: 28,
+                }}
+              />
               <Typography variant="body1" color="navy.main">
                 <strong>{t('orderModal.email')}</strong>{' '}
                 <Link
@@ -390,7 +520,9 @@ const ProductDetailsPage = () => {
                   sx={{
                     color: 'oceanBlue.main',
                     textDecoration: 'none',
-                    '&:hover': { textDecoration: 'underline' },
+                    '&:hover': {
+                      textDecoration: 'underline',
+                    },
                   }}
                 >
                   contact@meowpc.fi
@@ -398,10 +530,6 @@ const ProductDetailsPage = () => {
               </Typography>
             </Box>
           </Stack>
-
-          <Typography variant="body2" color="oceanBlue.main" sx={{ pt: 1 }}>
-            {t('orderModal.availability')}
-          </Typography>
         </Stack>
       </CustomModal>
     </Container>

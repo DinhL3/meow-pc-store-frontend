@@ -48,13 +48,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             alignItems: 'center',
           }}
         >
-          <Typography
-            gutterBottom
-            variant="h5"
-            component="div"
-            color="navy.main"
-            sx={{ fontWeight: 500 }}
-          >
+          <Typography gutterBottom variant="h5" component="div" color="navy.main" sx={{ fontWeight: 500 }}>
             {product.name}
           </Typography>
           <Stack direction="row" spacing={1} sx={{ mb: 1, flexWrap: 'wrap' }}>

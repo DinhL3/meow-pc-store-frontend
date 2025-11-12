@@ -64,10 +64,15 @@
   },
   "orderModal": {
     "title": "How to order 📦",
-    "intro": "The fastest way to order this PC is to send me a message. The machine can be picked up in Tampere, where you can confirm it is working by running a benchmark. Or, choose reliable home shipping via a trusted Finnish carrier. For customers within reasonable driving distance from Tampere, we also offer premium fast delivery - our driver will bring your PC directly to your door as soon as possible (price based on distance).",
+    "intro": "The fastest way to order this PC is to send me a message.",
+    "deliveryTitle": "Here are our delivery options:",
+    "deliveryOptions": {
+      "pickup": "Pick up in Tampere (free)",
+      "postnord": "PostNord home shipping (+17 €)",
+      "premium": "Premium fast shipping, same or next day, including weekends (price based on distance)"
+    },
     "phoneLabel": "Send a message to +358408589471, I'm available on:",
-    "email": "Email:",
-    "availability": "⏰ I am available almost 24/7 and will try to reply as soon as possible! Service in Finnish and English."
+    "email": "Email:"
   },
   "customBuild": {
     "title": "Get the exact PC you want",
@@ -77,11 +82,10 @@
     "benefit1": "Your PC built and ready within a week",
     "benefit2": "Windows 11 Pro installed",
     "benefit3": "Full benchmark testing to ensure peak performance",
-    "benefit4": "Choose pickup in Tampere, standard delivery, or premium fast delivery to your door",
+    "benefit4": "Choose pickup in Tampere, standard Postnord home delivery, or premium same-day delivery",
     "contactTitle": "Send a message to +358408589471",
     "availableOn": "I'm available on:",
-    "email": "Email:",
-    "availability": "⏰ I am available almost 24/7 and will try to reply as soon as possible! Service in Finnish and English."
+    "email": "Email:"
   },
   "about": {
     "pageTitle": "About Meow PC Store",
@@ -107,7 +111,7 @@
     },
     "localAdvantage": {
       "title": "Based in Tampere, Delivering Across Finland",
-      "description": "While based in Pirkanmaa region, I serve customers throughout Finland. Choose to meet face-to-face in Tampere with flexible pickup times, reliable home shipping via a trusted Finnish carrier, or premium fast delivery for customers within reasonable driving distance - our driver will bring your PC directly to your door as soon as possible. Whether you're in Helsinki, Vaasa, Jyväskylä, or anywhere in between, your PC arrives safe and ready to use. Support local business with personal service you can trust."
+      "description": "While based in Pirkanmaa region, I serve customers throughout Finland. Meet me in Tampere with flexible pickup times, reliable home shipping via Postnord, or premium same-day delivery for customers within reasonable driving distance. Whether you're in Helsinki, Jyväskylä, Oulu or anywhere in Finland, your PC arrives safe and ready to use."
     },
     "meowStory": {
       "title": "The Story Behind \"Meow\"",

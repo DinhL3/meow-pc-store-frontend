@@ -25,21 +25,15 @@ interface CustomModalProps {
   maxWidth?: number | string;
 }
 
-export function CustomModal({
-  open,
-  onClose,
-  title,
-  children,
-  maxWidth = 500,
-}: CustomModalProps) {
+export function CustomModal({ open, onClose, title, children, maxWidth = 500 }: CustomModalProps) {
   return (
-    <Modal
-      open={open}
-      onClose={onClose}
-      aria-labelledby="modal-title"
-      aria-describedby="modal-description"
-    >
-      <Box sx={{ ...style, width: { xs: '90%', sm: maxWidth } }}>
+    <Modal open={open} onClose={onClose} aria-labelledby="modal-title" aria-describedby="modal-description">
+      <Box
+        sx={{
+          ...style,
+          width: { xs: '90%', sm: maxWidth },
+        }}
+      >
         <Box
           sx={{
             display: 'flex',
@@ -49,12 +43,7 @@ export function CustomModal({
           }}
         >
           {title && (
-            <Typography
-              id="modal-title"
-              variant="h6"
-              component="h2"
-              color="navy.main"
-            >
+            <Typography id="modal-title" variant="h6" component="h2" color="navy.main">
               {title}
             </Typography>
           )}

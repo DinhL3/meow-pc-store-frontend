@@ -66,8 +66,7 @@
     "title": "Kuinka tilata 📦",
     "intro": "Nopein tapa tilata tämä kone on lähettää minulle viesti. Koneen voi noutaa Tampereelta ja testata paikan päällä (esim. benchmarkilla). Voit myös valita luotettavan kotiinkuljetuksen suomalaisella kuriirilla. Asiakkaille, jotka asuvat kohtuullisen ajomatkan päässä Tampereelta, tarjoan myös premium-pikatoimitusta – tuon PC:n henkilökohtaisesti suoraan kotiovellesi mahdollisimman pian (hinta määräytyy etäisyyden mukaan).",
     "phoneLabel": "Lähetä viesti numeroon +358408589471, olen tavoitettavissa:",
-    "email": "Sähköposti:",
-    "availability": "⏰ Olen tavoitettavissa lähes 24/7 ja vastaan viesteihin mahdollisimman pian! Palvelu suomeksi ja englanniksi."
+    "email": "Sähköposti:"
   },
   "customBuild": {
     "title": "Hanki juuri sellainen PC kuin haluat",
@@ -80,8 +79,7 @@
     "benefit4": "Voit noutaa koneen Tampereelta, tilata luotettavan kotiinkuljetuksen suomalaisella kuriirilla tai premium-pikatoimituksen suoraan kotiovelle",
     "contactTitle": "Lähetä viesti numeroon +358408589471",
     "availableOn": "Olen tavoitettavissa:",
-    "email": "Sähköposti:",
-    "availability": "⏰ Olen tavoitettavissa lähes 24/7 ja vastaan viesteihin mahdollisimman pian! Palvelu suomeksi ja englanniksi."
+    "email": "Sähköposti:"
   },
   "about": {
     "pageTitle": "Tietoa Meow PC Storesta",

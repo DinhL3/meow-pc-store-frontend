@@ -1,13 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import {
-  Button,
-  Container,
-  Stack,
-  Typography,
-  Box,
-  IconButton,
-} from '@mui/material';
+import { Button, Container, Stack, Typography, Box, IconButton } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { FaTiktok, FaYoutube, FaInstagram } from 'react-icons/fa';
 
@@ -33,9 +26,18 @@ const HeroSection: React.FC = () => {
           xs: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/dlhzbr2to/image/upload/v1759146568/hero_drfjce.webp')`,
           md: `linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.30) 40%, rgba(0, 0, 0, 0.0) 65%), url('https://res.cloudinary.com/dlhzbr2to/image/upload/v1759147132/hero_right_vr4ep1.webp')`,
         },
-        backgroundSize: { xs: 'cover', md: 'cover' },
-        backgroundPosition: { xs: 'center', md: 'center' },
-        backgroundRepeat: { xs: 'no-repeat', md: 'no-repeat' },
+        backgroundSize: {
+          xs: 'cover',
+          md: 'cover',
+        },
+        backgroundPosition: {
+          xs: 'center',
+          md: 'center',
+        },
+        backgroundRepeat: {
+          xs: 'no-repeat',
+          md: 'no-repeat',
+        },
         color: 'white',
         userSelect: 'none',
         pointerEvents: 'auto',
@@ -61,7 +63,10 @@ const HeroSection: React.FC = () => {
         <Stack
           spacing={2}
           sx={{
-            textAlign: { xs: 'center', md: 'left' },
+            textAlign: {
+              xs: 'center',
+              md: 'left',
+            },
             maxWidth: '800px',
             mx: { xs: 'auto', md: 0 },
           }}
@@ -72,7 +77,11 @@ const HeroSection: React.FC = () => {
             sx={{
               fontWeight: '500',
               lineHeight: 1,
-              fontSize: { xs: '2.5rem', sm: '3rem', md: '4rem' },
+              fontSize: {
+                xs: '2.5rem',
+                sm: '3rem',
+                md: '4rem',
+              },
             }}
           >
             {t('hero.title')}
@@ -83,7 +92,11 @@ const HeroSection: React.FC = () => {
             component="p"
             sx={{
               fontWeight: 'normal',
-              fontSize: { xs: '1.1rem', sm: '1.3rem', md: '1.5rem' },
+              fontSize: {
+                xs: '1.1rem',
+                sm: '1.3rem',
+                md: '1.5rem',
+              },
             }}
           >
             {t('hero.subtitle')} <br />
@@ -91,11 +104,17 @@ const HeroSection: React.FC = () => {
           </Typography>
 
           <Stack
-            direction={{ xs: 'column', md: 'row' }}
+            direction={{
+              xs: 'column',
+              md: 'row',
+            }}
             spacing={2}
             sx={{
               alignItems: 'center',
-              justifyContent: { xs: 'center', md: 'flex-start' },
+              justifyContent: {
+                xs: 'center',
+                md: 'flex-start',
+              },
             }}
           >
             <Button
@@ -107,7 +126,10 @@ const HeroSection: React.FC = () => {
                 backgroundColor: 'oceanBlue.main',
                 fontWeight: 400,
                 textTransform: 'none',
-                fontSize: { xs: '1rem', md: '1.1rem' },
+                fontSize: {
+                  xs: '1rem',
+                  md: '1.1rem',
+                },
               }}
             >
               {t('hero.browsePCsButton')}
@@ -117,9 +139,15 @@ const HeroSection: React.FC = () => {
               variant="body1"
               sx={{
                 color: 'white',
-                fontSize: { xs: '1rem', md: '1.1rem' },
+                fontSize: {
+                  xs: '1rem',
+                  md: '1.1rem',
+                },
                 fontWeight: 400,
-                display: { xs: 'none', md: 'block' },
+                display: {
+                  xs: 'none',
+                  md: 'block',
+                },
               }}
             >
               {t('hero.or')}
@@ -134,7 +162,10 @@ const HeroSection: React.FC = () => {
                 backgroundColor: 'navy.main',
                 textTransform: 'none',
                 fontWeight: 400,
-                fontSize: { xs: '1rem', md: '1.1rem' },
+                fontSize: {
+                  xs: '1rem',
+                  md: '1.1rem',
+                },
               }}
             >
               {t('hero.buildPCButton')}
@@ -146,7 +177,10 @@ const HeroSection: React.FC = () => {
             sx={{
               display: 'flex',
               flexDirection: 'column',
-              alignItems: { xs: 'center', md: 'flex-start' },
+              alignItems: {
+                xs: 'center',
+                md: 'flex-start',
+              },
               gap: 1.5,
               mt: 2,
             }}
@@ -222,8 +256,7 @@ const HeroSection: React.FC = () => {
                   height: 48,
                   transition: 'all 0.3s ease',
                   '&:hover': {
-                    background:
-                      'linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)',
+                    background: 'linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)',
                     transform: 'scale(1.1)',
                   },
                 }}

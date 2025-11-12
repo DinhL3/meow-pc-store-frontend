@@ -8,11 +8,7 @@ const Root: React.FC = () => {
 
   return (
     <>
-      <SEOHead
-        title={t('seo.home.title')}
-        description={t('seo.home.description')}
-        keywords={t('seo.home.keywords')}
-      />
+      <SEOHead title={t('seo.home.title')} description={t('seo.home.description')} keywords={t('seo.home.keywords')} />
       <HeroSection />
     </>
   );

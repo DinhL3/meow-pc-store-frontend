@@ -9,13 +9,7 @@ interface SEOHeadProps {
   canonicalUrl?: string;
 }
 
-export const SEOHead: React.FC<SEOHeadProps> = ({
-  title,
-  description,
-  keywords,
-  image,
-  canonicalUrl,
-}) => {
+export const SEOHead: React.FC<SEOHeadProps> = ({ title, description, keywords, image, canonicalUrl }) => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   const baseUrl = 'https://meowpc.fi';
@@ -23,9 +17,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
 
   const fullDescription = description || t('seo.defaultDescription');
   const fullKeywords = keywords || t('seo.defaultKeywords');
-  const fullImage =
-    image ||
-    'https://res.cloudinary.com/dlhzbr2to/image/upload/v1760895293/og-image_z8tcpg.jpg';
+  const fullImage = image || 'https://res.cloudinary.com/dlhzbr2to/image/upload/v1760895293/og-image_z8tcpg.jpg';
   const fullUrl = canonicalUrl || `${baseUrl}${window.location.pathname}`;
 
   useEffect(() => {
@@ -35,9 +27,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     // Helper function to set or update meta tags
     const setMetaTag = (name: string, content: string, isProperty = false) => {
       const attribute = isProperty ? 'property' : 'name';
-      let element = document.querySelector(
-        `meta[${attribute}="${name}"]`
-      ) as HTMLMetaElement;
+      let element = document.querySelector(`meta[${attribute}="${name}"]`) as HTMLMetaElement;
 
       if (!element) {
         element = document.createElement('meta');
@@ -50,9 +40,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
 
     // Helper function to set link tags
     const setLinkTag = (rel: string, href: string, hreflang?: string) => {
-      const selector = hreflang
-        ? `link[rel="${rel}"][hreflang="${hreflang}"]`
-        : `link[rel="${rel}"]`;
+      const selector = hreflang ? `link[rel="${rel}"][hreflang="${hreflang}"]` : `link[rel="${rel}"]`;
 
       let element = document.querySelector(selector) as HTMLLinkElement;
 
@@ -98,14 +86,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       setLinkTag('alternate', fullUrl, 'fi');
       setLinkTag('alternate', fullUrl, 'en');
     }
-  }, [
-    fullTitle,
-    fullDescription,
-    fullKeywords,
-    fullImage,
-    fullUrl,
-    currentLang,
-  ]);
+  }, [fullTitle, fullDescription, fullKeywords, fullImage, fullUrl, currentLang]);
 
   return null; // This component doesn't render anything visible
 };

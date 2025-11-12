@@ -16,12 +16,9 @@ function ResponsiveNavBar() {
   // Check if we're on the home page
   const isHomePage = location.pathname === '/' || location.pathname === '/home';
 
-  const handleOpenNavMenu = useCallback(
-    (event: React.MouseEvent<HTMLElement>) => {
-      setAnchorElNav(event.currentTarget);
-    },
-    []
-  );
+  const handleOpenNavMenu = useCallback((event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElNav(event.currentTarget);
+  }, []);
 
   const handleCloseNavMenu = useCallback(() => {
     setAnchorElNav(null);
@@ -37,7 +34,13 @@ function ResponsiveNavBar() {
   const mobileLayout = useMemo(
     () => (
       <>
-        <Box sx={{ width: 48, display: 'flex', justifyContent: 'flex-start' }}>
+        <Box
+          sx={{
+            width: 48,
+            display: 'flex',
+            justifyContent: 'flex-start',
+          }}
+        >
           <MobileNav
             pages={PAGES}
             anchorEl={anchorElNav}
@@ -46,15 +49,23 @@ function ResponsiveNavBar() {
             onNavigate={handleNavigation}
           />
         </Box>
-        <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
+        <Box
+          sx={{
+            flexGrow: 1,
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
           {/* Compact on non-home, big on root */}
-          <Logo
-            isMobile={isMobile}
-            onNavigate={handleNavigation}
-            compact={!isHomePage}
-          />
+          <Logo isMobile={isMobile} onNavigate={handleNavigation} compact={!isHomePage} />
         </Box>
-        <Box sx={{ width: 48, display: 'flex', justifyContent: 'flex-end' }}>
+        <Box
+          sx={{
+            width: 48,
+            display: 'flex',
+            justifyContent: 'flex-end',
+          }}
+        >
           <LanguagePicker isMobile={isMobile} />
         </Box>
       </>
@@ -73,15 +84,22 @@ function ResponsiveNavBar() {
     () => (
       <>
         {/* compact whenever we're not on home */}
-        <Logo
-          isMobile={isMobile}
-          onNavigate={handleNavigation}
-          compact={!isHomePage}
-        />
-        <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
+        <Logo isMobile={isMobile} onNavigate={handleNavigation} compact={!isHomePage} />
+        <Box
+          sx={{
+            flexGrow: 1,
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
           <DesktopNav pages={PAGES} />
         </Box>
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+        <Box
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >
           <LanguagePicker />
         </Box>
       </>
@@ -95,7 +113,7 @@ function ResponsiveNavBar() {
       sx={{
         backgroundColor: isHomePage ? 'transparent' : 'navy.main',
         boxShadow: isHomePage ? 'none' : 1,
-        zIndex: (theme) => theme.zIndex.drawer + 1,
+        zIndex: theme => theme.zIndex.drawer + 1,
         transition: 'background-color 0.3s ease',
       }}
     >

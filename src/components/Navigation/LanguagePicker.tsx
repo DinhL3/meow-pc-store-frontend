@@ -27,7 +27,7 @@ export const LanguagePicker = ({ isMobile = false }: LanguagePickerProps) => {
 
   const currentLanguageLabel = isMobile
     ? i18n.language.toUpperCase()
-    : LANGUAGES.find((lang) => lang.code === i18n.language)?.label;
+    : LANGUAGES.find(lang => lang.code === i18n.language)?.label;
 
   return (
     <>
@@ -53,10 +53,16 @@ export const LanguagePicker = ({ isMobile = false }: LanguagePickerProps) => {
         anchorEl={anchorEl}
         open={Boolean(anchorEl)}
         onClose={handleClose}
-        anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-        transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'right',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'right',
+        }}
       >
-        {LANGUAGES.map((lang) => (
+        {LANGUAGES.map(lang => (
           <MenuItem
             key={lang.code}
             onClick={() => handleLanguageChange(lang.code)}

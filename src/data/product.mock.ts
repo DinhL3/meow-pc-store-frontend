@@ -40,32 +40,41 @@ export const mockPCProducts: Product[] = [
             label: 'CPU',
             value: 'AMD Ryzen 9 5900X (12 ydintä, 24 säiettä, ylikellotettava)',
           },
-          { label: 'GPU', value: 'Sapphire PULSE AMD Radeon™ RX 7800 XT 16GB' },
+          {
+            label: 'GPU',
+            value: 'Sapphire PULSE AMD Radeon™ RX 7800 XT 16GB',
+          },
           {
             label: 'Muisti',
             value: 'Crucial Ballistix 32GB (2x16GB) 3600 MHz DDR4',
           },
-          { label: 'Tallennustila', value: 'WD Blue SN5000 2TB NVMe SSD' },
-          { label: 'Virtalähde', value: 'Corsair RM650e | 80 Plus Gold' },
-          { label: 'Emolevy', value: 'Asus TUF Gaming B550-Plus' },
+          {
+            label: 'Tallennustila',
+            value: 'WD Blue SN5000 2TB NVMe SSD',
+          },
+          {
+            label: 'Virtalähde',
+            value: 'Corsair RM650e | 80 Plus Gold',
+          },
+          {
+            label: 'Emolevy',
+            value: 'Asus TUF Gaming B550-Plus',
+          },
           {
             label: 'CPU-jäähdytin',
             value: 'Thermalright Assassin X 120 Refined SE ARGB',
           },
           {
             label: 'Lämpötahna',
-            value:
-              "Arctic MX-6 (Tom's Hardware -lehden mukaan vuoden 2025 paras lämpötahna)",
+            value: "Arctic MX-6 (Tom's Hardware -lehden mukaan vuoden 2025 paras lämpötahna)",
           },
           {
             label: 'Kotelo',
-            value:
-              'Montech XR TG. Koko: 450 × 230 × 455 mm (pituus × leveys × korkeus)',
+            value: 'Montech XR TG. Koko: 450 × 230 × 455 mm (pituus × leveys × korkeus)',
           },
           {
             label: 'Langaton yhteys',
-            value:
-              'Wifi 6 & Bluetooth 5.2 | TP-Link Archer TX55E AX3000 PCIe-kortti',
+            value: 'Wifi 6 & Bluetooth 5.2 | TP-Link Archer TX55E AX3000 PCIe-kortti',
           },
         ],
       },
@@ -76,14 +85,26 @@ export const mockPCProducts: Product[] = [
             label: 'CPU',
             value: 'AMD Ryzen 9 5900X (12 cores, 24 threads, overclockable)',
           },
-          { label: 'GPU', value: 'Sapphire PULSE AMD Radeon™ RX 7800 XT 16GB' },
+          {
+            label: 'GPU',
+            value: 'Sapphire PULSE AMD Radeon™ RX 7800 XT 16GB',
+          },
           {
             label: 'Memory',
             value: 'Crucial Ballistix 32GB (2x16GB) 3600 MHz DDR4',
           },
-          { label: 'Storage', value: 'WD Blue SN5000 2TB NVMe SSD' },
-          { label: 'Power Supply', value: 'Corsair RM650e | 80 Plus Gold' },
-          { label: 'Motherboard', value: 'Asus TUF Gaming B550-Plus' },
+          {
+            label: 'Storage',
+            value: 'WD Blue SN5000 2TB NVMe SSD',
+          },
+          {
+            label: 'Power Supply',
+            value: 'Corsair RM650e | 80 Plus Gold',
+          },
+          {
+            label: 'Motherboard',
+            value: 'Asus TUF Gaming B550-Plus',
+          },
           {
             label: 'CPU Cooler',
             value: 'Thermalright Assassin X 120 Refined SE ARGB',
@@ -98,8 +119,7 @@ export const mockPCProducts: Product[] = [
           },
           {
             label: 'Wireless',
-            value:
-              'Wifi 6 & Bluetooth 5.2 | TP-Link Archer TX55E AX3000 PCIe card',
+            value: 'Wifi 6 & Bluetooth 5.2 | TP-Link Archer TX55E AX3000 PCIe card',
           },
         ],
       },
@@ -129,7 +149,10 @@ export const mockPCProducts: Product[] = [
       fi: {
         title: 'Komponentit',
         items: [
-          { label: 'CPU', value: 'AMD Ryzen 5 7500F (6 ydintä/ 12 säiettä)' },
+          {
+            label: 'CPU',
+            value: 'AMD Ryzen 5 7500F (6 ydintä/ 12 säiettä)',
+          },
           {
             label: 'GPU',
             value: 'SAPPHIRE PURE AMD Radeon™ RX 9060 XT 16GB OC',
@@ -138,33 +161,47 @@ export const mockPCProducts: Product[] = [
             label: 'Muisti',
             value: 'Kingston Fury Beast 32GB DDR5 6000 MHz CL36',
           },
-          { label: 'Tallennustila', value: 'WD Blue SN5000 2TB NVMe SSD' },
+          {
+            label: 'Tallennustila',
+            value: 'WD Blue SN5000 2TB NVMe SSD',
+          },
           {
             label: 'Emolevy',
             value: 'Gigabyte B650M Gaming Plus WiFi (Rev 1.1)',
           },
-          { label: 'Virtalähde', value: 'Phanteks AMP GH750 | 80 Plus Gold' },
-          { label: 'Kotelo', value: 'DeepCool CH260 WH' },
+          {
+            label: 'Virtalähde',
+            value: 'Phanteks AMP GH750 | 80 Plus Gold',
+          },
+          {
+            label: 'Kotelo',
+            value: 'DeepCool CH260 WH',
+          },
           {
             label: 'CPU-jäähdytin',
             value: 'Thermalright Assassin Spirit 120 EVO White ARGB',
           },
           {
             label: 'Lämpötahna',
-            value:
-              "Arctic MX-6 (Tom's Hardware -lehden mukaan vuoden 2025 paras lämpötahna)",
+            value: "Arctic MX-6 (Tom's Hardware -lehden mukaan vuoden 2025 paras lämpötahna)",
           },
           {
             label: 'Kotelotuulettimet',
             value: '3x Thermalright TL-C12CW-S ARGB',
           },
-          { label: 'Langaton yhteys', value: 'Wifi 6E & Bluetooth 5.3' },
+          {
+            label: 'Langaton yhteys',
+            value: 'Wifi 6E & Bluetooth 5.3',
+          },
         ],
       },
       en: {
         title: 'Components',
         items: [
-          { label: 'CPU', value: 'AMD Ryzen 5 7500F (6 cores/ 12 threads)' },
+          {
+            label: 'CPU',
+            value: 'AMD Ryzen 5 7500F (6 cores/ 12 threads)',
+          },
           {
             label: 'GPU',
             value: 'SAPPHIRE PURE AMD Radeon™ RX 9060 XT 16GB OC',
@@ -173,13 +210,22 @@ export const mockPCProducts: Product[] = [
             label: 'Memory',
             value: 'Kingston Fury Beast 32GB DDR5 6000 MHz CL36',
           },
-          { label: 'Storage', value: 'WD Blue SN5000 2TB NVMe SSD' },
+          {
+            label: 'Storage',
+            value: 'WD Blue SN5000 2TB NVMe SSD',
+          },
           {
             label: 'Motherboard',
             value: 'Gigabyte B650M Gaming Plus WiFi (Rev 1.1)',
           },
-          { label: 'Power Supply', value: 'Phanteks AMP GH750 | 80 Plus Gold' },
-          { label: 'Case', value: 'DeepCool CH260 WH' },
+          {
+            label: 'Power Supply',
+            value: 'Phanteks AMP GH750 | 80 Plus Gold',
+          },
+          {
+            label: 'Case',
+            value: 'DeepCool CH260 WH',
+          },
           {
             label: 'CPU Cooler',
             value: 'Thermalright Assassin Spirit 120 EVO White ARGB',
@@ -188,8 +234,14 @@ export const mockPCProducts: Product[] = [
             label: 'Thermal Paste',
             value: "Arctic MX-6 (Tom's Hardware's best thermal paste of 2025)",
           },
-          { label: 'Case Fans', value: '3x Thermalright TL-C12CW-S ARGB' },
-          { label: 'Wireless', value: 'Wifi 6E & Bluetooth 5.3' },
+          {
+            label: 'Case Fans',
+            value: '3x Thermalright TL-C12CW-S ARGB',
+          },
+          {
+            label: 'Wireless',
+            value: 'Wifi 6E & Bluetooth 5.3',
+          },
         ],
       },
     },
@@ -217,7 +269,10 @@ export const mockPCProducts: Product[] = [
       fi: {
         title: 'Komponentit',
         items: [
-          { label: 'CPU', value: 'AMD Ryzen 5 7500F (6 ydintä/ 12 säiettä)' },
+          {
+            label: 'CPU',
+            value: 'AMD Ryzen 5 7500F (6 ydintä/ 12 säiettä)',
+          },
           {
             label: 'GPU',
             value: 'PowerColor Reaper AMD Radeon™ RX 9070 16GB GDDR6',
@@ -226,29 +281,43 @@ export const mockPCProducts: Product[] = [
             label: 'Muisti',
             value: 'Corsair Vengeance 32GB DDR5 6000 MHz CL36',
           },
-          { label: 'Tallennustila', value: 'WD Blue SN5000 2TB NVMe SSD' },
+          {
+            label: 'Tallennustila',
+            value: 'WD Blue SN5000 2TB NVMe SSD',
+          },
           {
             label: 'Emolevy',
             value: 'ASUS TUF GAMING B650M-PLUS WIFI',
           },
-          { label: 'Virtalähde', value: 'Corsair RM650e | 80 Plus Gold' },
-          { label: 'Kotelo', value: 'DeepCool MATREXX 40 3FS' },
+          {
+            label: 'Virtalähde',
+            value: 'Corsair RM650e | 80 Plus Gold',
+          },
+          {
+            label: 'Kotelo',
+            value: 'DeepCool MATREXX 40 3FS',
+          },
           {
             label: 'CPU-jäähdytin',
             value: 'Thermalright Assassin X 120 Refined SE ARGB',
           },
           {
             label: 'Lämpötahna',
-            value:
-              "Arctic MX-6 (Tom's Hardware -lehden mukaan vuoden 2025 paras lämpötahna)",
+            value: "Arctic MX-6 (Tom's Hardware -lehden mukaan vuoden 2025 paras lämpötahna)",
           },
-          { label: 'Langaton yhteys', value: 'Wifi 6 & Bluetooth 5.2' },
+          {
+            label: 'Langaton yhteys',
+            value: 'Wifi 6 & Bluetooth 5.2',
+          },
         ],
       },
       en: {
         title: 'Components',
         items: [
-          { label: 'CPU', value: 'AMD Ryzen 5 7500F (6 cores/ 12 threads)' },
+          {
+            label: 'CPU',
+            value: 'AMD Ryzen 5 7500F (6 cores/ 12 threads)',
+          },
           {
             label: 'GPU',
             value: 'PowerColor Reaper AMD Radeon™ RX 9070 16GB GDDR6',
@@ -257,13 +326,22 @@ export const mockPCProducts: Product[] = [
             label: 'Memory',
             value: 'Corsair Vengeance 32GB DDR5 6000 MHz CL36',
           },
-          { label: 'Storage', value: 'WD Blue SN5000 2TB NVMe SSD' },
+          {
+            label: 'Storage',
+            value: 'WD Blue SN5000 2TB NVMe SSD',
+          },
           {
             label: 'Motherboard',
             value: 'ASUS TUF GAMING B650M-PLUS WIFI',
           },
-          { label: 'Power Supply', value: 'Corsair RM650e | 80 Plus Gold' },
-          { label: 'Case', value: 'DeepCool MATREXX 40 3FS' },
+          {
+            label: 'Power Supply',
+            value: 'Corsair RM650e | 80 Plus Gold',
+          },
+          {
+            label: 'Case',
+            value: 'DeepCool MATREXX 40 3FS',
+          },
           {
             label: 'CPU Cooler',
             value: 'Thermalright Assassin X 120 Refined SE ARGB',
@@ -272,7 +350,10 @@ export const mockPCProducts: Product[] = [
             label: 'Thermal Paste',
             value: "Arctic MX-6 (Tom's Hardware's best thermal paste of 2025)",
           },
-          { label: 'Wireless', value: 'Wifi 6 & Bluetooth 5.2' },
+          {
+            label: 'Wireless',
+            value: 'Wifi 6 & Bluetooth 5.2',
+          },
         ],
       },
     },
@@ -300,7 +381,10 @@ export const mockPCProducts: Product[] = [
       fi: {
         title: 'Komponentit',
         items: [
-          { label: 'CPU', value: 'AMD Ryzen 9 9600X (6 ydintä/ 12 säiettä)' },
+          {
+            label: 'CPU',
+            value: 'AMD Ryzen 9 9600X (6 ydintä/ 12 säiettä)',
+          },
           {
             label: 'GPU',
             value: 'INNO3D GeForce RTX™ 5070 TWIN X2 12GB GDDR7',
@@ -309,16 +393,21 @@ export const mockPCProducts: Product[] = [
             label: 'Muisti',
             value: 'Crucial Pro Overclocking 32GB DDR5 6000 MHz CL36',
           },
-          { label: 'Tallennustila', value: 'WD Black SN770 2TB NVMe SSD' },
+          {
+            label: 'Tallennustila',
+            value: 'WD Black SN770 2TB NVMe SSD',
+          },
           {
             label: 'Emolevy',
             value: 'MSI B850M GAMING PLUS WIFI6E',
           },
-          { label: 'Virtalähde', value: 'Phanteks AMP GH 750W | 80 Plus Gold' },
+          {
+            label: 'Virtalähde',
+            value: 'Phanteks AMP GH 750W | 80 Plus Gold',
+          },
           {
             label: 'Kotelo',
-            value:
-              'NZXT H3 Flow (PC Gamer -lehden mukaan vuoden 2025 paras m-ATX kotelo)',
+            value: 'NZXT H3 Flow (PC Gamer -lehden mukaan vuoden 2025 paras m-ATX kotelo)',
           },
           {
             label: 'CPU-jäähdytin',
@@ -326,20 +415,25 @@ export const mockPCProducts: Product[] = [
           },
           {
             label: 'Lämpötahna',
-            value:
-              "Arctic MX-6 (Tom's Hardware -lehden mukaan vuoden 2025 paras lämpötahna)",
+            value: "Arctic MX-6 (Tom's Hardware -lehden mukaan vuoden 2025 paras lämpötahna)",
           },
           {
             label: 'Kotelotuulettimet',
             value: '3x Thermalright TL-C12CW-S ARGB',
           },
-          { label: 'Langaton yhteys', value: 'Wifi 6E & Bluetooth 5.3' },
+          {
+            label: 'Langaton yhteys',
+            value: 'Wifi 6E & Bluetooth 5.3',
+          },
         ],
       },
       en: {
         title: 'Components',
         items: [
-          { label: 'CPU', value: 'AMD Ryzen 9 9600X (6 cores/ 12 threads)' },
+          {
+            label: 'CPU',
+            value: 'AMD Ryzen 9 9600X (6 cores/ 12 threads)',
+          },
           {
             label: 'GPU',
             value: 'INNO3D GeForce RTX™ 5070 TWIN X2 12GB GDDR7',
@@ -348,7 +442,10 @@ export const mockPCProducts: Product[] = [
             label: 'Memory',
             value: 'Crucial Pro Overclocking 32GB DDR5 6000 MHz CL36',
           },
-          { label: 'Storage', value: 'WD Black SN770 2TB NVMe SSD' },
+          {
+            label: 'Storage',
+            value: 'WD Black SN770 2TB NVMe SSD',
+          },
           {
             label: 'Motherboard',
             value: 'MSI B850M GAMING PLUS WIFI6E',
@@ -369,8 +466,14 @@ export const mockPCProducts: Product[] = [
             label: 'Thermal Paste',
             value: "Arctic MX-6 (Tom's Hardware's best thermal paste of 2025)",
           },
-          { label: 'Case Fans', value: '3x Thermalright TL-C12CW-S ARGB' },
-          { label: 'Wireless', value: 'Wifi 6E & Bluetooth 5.3' },
+          {
+            label: 'Case Fans',
+            value: '3x Thermalright TL-C12CW-S ARGB',
+          },
+          {
+            label: 'Wireless',
+            value: 'Wifi 6E & Bluetooth 5.3',
+          },
         ],
       },
     },

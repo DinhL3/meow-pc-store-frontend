@@ -10,7 +10,7 @@ const ProductDetails = () => {
   const currentLang = i18n.language;
 
   // Find the product
-  const product = mockPCProducts.find((p) => p.id === productId);
+  const product = mockPCProducts.find(p => p.id === productId);
 
   if (!product) {
     return (
@@ -23,21 +23,13 @@ const ProductDetails = () => {
 
   // Dynamic SEO based on product
   const productTitle = `${product.name} - ${product.tags.join(', ')}`;
-  const productDescription =
-    currentLang === 'fi' ? product.description.fi : product.description.en;
-  const productKeywords = `${product.name}, ${product.tags.join(
-    ', '
-  )}, pelitietokone, gaming pc, ${product.price}€`;
+  const productDescription = currentLang === 'fi' ? product.description.fi : product.description.en;
+  const productKeywords = `${product.name}, ${product.tags.join(', ')}, pelitietokone, gaming pc, ${product.price}€`;
   const productImage = product.images[0];
 
   return (
     <>
-      <SEOHead
-        title={productTitle}
-        description={productDescription}
-        keywords={productKeywords}
-        image={productImage}
-      />
+      <SEOHead title={productTitle} description={productDescription} keywords={productKeywords} image={productImage} />
       <ProductDetailsPage />
     </>
   );

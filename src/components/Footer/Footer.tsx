@@ -18,7 +18,10 @@ export default function Footer() {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
-            flexDirection: { xs: 'column', sm: 'row' },
+            flexDirection: {
+              xs: 'column',
+              sm: 'row',
+            },
             gap: 3,
           }}
         >
@@ -26,13 +29,23 @@ export default function Footer() {
           <Stack spacing={0.5} sx={{ color: 'white' }}>
             <Typography
               variant="h6"
-              sx={{ fontWeight: 600, fontSize: '1.1rem' }}
+              sx={{
+                fontWeight: 600,
+                fontSize: '1.1rem',
+              }}
             >
               Meow PC Store Oy
             </Typography>
             <Typography variant="body2">Tampere, Finland</Typography>
             <Typography variant="body2">Business ID: 3567455-8</Typography>
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mt: 1 }}>
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 1,
+                mt: 1,
+              }}
+            >
               <MdEmail />
               <Typography
                 component="a"
@@ -113,8 +126,7 @@ export default function Footer() {
                 height: 48,
                 transition: 'all 0.3s ease',
                 '&:hover': {
-                  background:
-                    'linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)',
+                  background: 'linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)',
                   transform: 'scale(1.1)',
                 },
               }}

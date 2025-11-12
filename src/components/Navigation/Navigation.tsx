@@ -1,24 +1,11 @@
 import { useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import {
-  Box,
-  IconButton,
-  Typography,
-  Menu,
-  MenuItem,
-  Button,
-} from '@mui/material';
+import { Box, IconButton, Typography, Menu, MenuItem, Button } from '@mui/material';
 import { Menu as MenuIcon } from '@mui/icons-material';
 import type { MobileNavProps, DesktopNavProps } from './types';
 
-export const MobileNav = ({
-  pages,
-  anchorEl,
-  onOpenMenu,
-  onCloseMenu,
-  onNavigate,
-}: MobileNavProps) => {
+export const MobileNav = ({ pages, anchorEl, onOpenMenu, onCloseMenu, onNavigate }: MobileNavProps) => {
   const { t } = useTranslation();
 
   const handleMenuItemClick = useCallback(
@@ -57,11 +44,8 @@ export const MobileNav = ({
         open={Boolean(anchorEl)}
         onClose={onCloseMenu}
       >
-        {pages.map((page) => (
-          <MenuItem
-            key={page.path}
-            onClick={() => handleMenuItemClick(page.path)}
-          >
+        {pages.map(page => (
+          <MenuItem key={page.path} onClick={() => handleMenuItemClick(page.path)}>
             <Typography color="navy" component="span">
               {t(`nav.${page.key}`)}
             </Typography>
@@ -77,7 +61,7 @@ export const DesktopNav = ({ pages }: DesktopNavProps) => {
 
   return (
     <Box sx={{ display: 'flex', gap: 1 }}>
-      {pages.map((page) => (
+      {pages.map(page => (
         <Button
           key={page.path}
           component={Link}

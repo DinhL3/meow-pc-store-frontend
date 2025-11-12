@@ -1,12 +1,5 @@
 import { Box, Container, Typography, Paper, Avatar } from '@mui/material';
-import {
-  Schedule,
-  LocationOn,
-  Pets,
-  HandshakeOutlined,
-  WavingHand,
-  VerifiedUser,
-} from '@mui/icons-material';
+import { Schedule, LocationOn, Pets, HandshakeOutlined, WavingHand, VerifiedUser } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
 
 const AboutUsPage = () => {
@@ -47,7 +40,10 @@ const AboutUsPage = () => {
             mb: 4,
             bgcolor: 'powderBlue.main',
             display: 'flex',
-            flexDirection: { xs: 'column', md: 'row' },
+            flexDirection: {
+              xs: 'column',
+              md: 'row',
+            },
             justifyContent: 'center',
             alignItems: 'center',
             gap: 4,
@@ -71,14 +67,13 @@ const AboutUsPage = () => {
                 gap: 1,
               }}
             >
-              <WavingHand sx={{ fontSize: 32, color: 'navy.main' }} />
-              <Typography
-                variant="h5"
-                component="h2"
-                fontWeight={500}
-                color="navy"
-                gutterBottom
-              >
+              <WavingHand
+                sx={{
+                  fontSize: 32,
+                  color: 'navy.main',
+                }}
+              />
+              <Typography variant="h5" component="h2" fontWeight={500} color="navy" gutterBottom>
                 {t('about.whoIAm.greeting')}
               </Typography>
             </Box>
@@ -101,13 +96,34 @@ const AboutUsPage = () => {
           <Typography
             variant="h4"
             component="h2"
-            sx={{ color: 'navy.main', fontWeight: 600, mb: 3 }}
+            sx={{
+              color: 'navy.main',
+              fontWeight: 600,
+              mb: 3,
+            }}
           >
             {t('about.whyChoose.title')}
           </Typography>
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-            <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
-              <Schedule sx={{ color: 'coralRed.main', mt: 0.5 }} />
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 2,
+            }}
+          >
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'flex-start',
+                gap: 2,
+              }}
+            >
+              <Schedule
+                sx={{
+                  color: 'coralRed.main',
+                  mt: 0.5,
+                }}
+              />
               <Box>
                 <Typography variant="h6" color="navy" fontWeight={600}>
                   {t('about.whyChoose.saveTime.title')}
@@ -117,8 +133,19 @@ const AboutUsPage = () => {
                 </Typography>
               </Box>
             </Box>
-            <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
-              <HandshakeOutlined sx={{ color: 'coralRed.main', mt: 0.5 }} />
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'flex-start',
+                gap: 2,
+              }}
+            >
+              <HandshakeOutlined
+                sx={{
+                  color: 'coralRed.main',
+                  mt: 0.5,
+                }}
+              />
               <Box>
                 <Typography variant="h6" color="navy" fontWeight={600}>
                   {t('about.whyChoose.customerFirst.title')}
@@ -129,8 +156,19 @@ const AboutUsPage = () => {
               </Box>
             </Box>
 
-            <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
-              <VerifiedUser sx={{ color: 'coralRed.main', mt: 0.5 }} />
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'flex-start',
+                gap: 2,
+              }}
+            >
+              <VerifiedUser
+                sx={{
+                  color: 'coralRed.main',
+                  mt: 0.5,
+                }}
+              />
               <Box>
                 <Typography variant="h6" color="navy" fontWeight={600}>
                   {t('about.whyChoose.builtToLast.title')}
@@ -154,22 +192,30 @@ const AboutUsPage = () => {
             mb: 4,
           }}
         >
-          <Box sx={{ display: 'flex', alignItems: 'center', mb: 2, gap: 1 }}>
+          <Box
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              mb: 2,
+              gap: 1,
+            }}
+          >
             <LocationOn sx={{ fontSize: 32 }} />
             <Typography variant="h5" sx={{ fontWeight: 600 }}>
               {t('about.localAdvantage.title')}
             </Typography>
           </Box>
-          <Typography variant="body1">
-            {t('about.localAdvantage.description')}
-          </Typography>
+          <Typography variant="body1">{t('about.localAdvantage.description')}</Typography>
         </Paper>
 
         {/* The Story Behind the Name */}
         <Box
           sx={{
             display: 'flex',
-            flexDirection: { xs: 'column', md: 'row' },
+            flexDirection: {
+              xs: 'column',
+              md: 'row',
+            },
             gap: 4,
             mb: 6,
             p: 4,
@@ -178,11 +224,26 @@ const AboutUsPage = () => {
           }}
         >
           <Box sx={{ flex: 1 }}>
-            <Box sx={{ display: 'flex', alignItems: 'center', mb: 2, gap: 1 }}>
-              <Pets sx={{ fontSize: 32, color: 'navy.main' }} />
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                mb: 2,
+                gap: 1,
+              }}
+            >
+              <Pets
+                sx={{
+                  fontSize: 32,
+                  color: 'navy.main',
+                }}
+              />
               <Typography
                 variant="h5"
-                sx={{ color: 'navy.main', fontWeight: 600 }}
+                sx={{
+                  color: 'navy.main',
+                  fontWeight: 600,
+                }}
               >
                 {t('about.meowStory.title')}
               </Typography>
