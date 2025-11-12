@@ -120,7 +120,7 @@ const AboutUsPage = () => {
             >
               <Schedule
                 sx={{
-                  color: 'coralRed.main',
+                  color: 'oceanBlue.main',
                   mt: 0.5,
                 }}
               />
@@ -142,7 +142,7 @@ const AboutUsPage = () => {
             >
               <HandshakeOutlined
                 sx={{
-                  color: 'coralRed.main',
+                  color: 'oceanBlue.main',
                   mt: 0.5,
                 }}
               />
@@ -165,7 +165,7 @@ const AboutUsPage = () => {
             >
               <VerifiedUser
                 sx={{
-                  color: 'coralRed.main',
+                  color: 'oceanBlue.main',
                   mt: 0.5,
                 }}
               />
