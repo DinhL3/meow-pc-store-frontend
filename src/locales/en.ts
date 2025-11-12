@@ -169,18 +169,27 @@ export default {
         description: `
           I take time to understand what you need - whether it's for gaming,
           work, or creating content. Fast replies via text or email, flexible
-          pickup times, and now premium home delivery for ultimate convenience.
+          pickup times, and premium home delivery for ultimate convenience.
           That's why customers give me top ratings on Google Maps.
         `,
       },
       builtToLast: {
-        title: 'Built to Last',
+        title: 'PCs Built to Last',
         description: `
           Only new, quality parts from trusted suppliers - no shortcuts. Every
           PC runs through full stress tests and stability checks before delivery.
           Plus, you get a 3-year warranty on every build, following Finnish
           Consumer Protection Act.
         `,
+      },
+      sustainability: {
+        title: 'Sustainable & Ethical Business',
+        description: `I'm committed to doing business responsibly. That means using biodegradable
+            packing materials instead of plastic waste, and giving you component
+            boxes for reuse or resell. I uphold high standards in
+            social media content (no biased, false information for views and sponsorships). I treat customers, partners, and suppliers with
+            respect, because building trust matters more than chasing short-term
+            profits. This is a business built to last.`,
       },
     },
     localAdvantage: {

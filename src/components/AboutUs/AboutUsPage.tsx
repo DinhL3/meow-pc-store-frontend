@@ -1,5 +1,13 @@
 import { Box, Container, Typography, Paper, Avatar } from '@mui/material';
-import { Schedule, LocationOn, Pets, HandshakeOutlined, WavingHand, VerifiedUser } from '@mui/icons-material';
+import {
+  Schedule,
+  LocationOn,
+  Pets,
+  HandshakeOutlined,
+  WavingHand,
+  VerifiedUser,
+  Recycling,
+} from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
 
 const AboutUsPage = () => {
@@ -83,6 +91,8 @@ const AboutUsPage = () => {
             </Typography>
           </Box>
         </Paper>
+
+        {/* Why choose Meow PC Store section */}
 
         <Paper
           elevation={1}
@@ -175,6 +185,29 @@ const AboutUsPage = () => {
                 </Typography>
                 <Typography variant="body1" color="navy">
                   {t('about.whyChoose.builtToLast.description')}
+                </Typography>
+              </Box>
+            </Box>
+
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'flex-start',
+                gap: 2,
+              }}
+            >
+              <Recycling
+                sx={{
+                  color: 'oceanBlue.main',
+                  mt: 0.5,
+                }}
+              />
+              <Box>
+                <Typography variant="h6" color="navy" fontWeight={600}>
+                  {t('about.whyChoose.sustainability.title')}
+                </Typography>
+                <Typography variant="body1" color="navy">
+                  {t('about.whyChoose.sustainability.description')}
                 </Typography>
               </Box>
             </Box>
