@@ -12,27 +12,27 @@
   },
   "seo": {
     "defaultTitle": "Pelitietokone Tampere | Räätälöidyt Gaming PC:t | Meow PC Store",
-    "defaultDescription": "Uudet pelitietokoneet ja räätälöidyt kokoonpanot Tampereella. Laadukkaat komponentit (RTX 4070, Ryzen 7000), ammattimainen kokoaminen, 3 vuoden takuu. Nouto Tampereelta tai henkilökohtainen kotiinkuljetus.",
-    "defaultKeywords": "pelitietokone, pelitietokone tampere, räätälöity pelitietokone, uusi pelitietokone, pelitietokoneet, gaming pc, pelikone, valmis pelitietokone, kotiinkuljetus",
+    "defaultDescription": "Uudet pelitietokoneet ja räätälöidyt kokoonpanot Tampereella. Laadukkaat komponentit (RTX 4070, Ryzen 7000), ammattimainen kokoaminen, 3 vuoden takuu. Nouto Tampereelta, luotettava kotiinkuljetus suomalaisella kuriirilla tai premium-pikatoimitus.",
+    "defaultKeywords": "pelitietokone, pelitietokone tampere, räätälöity pelitietokone, uusi pelitietokone, pelitietokoneet, gaming pc, valmis pelitietokone, pc toimitus, kotiinkuljetus",
     "home": {
       "title": "Pelitietokone Tampere | Uudet Gaming PC:t & Räätälöidyt pelikoneet",
-      "description": "Tyylikkäät uudet pelitietokoneet laadukkaista osista. Valmis PC tai juuri sinulle räätälöity kone. Ammattitaitoinen kokoaminen, 3 vuoden takuu. Nouto Tampereelta tai henkilökohtainen toimitus kotiovelle.",
-      "keywords": "uusi pelitietokone, pelitietokone tampere, räätälöity pelitietokone, uudet pelitietokoneet, gaming pc, valmis pelikone, pc toimitus"
+      "description": "Tyylikkäät uudet pelitietokoneet laadukkaista osista. Valmis PC tai juuri sinulle räätälöity kone. Ammattitaitoinen kokoaminen, 3 vuoden takuu. Luotettava kotiinkuljetus suomalaisella kuriirilla tai premium-pikatoimitus saatavilla.",
+      "keywords": "uusi pelitietokone, pelitietokone tampere, räätälöity pelitietokone, uudet pelitietokoneet, gaming pc, valmis pelikone, pc toimitus, premium toimitus"
     },
     "products": {
       "title": "Uudet valmiit pelitietokoneet",
-      "description": "Selaa uusia valmiita pelitietokoneita. AMD Ryzen -prosessorit, NVIDIA RTX ja AMD Radeon -näytönohjaimet. Kaikki uusista komponenteista, 3 vuoden takuu. Henkilökohtainen kotiinkuljetus mahdollinen.",
-      "keywords": "uusi pelitietokone, valmis pelitietokone, uudet pelitietokoneet, gaming pc, rtx 4070, rx 7800 xt, rx 9060 xt, pelikone"
+      "description": "Selaa uusia valmiita pelitietokoneita. AMD Ryzen -prosessorit, NVIDIA RTX ja AMD Radeon -näytönohjaimet. Kaikki uusista komponenteista, 3 vuoden takuu. Luotettava kotiinkuljetus suomalaisella kuriirilla tai premium-pikatoimitus saatavilla.",
+      "keywords": "uusi pelitietokone, valmis pelitietokone, gaming pc, rtx 4070, rx 7800 xt, rx 9060 xt, pelikone, premium toimitus"
     },
     "customBuild": {
       "title": "Räätälöity pelitietokone | Custom Gaming PC Tampere",
-      "description": "Tilaa räätälöity uusi pelitietokone juuri sinun tarpeisiin. Ammattitaitoinen PC-kokoamispalvelu Tampereella. Kerro tarpeesi, rakennamme unelmakoneen noin viikossa uusista osista. Nouto Tampereelta tai henkilökohtainen kotiinkuljetus.",
-      "keywords": "räätälöity pelitietokone, custom gaming pc, pelitietokoneen kokoaminen, tilaustyö pelitietokone, yksilöllinen pelikone, uusi pelitietokone, pc kotiinkuljetus"
+      "description": "Tilaa räätälöity uusi pelitietokone juuri sinun tarpeisiin. Ammattitaitoinen PC-kokoamispalvelu Tampereella. Kerro tarpeesi, rakennamme unelmakoneen noin viikossa uusista osista. Luotettava kotiinkuljetus suomalaisella kuriirilla tai premium-pikatoimitus suoraan kotiovelle.",
+      "keywords": "räätälöity pelitietokone, custom gaming pc, pelitietokoneen kokoaminen, tilaustyö pelitietokone, yksilöllinen pelikone, uusi pelitietokone, pc toimitus, premium toimitus"
     },
     "about": {
       "title": "Tietoa meistä | Pelitietokone Tampere",
-      "description": "Tutustu Meow PC Storeen – paikallinen pelitietokone-asiantuntija Tampereella. Laatukokoonpanot uusista osista, nopea ja henkilökohtainen palvelu, joustavat noudot ja tarvittaessa kotiinkuljetus.",
-      "keywords": "pelitietokone tampere, gaming pc myynti, pc-kauppa tampere, tietokoneen kokoaminen"
+      "description": "Tutustu Meow PC Storeen – paikallinen pelitietokoneasiantuntija Tampereella. Laatukokoonpanot uusista osista, nopea ja henkilökohtainen palvelu, joustavat noudot ja toimitukset – luotettavalla suomalaisella kuriirilla tai premium-pikatoimituksella.",
+      "keywords": "pelitietokone tampere, gaming pc myynti, pc-kauppa tampere, tietokoneen kokoaminen, kotiinkuljetus"
     }
   },
   "hero": {
@@ -64,8 +64,8 @@
   },
   "orderModal": {
     "title": "Kuinka tilata 📦",
-    "intro": "Nopein tapa tilata tämä kone on lähettää minulle viesti. Koneen voi noutaa Tampereelta ja testata paikan päällä (esim. benchmarkilla), jotta näet että se toimii. Voit myös valita premium-kotiinkuljetuksen – tuon tietokoneesi henkilökohtaisesti omalla autolla suoraan kotiovellesi. Hinta määräytyy etäisyyden mukaan.",
-    "phoneLabel": "+358408589471 – tavoitat minut:",
+    "intro": "Nopein tapa tilata tämä kone on lähettää minulle viesti. Koneen voi noutaa Tampereelta ja testata paikan päällä (esim. benchmarkilla). Voit myös valita luotettavan kotiinkuljetuksen suomalaisella kuriirilla. Asiakkaille, jotka asuvat kohtuullisen ajomatkan päässä Tampereelta, tarjoan myös premium-pikatoimitusta – tuon PC:n henkilökohtaisesti suoraan kotiovellesi mahdollisimman pian (hinta määräytyy etäisyyden mukaan).",
+    "phoneLabel": "Lähetä viesti numeroon +358408589471, olen tavoitettavissa:",
     "email": "Sähköposti:",
     "availability": "⏰ Olen tavoitettavissa lähes 24/7 ja vastaan viesteihin mahdollisimman pian! Palvelu suomeksi ja englanniksi."
   },
@@ -77,7 +77,7 @@
     "benefit1": "PC rakennettuna ja valmiina yleensä noin viikon sisällä",
     "benefit2": "Windows 11 Pro valmiiksi asennettuna",
     "benefit3": "Täydet suorituskyky- ja vakaustestit ennen luovutusta",
-    "benefit4": "Voit noutaa koneen Tampereelta tai tilata premium-kotiinkuljetuksen suoraan kotiovelle",
+    "benefit4": "Voit noutaa koneen Tampereelta, tilata luotettavan kotiinkuljetuksen suomalaisella kuriirilla tai premium-pikatoimituksen suoraan kotiovelle",
     "contactTitle": "Lähetä viesti numeroon +358408589471",
     "availableOn": "Olen tavoitettavissa:",
     "email": "Sähköposti:",
@@ -98,7 +98,7 @@
       },
       "customerFirst": {
         "title": "Sinä olet etusijalla",
-        "description": "Kysyn ensin mitä tarvitset – pelaamiseen, työhön tai sisällöntuotantoon – ja ehdotan siihen sopivan ratkaisun. Vastaan viesteihin nopeasti, noutoajat ovat joustavia ja tarvittaessa tuon koneen kotiovellesi. Siksi asiakkaat antavat minulle hyviä arvosteluja Google Mapsissa."
+        "description": "Kysyn ensin mitä tarvitset – pelaamiseen, työhön tai sisällöntuotantoon – ja ehdotan siihen sopivan ratkaisun. Vastaan viesteihin nopeasti, noutoajat ovat joustavia ja nyt myös toimitusvaihtoehtoina on luotettava kotiinkuljetus suomalaisella kuriirilla tai premium-pikatoimitus. Siksi asiakkaat antavat minulle hyviä arvosteluja Google Mapsissa."
       },
       "builtToLast": {
         "title": "Rakennettu kestämään",
@@ -107,7 +107,7 @@
     },
     "localAdvantage": {
       "title": "Tampereelta koko Suomeen",
-      "description": "Toimin Pirkanmaan alueella, mutta palvelen asiakkaita ympäri Suomea. Voit tulla Tampereelle katsomaan ja noutamaan koneen silloin kun sinulle sopii, tai voit valita premium-kotiinkuljetuksen, jossa tuon PC:n henkilökohtaisesti omalla autolla – ei rahdissa pyörinytnä. Näin kone tulee perille ehjänä ja käyttövalmiina."
+      "description": "Toimin Pirkanmaan alueella, mutta palvelen asiakkaita ympäri Suomea. Voit tulla Tampereelle katsomaan ja noutamaan koneen silloin kun sinulle sopii, valita luotettavan kotiinkuljetuksen suomalaisella kuriirilla, tai premium-pikatoimituksen, jossa tuon PC:n henkilökohtaisesti suoraan kotiovellesi mahdollisimman pian. Näin kone tulee perille ehjänä ja käyttövalmiina – olitpa Helsingissä, Vaasassa, Jyväskylässä tai missä tahansa välillä. Tue paikallista yritystä, joka tarjoaa henkilökohtaista palvelua, johon voit luottaa."
     },
     "meowStory": {
       "title": "Tarina nimen takana",
