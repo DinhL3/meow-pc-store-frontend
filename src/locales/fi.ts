@@ -11,93 +11,38 @@ export default {
     select: 'Valitse kieli',
   },
   seo: {
-    defaultTitle: 'Pelitietokone Tampere | Räätälöidyt Gaming PC:t | Meow PC Store',
+    defaultTitle: 'Pelikone Tampere | Räätälöidyt Gaming PC:t | Meow PC Store',
     defaultDescription: `
-      Uudet pelitietokoneet ja räätälöidyt kokoonpanot Tampereella.
-      Laadukkaat komponentit (RTX 4070, Ryzen 7000), ammattimainen kokoaminen,
-      3 vuoden takuu. Nouto Tampereelta, luotettava kotiinkuljetus suomalaisella
-      kuriirilla tai premium-pikatoimitus.
-    `,
-    defaultKeywords: `
-      pelitietokone, pelitietokone tampere, räätälöity pelitietokone,
-      uusi pelitietokone, pelitietokoneet, gaming pc, valmis pelitietokone,
-      pc toimitus, kotiinkuljetus
-    `,
-    home: {
-      title: 'Pelitietokone Tampere | Uudet Gaming PC:t & Räätälöidyt pelikoneet',
-      description: `
-        Tyylikkäät uudet pelitietokoneet laadukkaista osista. Valmis PC tai
-        juuri sinulle räätälöity kone. Ammattitaitoinen kokoaminen, 3 vuoden takuu.
-        Luotettava kotiinkuljetus suomalaisella kuriirilla tai premium-pikatoimitus
-        saatavilla.
-      `,
-      keywords: `
-        uusi pelitietokone, pelitietokone tampere, räätälöity pelitietokone,
-        uudet pelitietokoneet, gaming pc, valmis pelikone, pc toimitus,
-        premium toimitus
-      `,
-    },
-    products: {
-      title: 'Uudet valmiit pelitietokoneet',
-      description: `
-        Selaa uusia valmiita pelitietokoneita. AMD Ryzen -prosessorit,
-        NVIDIA RTX ja AMD Radeon -näytönohjaimet. Kaikki uusista komponenteista,
-        3 vuoden takuu. Luotettava kotiinkuljetus suomalaisella kuriirilla tai
-        premium-pikatoimitus saatavilla.
-      `,
-      keywords: `
-        uusi pelitietokone, valmis pelitietokone, gaming pc, rtx 4070,
-        rx 7800 xt, rx 9060 xt, pelikone, premium toimitus
-      `,
-    },
-    customBuild: {
-      title: 'Räätälöity pelitietokone | Custom Gaming PC Tampere',
-      description: `
-        Tilaa räätälöity uusi pelitietokone juuri sinun tarpeisiin.
-        Ammattitaitoinen PC-kokoamispalvelu Tampereella. Kerro tarpeesi,
-        rakennamme unelmakoneen noin viikossa uusista osista. Luotettava
-        kotiinkuljetus suomalaisella kuriirilla tai premium-pikatoimitus
-        suoraan kotiovelle.
-      `,
-      keywords: `
-        räätälöity pelitietokone, custom gaming pc, pelitietokoneen kokoaminen,
-        tilaustyö pelitietokone, yksilöllinen pelikone, uusi pelitietokone,
-        pc toimitus, premium toimitus
-      `,
-    },
-    about: {
-      title: 'Tietoa meistä | Pelitietokone Tampere',
-      description: `
-        Tutustu Meow PC Storeen – paikallinen pelitietokoneasiantuntija
-        Tampereella. Laatukokoonpanot uusista osista, nopea ja henkilökohtainen
-        palvelu, joustavat noudot ja toimitukset – luotettavalla suomalaisella
-        kuriirilla tai premium-pikatoimituksella.
-      `,
-      keywords: `
-        pelitietokone tampere, gaming pc myynti, pc-kauppa tampere,
-        tietokoneen kokoaminen, kotiinkuljetus
-      `,
-    },
+    Uudet ja räätälöidyt pelitietokoneet Tampereelta. Laadukkaat osat, siisti kaapelointi
+    ja 3 vuoden takuu. Nouto Tampereelta tai kotiinkuljetus koko Suomeen.
+  `,
+    keywords: `
+    pelikone, pelitietokone, gaming pc, räätälöity pc, custom pc,
+    pelikone Tampere, pelitietokone Tampere, toimitus koko Suomeen,
+    1440p pelikone, hiljainen pelikone, valkoinen pc, striimaus pc, editointi pc,
+    RTX 5070 pelikone, RX 9060 XT pelikone, RX 9070 pelikone, Ryzen 5 pelikone, pelikone hinta, pelikone tarjous
+  `,
   },
   hero: {
-    title: 'Tyylikkäät ja tehokkaat PC:t',
-    subtitle: 'Laadukkaat osat, rakennettu kestämään, koottu ammattilaisen toimesta.',
-    subtitleLine2: 'Säästä aikaa ja vaivaa – saat luotettavan suorituskyvyn ja mielenrauhan.',
-    browsePCsButton: 'Selaa tietokoneita',
-    or: 'tai',
-    buildPCButton: 'Rakenna juuri sellainen PC kuin haluat',
-    watchVideos: 'Katso videomme:',
+    title: 'Tyylikkäät ja laadukkaat PC:t Tampereelta',
+    subtitle: `
+      Rakennan näyttäviä ja samalla hiljaisia pelitietokoneita, jotka on tehty
+      kestämään. Vain uudet, luotettavat osat. Siisti kaapelointi. 3 vuoden takuu.
+      Nouto Tampereelta tai toimitus kotiovelle.
+    `,
+    ctaBrowse: 'Selaa valmiita koneita',
+    ctaCustom: 'Pyydä oma kokoonpano',
   },
-  banner: {
+  underConstruction: {
     title: 'Sivusto rakenteilla 🚧',
     message: `
-      Tämä sivusto on parhaillaan rakenteilla yrityksen parhaan (ja ainoan)
-      web-kehittäjän, eli minun, toimesta. Pahoittelen mahdollisia puuttuvia
-      ominaisuuksia. Kiitos kärsivällisyydestäsi!
+      Tämä sivusto on parhaillaan yrityksen ainoan (ja siksi myös parhaan)
+      web-kehittäjän työn alla. Pahoittelut puuttuvista ominaisuuksista!
+      Kiitos kärsivällisyydestä 🙌
     `,
   },
   products: {
-    title: 'Valmiit pelitietokoneet',
+    title: 'Uudet valmiit pelitietokoneet',
     outOfStock: 'Loppuunmyyty',
   },
   productDetails: {
@@ -116,13 +61,17 @@ export default {
   orderModal: {
     title: 'Kuinka tilata 📦',
     intro: `
-      Nopein tapa tilata tämä kone on lähettää minulle viesti. Koneen voi
-      noutaa Tampereelta ja testata paikan päällä (esim. benchmarkilla).
-      Voit myös valita luotettavan kotiinkuljetuksen suomalaisella kuriirilla.
-      Asiakkaille, jotka asuvat kohtuullisen ajomatkan päässä Tampereelta,
-      tarjoan myös premium-pikatoimitusta – tuon PC:n henkilökohtaisesti
-      suoraan kotiovellesi mahdollisimman pian (hinta määräytyy etäisyyden mukaan).
+      Nopein tapa tilata tämä kone on lähettää minulle viesti.
     `,
+    deliveryTitle: 'Toimitusvaihtoehdot:',
+    deliveryOptions: {
+      pickup: 'Nouto Tampereelta (ilmainen)',
+      postnord: 'PostNord-kotiinkuljetus (+17 €)',
+      premium: `
+        Premium-pikatoimitus samana tai seuraavana päivänä, myös viikonloppuisin
+        (hinta määräytyy etäisyyden mukaan)
+      `,
+    },
     phoneLabel: 'Lähetä viesti numeroon +358408589471, olen tavoitettavissa:',
     email: 'Sähköposti:',
   },
@@ -134,10 +83,12 @@ export default {
       Ultra-asetuksilla, kilpailullista esports-suorituskykyä vai työasemaa
       videon editointiin? Haluatko RGB-valot jotka loistavat, vai siistin,
       huomaamattoman koneen? Pienempi kotelo pöydälle vai täysikokoinen torni
-      lisätilalla – kaikki onnistuu.
+      useilla laajennuspaikoilla?
     `,
-    callToAction: 'Lähetä minulle viesti ja jutellaan siitä, mitä etsit.',
-    whatYouGet: 'Mitä saat:',
+    callToAction: `
+      Lähetä minulle viesti, niin katsotaan yhdessä sinulle sopiva ratkaisu.
+    `,
+    whatYouGet: 'Näin se toimii:',
     benefit1: 'PC rakennettuna ja valmiina yleensä noin viikon sisällä',
     benefit2: 'Windows 11 Pro valmiiksi asennettuna',
     benefit3: 'Täydet suorituskyky- ja vakaustestit ennen luovutusta',
@@ -153,31 +104,34 @@ export default {
     pageTitle: 'Tietoa Meow PC Storesta',
     pageSubtitle: 'Tyylikkäät ja laadukkaat PC:t Tampereelta',
     whoIAm: {
-      greeting: 'Moro, olen Dinh',
+      greeting: 'Moikka, olen Dinh',
       description: `
         Olen Tampereella toimiva ohjelmistokehittäjä, jolla on vahva intohimo
         rakentaa koneita jotka näyttävät hyvältä, toimivat moitteettomasti ja
-        kestävät pitkään – sellaisia, joista omistaja voi olla ylpeä.
+        kestävät käyttöä – sellaisia, joista asiakas on oikeasti ylpeä.
       `,
     },
     whyChoose: {
-      title: 'Miksi valita Meow PC Store?',
+      title: 'Miksi tilata juuri minulta?',
       saveTime: {
-        title: 'Säästä aikaa ja vaivaa',
+        title: 'Säästät aikaa ja vaivaa',
         description: `
-          PC:n rakentaminen vaatii paljon selvittelyä, osavalintoja, kokoamista
-          ja asennuksia. Minä hoidan tämän puolestasi, jotta sinä voit keskittyä
-          pelaamiseen tai työhön.
+          Sinun ei tarvitse käyttää tunteja osien valintaan, yhteensopivuuden
+          tarkistamiseen ja kasaamiseen. Saat kaiken kerralla valmiina.
         `,
       },
-      customerFirst: {
-        title: 'Sinä olet etusijalla',
+      qualityParts: {
+        title: 'Vain uudet ja laadukkaat osat',
         description: `
-          Kysyn ensin mitä tarvitset – pelaamiseen, työhön tai sisällöntuotantoon
-          – ja ehdotan siihen sopivan ratkaisun. Vastaan viesteihin nopeasti,
-          noutoajat ovat joustavia ja nyt myös toimitusvaihtoehtoina on luotettava
-          kotiinkuljetus suomalaisella kuriirilla tai premium-pikatoimitus.
-          Siksi asiakkaat antavat minulle hyviä arvosteluja Google Mapsissa.
+          En käytä tuntemattomia virtalähteitä tai hämäriä komponentteja.
+          Käytän toimittajia ja osia, joiden takuut ja suorituskyky ovat tiedossa.
+        `,
+      },
+      tested: {
+        title: 'Testattu ja käyttövalmis',
+        description: `
+          Jokainen kone testataan ennen luovutusta. Voin ajaa sinulle benchmarkit
+          ja lämpötilat talteen.
         `,
       },
       builtToLast: {
@@ -188,27 +142,37 @@ export default {
           joka noudattaa Suomen kuluttajansuojalakia.
         `,
       },
+      sustainability: {
+        title: 'Vastuullinen ja eettinen toiminta',
+        description: `
+          Pyrin tekemään tätä työtä mahdollisimman vastuullisesti. Se tarkoittaa
+          esimerkiksi sitä, että pakkaan mieluummin ympäristöystävällisesti enkä
+          turhaan muoviin, ja annan komponenttien laatikot sinulle talteen tai
+          mahdollista jälleenmyyntiä varten. Pidän some-sisällön rehellisenä
+          (ei harhaanjohtavia tai "maksettu mutta ei kerrota" -juttuja) ja
+          kohtelen asiakkaita, kumppaneita ja toimittajia kunnioittavasti –
+          koska luottamus on tärkeämpi kuin nopeat kaupat. Tämä on bisnes,
+          joka on tehty kestämään.
+        `,
+      },
     },
     localAdvantage: {
       title: 'Tampereelta koko Suomeen',
       description: `
         Toimin Pirkanmaan alueella, mutta palvelen asiakkaita ympäri Suomea.
         Voit tulla Tampereelle katsomaan ja noutamaan koneen silloin kun sinulle
-        sopii, valita luotettavan kotiinkuljetuksen suomalaisella kuriirilla,
-        tai premium-pikatoimituksen, jossa tuon PC:n henkilökohtaisesti suoraan
-        kotiovellesi mahdollisimman pian. Näin kone tulee perille ehjänä ja
-        käyttövalmiina – olitpa Helsingissä, Vaasassa, Jyväskylässä tai missä
-        tahansa välillä. Tue paikallista yritystä, joka tarjoaa henkilökohtaista
-        palvelua, johon voit luottaa.
+        sopii, tai valita luotettavan kotiinkuljetuksen tai premium-pikatoimituksen.
+        Haluan, että kone tulee perille ehjänä ja helposti – mieluiten niin, että
+        voit vain kytkeä sen ja aloittaa pelaamisen.
       `,
     },
     meowStory: {
       title: 'Tarina nimen takana',
       description: `
         Muutama vuosi sitten pelastin pienen kellarikissanpennun, jolle annoin
-        nimeksi Meo. Se toi paljon iloa ja onnea vaikeaan hetkeen. Nimi
-        "Meow PC Store" muistuttaa minua siitä, että myös asiakkaalle pitää
-        tuoda hyvä fiilis – vähän samaan tapaan kuin se kissa toi minulle.
+        nimeksi Meo. Se toi paljon iloa vaikeaan vaiheeseen. Nimi
+        "Meow PC Store" muistuttaa minua siitä, että asiakkaalle pitää tuoda
+        sama tunne – hyvää fiilistä, reilua palvelua ja vähän persoonaa mukaan.
       `,
       caption: 'Hän on nyt iso ja hyvinvoiva kissa, joka elää onnellisesti omistajansa kanssa.',
     },
