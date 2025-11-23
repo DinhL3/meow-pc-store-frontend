@@ -1,5 +1,5 @@
 import { Box, Container, IconButton, Typography, Stack } from '@mui/material';
-import { FaTiktok, FaYoutube, FaInstagram } from 'react-icons/fa';
+import { FaTiktok, FaYoutube } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
 export default function Footer() {
@@ -111,27 +111,6 @@ export default function Footer() {
               }}
             >
               <FaYoutube />
-            </IconButton>
-
-            <IconButton
-              component="a"
-              href="https://www.instagram.com/meowpc.fi/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              sx={{
-                backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                color: 'white',
-                width: 48,
-                height: 48,
-                transition: 'all 0.3s ease',
-                '&:hover': {
-                  background: 'linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)',
-                  transform: 'scale(1.1)',
-                },
-              }}
-            >
-              <FaInstagram />
             </IconButton>
           </Box>
         </Box>
