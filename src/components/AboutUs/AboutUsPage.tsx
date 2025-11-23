@@ -218,27 +218,48 @@ const AboutUsPage = () => {
         <Paper
           elevation={0}
           sx={{
-            bgcolor: 'navy.main',
-            color: 'white',
             p: 4,
-            borderRadius: 2,
             mb: 4,
+            bgcolor: 'navy.main',
+            display: 'flex',
+            flexDirection: {
+              xs: 'column',
+              md: 'row',
+            },
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: 4,
+            borderRadius: 2,
           }}
         >
-          <Box
+          <Avatar
+            src="https://res.cloudinary.com/dlhzbr2to/image/upload/v1763865785/alex-delivery_wyrbsz.webp"
+            alt="Next-day premium delivery"
             sx={{
-              display: 'flex',
-              alignItems: 'center',
-              mb: 2,
-              gap: 1,
+              width: 200,
+              height: 200,
+              margin: '0 auto',
             }}
-          >
-            <LocationOn sx={{ fontSize: 32 }} />
-            <Typography variant="h5" sx={{ fontWeight: 600 }}>
-              {t('about.localAdvantage.title')}
+          />
+          <Box>
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                mb: 2,
+                gap: 1,
+              }}
+            >
+              <LocationOn sx={{ fontSize: 32, color: 'cream.main' }} />
+              <Typography variant="h5" color="cream" sx={{ fontWeight: 600 }}>
+                {t('about.localAdvantage.title')}
+              </Typography>
+            </Box>
+
+            <Typography variant="body1" color="cream">
+              {t('about.localAdvantage.description')}
             </Typography>
           </Box>
-          <Typography variant="body1">{t('about.localAdvantage.description')}</Typography>
         </Paper>
 
         {/* The Story Behind the Name */}
@@ -288,23 +309,16 @@ const AboutUsPage = () => {
               {t('about.meowStory.caption')}
             </Typography>
           </Box>
-          <Box
+
+          <Avatar
+            src="https://res.cloudinary.com/dlhzbr2to/image/upload/v1760983493/meo_wzapxi.jpg"
+            alt="Meo the rescued kitten"
             sx={{
-              flex: { xs: 1, md: 0.4 },
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+              width: 200,
+              height: 200,
+              margin: '0 auto',
             }}
-          >
-            <Avatar
-              src="https://res.cloudinary.com/dlhzbr2to/image/upload/v1760983493/meo_wzapxi.jpg"
-              alt="Meo the rescued kitten"
-              sx={{
-                width: 200,
-                height: 200,
-              }}
-            />
-          </Box>
+          />
         </Box>
       </Container>
     </Box>
