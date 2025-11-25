@@ -1,5 +1,5 @@
 import { Box, Container, IconButton, Typography, Stack } from '@mui/material';
-import { FaTiktok, FaYoutube } from 'react-icons/fa';
+import { FaTiktok, FaYoutube, FaTwitch } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
 export default function Footer() {
@@ -90,6 +90,27 @@ export default function Footer() {
               }}
             >
               <FaTiktok />
+            </IconButton>
+
+            <IconButton
+              component="a"
+              href="https://www.twitch.tv/meowpcfi"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitch"
+              sx={{
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                color: 'white',
+                width: 48,
+                height: 48,
+                transition: 'all 0.3s ease',
+                '&:hover': {
+                  backgroundColor: '#9147ff',
+                  transform: 'scale(1.1)',
+                },
+              }}
+            >
+              <FaTwitch />
             </IconButton>
 
             <IconButton

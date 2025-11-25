@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button, Container, Stack, Typography, Box, IconButton } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { FaTiktok, FaYoutube } from 'react-icons/fa';
+import { FaTiktok, FaYoutube, FaTwitch } from 'react-icons/fa';
 
 const HeroSection: React.FC = () => {
   const { t } = useTranslation();
@@ -220,6 +220,27 @@ const HeroSection: React.FC = () => {
                 }}
               >
                 <FaTiktok />
+              </IconButton>
+
+              <IconButton
+                component="a"
+                href="https://www.twitch.tv/meowpcfi"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitch"
+                sx={{
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  color: 'white',
+                  width: 48,
+                  height: 48,
+                  transition: 'all 0.3s ease',
+                  '&:hover': {
+                    backgroundColor: '#9147ff',
+                    transform: 'scale(1.1)',
+                  },
+                }}
+              >
+                <FaTwitch />
               </IconButton>
 
               <IconButton
