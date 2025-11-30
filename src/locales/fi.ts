@@ -88,6 +88,8 @@ export default {
   products: {
     title: 'Valmiiksi kasatut pelitietokoneet',
     outOfStock: 'Loppunut varastosta',
+    info: `Nykyisten komponenttihintojen vuoksi valmiiden kokoonpanojen saatavuus vaihtelee.
+    Jos olet kiinnostunut vastaavan tehoisesta koneesta, ota rohkeasti yhteyttä niin katsotaan sinulle sopiva räätälöity vaihtoehto.`,
   },
   productDetails: {
     notFound: 'Tuotetta ei löytynyt',

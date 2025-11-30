@@ -88,6 +88,8 @@ export default {
   products: {
     title: 'Pre-built Gaming PCs',
     outOfStock: 'Out of stock',
+    info: `Due to current component pricing, availability of prebuilt PCs is uncertain. If you're interested in a system
+          with similar specifications, please contact me to discuss custom options.`,
   },
   productDetails: {
     notFound: 'Product not found',

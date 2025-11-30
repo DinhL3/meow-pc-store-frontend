@@ -1,4 +1,4 @@
-import { Container, Typography, Box } from '@mui/material';
+import { Container, Typography, Box, Alert } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { mockPCProducts } from '../../data/product.mock';
 import ProductCard from './ProductCard';
@@ -15,6 +15,12 @@ const ProductsPage = () => {
         <Typography variant="h4" fontWeight="600" component="h1" textAlign="center" color="navy.main">
           {t('products.title')}
         </Typography>
+      </Box>
+
+      <Box mb={2} width="100%" sx={{ display: 'flex', justifyContent: 'center' }}>
+        <Alert severity="info" sx={{ maxWidth: '800px', background: 'powderBlue.main' }}>
+          {t('products.info')}
+        </Alert>
       </Box>
 
       <Box
