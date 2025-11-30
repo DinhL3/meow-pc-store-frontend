@@ -1,4 +1,15 @@
-import { Container, Typography, Box, Stack, List, ListItem, ListItemIcon, ListItemText, Link } from '@mui/material';
+import {
+  Container,
+  Typography,
+  Box,
+  Stack,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Link,
+  Divider,
+} from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { FaSignalMessenger } from 'react-icons/fa6';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -6,11 +17,14 @@ import TelegramIcon from '@mui/icons-material/Telegram';
 import EmailIcon from '@mui/icons-material/Email';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
+import { customBuilds } from '../../data/customBuild.data';
+import CustomBuildCard from './CustomBuildCard';
+
 export default function CustomBuildPage() {
   const { t } = useTranslation();
 
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="md">
       <Box sx={{ mt: 3, mb: 4 }}>
         <Typography variant="h4" fontWeight={600} component="h1" textAlign="center" color="navy.main" gutterBottom>
           {t('customBuild.title')}
@@ -145,9 +159,6 @@ export default function CustomBuildPage() {
                   display: 'flex',
                   alignItems: 'center',
                   gap: 1.5,
-                  pt: 1,
-                  borderTop: '1px solid',
-                  borderColor: 'powderBlue.main',
                 }}
               >
                 <EmailIcon
@@ -175,6 +186,23 @@ export default function CustomBuildPage() {
             </Stack>
           </Box>
         </Stack>
+
+        <Typography variant="h5" fontWeight={600} textAlign="center" color="navy.main" mt={4} mb={3}>
+          {t('customBuild.exampleBuildsTitle')}
+        </Typography>
+
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            flexWrap: 'wrap',
+            gap: 2,
+          }}
+        >
+          {customBuilds.map(customBuild => (
+            <CustomBuildCard key={customBuild.id} customBuild={customBuild} />
+          ))}
+        </Box>
       </Box>
     </Container>
   );

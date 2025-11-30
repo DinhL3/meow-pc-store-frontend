@@ -142,6 +142,7 @@ export default {
     contactTitle: 'Lähetä viesti numeroon +358408589471',
     availableOn: `Tavoitat minut:`,
     email: 'Sähköposti:',
+    exampleBuildsTitle: 'Viimeisimmät räätälöidyt kokoonpanot asiakkaille',
   },
   about: {
     pageTitle: 'Tietoa Meow PC Storesta',

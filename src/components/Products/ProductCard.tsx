@@ -38,7 +38,6 @@ const ProductCard = ({ product }: ProductCardProps) => {
           alt={product.name}
           sx={{
             objectFit: 'cover',
-            transform: 'scale(1.1)',
           }}
         />
         <CardContent

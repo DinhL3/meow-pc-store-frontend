@@ -143,6 +143,7 @@ export default {
     contactTitle: 'Send a message to +358408589471',
     availableOn: `I'm available on:`,
     email: 'Email:',
+    exampleBuildsTitle: 'Recent custom builds for happy customers',
   },
   about: {
     pageTitle: 'About Meow PC Store',
