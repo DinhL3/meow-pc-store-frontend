@@ -1,15 +1,4 @@
-import {
-  Container,
-  Typography,
-  Box,
-  Stack,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Link,
-  Divider,
-} from '@mui/material';
+import { Container, Typography, Box, Stack, List, ListItem, ListItemIcon, ListItemText, Link } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { FaSignalMessenger } from 'react-icons/fa6';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';

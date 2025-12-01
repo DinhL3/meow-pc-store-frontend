@@ -12,7 +12,7 @@ interface CustomBuildCardProps {
 }
 
 const CustomBuildCard = ({ customBuild }: CustomBuildCardProps) => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const currentLang = i18n.language.startsWith('fi') ? 'fi' : 'en';
 
   return (
