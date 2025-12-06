@@ -125,7 +125,7 @@ export const mockPCProducts: Product[] = [
     id: 'tempest-lynx',
     name: 'Tempest Lynx & ARC Raiders',
     tags: ['Ryzen 5 9600X', 'RTX 5070'],
-    price: 1799,
+    price: 1599,
     currency: 'EUR',
     description: {
       en: 'The MeowPC™ Tempest Lynx is a stylish all-white, powerful PC built entirely with brand-new components. Featuring the Ryzen 5 9600X with among the fastest single-core performance available, this system excels at both gaming and productivity tasks. The RTX 5070 GPU delivers exceptional performance for creative work, AI applications, and content creation, while also providing outstanding 1440p Ultra gaming with the latest DLSS 4 support. The AM5 platform ensures easy future upgrades. Comes with Windows 11 Pro pre-installed, a generous 32GB of fast DDR5 RAM, a 2TB NVMe SSD for large projects and AAA titles, and a high-quality Phanteks power supply with 8-year manufacturer warranty. Includes a free copy of ARC Raiders',
