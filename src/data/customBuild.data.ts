@@ -37,4 +37,16 @@ export const customBuilds: CustomBuild[] = [
     createdAt: '2025-11-30T19:07:00Z',
     updatedAt: '2025-11-30T19:07:00Z',
   },
+  {
+    id: 'compact-5090',
+    name: 'Compact 4K Living Room Gaming PC',
+    tags: ['Ryzen 7 9800X3D', 'RTX 5090', 'Lian Li A3'],
+    description: {
+      en: `I want a compact, stealthy, future-proof PC that is used for living room gaming at 4K Ultra 120Hz.`,
+      fi: 'Haluan kompaktin, huomaamattoman ja tulevaisuuden kestävän PC:n 4K Ultra 120 Hz -pelaamiseen olohuonekäyttöön.',
+    },
+    image: 'https://res.cloudinary.com/dlhzbr2to/image/upload/v1765519612/compact-5090_rgx5wf.webp',
+    createdAt: '2025-12-12T08:24:00Z',
+    updatedAt: '2025-12-12T08:24:00Z',
+  },
 ];
