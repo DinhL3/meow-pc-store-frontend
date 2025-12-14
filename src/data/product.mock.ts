@@ -137,7 +137,7 @@ export const mockPCProducts: Product[] = [
         items: [
           {
             label: 'CPU',
-            value: 'AMD Ryzen 9 9600X (6 ydintä/ 12 säiettä)',
+            value: 'AMD Ryzen 5 9600X (6 ydintä/ 12 säiettä)',
           },
           {
             label: 'GPU',
@@ -186,7 +186,7 @@ export const mockPCProducts: Product[] = [
         items: [
           {
             label: 'CPU',
-            value: 'AMD Ryzen 9 9600X (6 cores/ 12 threads)',
+            value: 'AMD Ryzen 5 9600X (6 cores/ 12 threads)',
           },
           {
             label: 'GPU',
