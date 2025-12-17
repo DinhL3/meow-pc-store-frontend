@@ -128,8 +128,8 @@ export const mockPCProducts: Product[] = [
     price: 1699,
     currency: 'EUR',
     description: {
-      en: 'The MeowPC™ Tempest Lynx is a stylish all-white, powerful PC built entirely with brand-new components. Featuring the Ryzen 5 9600X with among the fastest single-core performance available, this system excels at both gaming and productivity tasks. The RTX 5070 GPU delivers exceptional performance for creative work, AI applications, and content creation, while also providing outstanding 1440p Ultra gaming with the latest DLSS 4 support. The AM5 platform ensures easy future upgrades. Comes with Windows 11 Pro pre-installed, a generous 32GB of fast DDR5 RAM, a 2TB NVMe SSD for large projects and AAA titles, and a high-quality Phanteks power supply with 8-year manufacturer warranty.',
-      fi: 'MeowPC™ Tempest Lynx on tyylikäs, täysin valkoinen ja tehokas tietokone, joka on koottu pelkästään uusista komponenteista. Ryzen 5 9600X -prosessori tarjoaa markkinoiden nopeimpiin kuuluvan yksiydinsuorituskyvyn, joten järjestelmä loistaa sekä pelaamisessa että tuottavuustehtävissä. RTX 5070 -näytönohjain tarjoaa erinomaisen suorituskyvyn luovaan työhön, tekoälysovelluksiin ja sisällöntuotantoon – ja samalla huippuluokan 1440p Ultra-pelaamisen uusimman DLSS 4 -tuella. AM5-alusta takaa vaivattomat tulevat päivitykset. Tietokoneessa on valmiiksi asennettu Windows 11 Pro, 32 Gt nopeaa DDR5-muistia, 2 Tt NVMe-SSD suurille projekteille ja AAA-peleille sekä laadukas Phanteks-virtalähde 8 vuoden valmistajan takuulla.',
+      en: 'An all-white PC that looks great on your desk, and can play the latest games at max graphics. Generous storage that will let you install many large games and softwares. High-quality parts inside, so you can enjoy gaming for many years to come. Comes with Windows 11 Pro.',
+      fi: 'Täysin valkoinen PC, joka näyttää hyvältä työpöydällä. Se pyörittää uusimmat pelit korkeilla grafiikka-asetuksilla. Paljon tallennustilaa isoille peleille ja ohjelmille. Laadukkaat osat takaavat pitkän käyttöiän. Mukana Windows 11 Pro.',
     },
     components: {
       fi: {

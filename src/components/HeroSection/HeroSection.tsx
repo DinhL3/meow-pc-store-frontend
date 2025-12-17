@@ -7,14 +7,6 @@ import { FaTiktok, FaYoutube } from 'react-icons/fa';
 const HeroSection: React.FC = () => {
   const { t } = useTranslation();
 
-  const handleContextMenu = (e: React.MouseEvent) => {
-    e.preventDefault();
-  };
-
-  const handleDragStart = (e: React.DragEvent) => {
-    e.preventDefault();
-  };
-
   return (
     <Box
       sx={{
@@ -22,6 +14,7 @@ const HeroSection: React.FC = () => {
         minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
+        userSelect: 'text',
         background: {
           xs: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/dlhzbr2to/image/upload/v1759146568/hero_drfjce.webp')`,
           md: `linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.30) 40%, rgba(0, 0, 0, 0.0) 65%), url('https://res.cloudinary.com/dlhzbr2to/image/upload/v1759147132/hero_right_vr4ep1.webp')`,
@@ -39,8 +32,6 @@ const HeroSection: React.FC = () => {
           md: 'no-repeat',
         },
         color: 'white',
-        userSelect: 'none',
-        pointerEvents: 'auto',
         '&::before': {
           content: '""',
           position: 'absolute',
@@ -49,15 +40,8 @@ const HeroSection: React.FC = () => {
           right: 0,
           bottom: 0,
           pointerEvents: 'none',
-          userSelect: 'none',
-          WebkitUserSelect: 'none',
-          MozUserSelect: 'none',
-          msUserSelect: 'none',
         },
       }}
-      onContextMenu={handleContextMenu}
-      onDragStart={handleDragStart}
-      draggable={false}
     >
       <Container maxWidth="xl">
         <Stack
