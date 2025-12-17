@@ -8,8 +8,8 @@ export const mockPCProducts: Product[] = [
     price: 1349,
     currency: 'EUR',
     description: {
-      en: 'The Meow PC™ Snow Kitten is a stylish, compact, and powerful gaming PC built entirely with brand-new components. The Ryzen 5 7500F and RX 9060 XT 16G offer the best price-to-performance on the market, while the AM5 platform ensures easy future upgrades. Enjoy smooth 1440p gaming at High to Ultra settings with the latest FSR 4 support. It also comes with Windows 11 Pro pre-installed, a generous 32GB of fast DDR5 RAM, a 2TB NVMe SSD for large AAA titles, and a high-quality Phanteks power supply with 8-year manufacturer warranty.',
-      fi: 'Meow PC™ Snow Kitten on tyylikäs, kompakti ja tehokas pelitietokone, koottu täysin uusista komponenteista. Ryzen 5 7500F ja RX 9060 XT 16G tarjoavat markkinoiden parasta hinta–suorituskykyä, AM5-alusta mahdollistaa tulevat päivitykset, ja 1440p-pelaaminen onnistuu High–Ultra -asetuksilla uusimmalla FSR 4 -tuella. Mukana myös Windows 11 Pro, nopeat 32 GB DDR5 -muistia, 2 TB NVMe SSD tilaa isoille AAA-peleille sekä laadukas Phanteksin virtalähde (8 vuoden valmistajan takuu).',
+      en: 'This is a great starter gaming PC, as it can play the latest games well, while still let you upgrade in the future. High-quality parts inside, so you can enjoy gaming for many years to come. Comes with Windows 11 Pro.',
+      fi: 'Tämä on hyvä aloitustason pelikone. Se pyörittää uusimmat pelit hyvin ja antaa mahdollisuuden päivittää osia myöhemmin. Laadukkaat komponentit takaavat pitkäikäisen pelikokemuksen. Mukana Windows 11 Pro.',
     },
     components: {
       fi: {

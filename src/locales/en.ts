@@ -74,7 +74,7 @@ export default {
     subtitleLine2: 'Save time, no headaches, just turn on and have fun!',
     browsePCsButton: 'See PCs',
     or: 'or',
-    buildPCButton: 'Build the exact PC you want',
+    buildPCButton: 'Let me build your dream PC',
     watchVideos: 'Watch our videos on:',
   },
   banner: {
@@ -86,10 +86,9 @@ export default {
     `,
   },
   products: {
-    title: 'Pre-built Gaming PCs',
+    title: 'Ready-to-Play Gaming PCs',
     outOfStock: 'Out of stock',
-    info: `Due to current component pricing, availability of prebuilt PCs is uncertain. If you're interested in a system
-          with similar specifications, please contact me to discuss custom options.`,
+    info: `Due to high component prices, I am trying my best to build new PCs at a good price, but there are no promises. Please send me a Whatsapp message if you want a PC now!`,
   },
   productDetails: {
     notFound: 'Product not found',
@@ -120,15 +119,9 @@ export default {
     email: 'Email:',
   },
   customBuild: {
-    title: 'Get the exact PC you want',
+    title: 'Let me build your dream PC',
     intro: `
-      Whether you have a clear vision or just a rough idea, I'm here to help.
-      Tell me about your needs: are you looking for silky-smooth 1440p gaming
-      at Ultra settings, competitive esports performance, or a workstation for
-      video editing? Want RGB lights that shine, or a clean stealth build?
-      Prefer a compact PC to fit on your desk, or a full tower with many
-      expansion slots?
-    `,
+      You have some ideas, or a component list of your dream PC, but too busy to build one yourself? No worries, send me a Whatsapp message or email. I will pick the best components for your budget and take care of everything else, so you can jump straight into gaming!`,
     callToAction: `
       Send me a message and let's have a chat about what you're looking for.
     `,
@@ -143,7 +136,7 @@ export default {
     contactTitle: 'Send a message to +358408589471',
     availableOn: `I'm available on:`,
     email: 'Email:',
-    exampleBuildsTitle: 'Recent custom builds for happy customers',
+    exampleBuildsTitle: 'What my happy customers wanted',
   },
   about: {
     pageTitle: 'About Meow PC Store',
@@ -151,58 +144,40 @@ export default {
     whoIAm: {
       greeting: `Hi, I'm Dinh`,
       description: `
-        I'm a software engineer based in Tampere with a deep passion for
-        building excellent PCs. It must look good on your desk, perform
-        flawlessly, and stand the test of time - something that you are
-        proud to own.
-      `,
+        I build PCs for people who want the joy of gaming without the hassle. I believe your dream PC should perform well, look great on your desk, and bring you a lot of fun for many years.`,
     },
     whyChoose: {
       title: 'Why choose Meow PC Store?',
       saveTime: {
-        title: 'Save Time and Hassle',
+        title: 'Save Time. No Hassle',
         description: `
-          Building a PC can be fun, but it demands hours of research, assembly,
-          software installation, and troubleshooting. Let me handle all of that
-          so you can skip straight to enjoying your new machine.
+          Building a PC take hours or even days, and there are always risks. Let me handle everything so you can skip straight to enjoying your new PC.
         `,
       },
       customerFirst: {
         title: 'You Come First',
         description: `
-          I take time to understand what you need - whether it's for gaming,
-          work, or creating content. Fast replies via text or email, flexible
-          pickup times, and premium home delivery for ultimate convenience.
-          That's why customers give me top ratings on Google Maps.
+          I choose the best components for your need and budget, whether gaming, work, or content creation. No upselling, no waste.
         `,
       },
       builtToLast: {
         title: 'PCs Built to Last',
         description: `
-          Only new, quality parts from trusted suppliers - no shortcuts. Every
-          PC runs through full stress tests and stability checks before delivery.
-          Plus, you get a 3-year warranty on every build, following Finnish
-          Consumer Protection Act.
+          Only new, high-quality parts from trusted suppliers. No fire hazards from low-quality power supplies, no shady-branded components. Every
+          PC is stress-tested before delivery. You also get a 3-year warranty, in line with Finnish consumer law.
         `,
       },
       sustainability: {
         title: 'Sustainable & Ethical Business',
-        description: `I'm committed to doing business responsibly. That means using biodegradable
-            packing materials instead of plastic waste, and giving you component
-            boxes for reuse or resell. I uphold high standards in
-            social media content (no biased, false information for views and sponsorships). I treat customers, partners, and suppliers with
-            respect, because building trust matters more than chasing short-term
-            profits. This is a business built to last.`,
+        description: `I run my business with care and respect. Less plastic, reusable packaging, and honest information. Long-time trust over short-term profits.`,
       },
     },
     localAdvantage: {
-      title: 'Based in Tampere, Delivering Across Finland',
+      title: 'Delivering Across Finland',
       description: `
-        Meow PCs are available for everyone in Finland.
-        Meet me in Tampere with flexible pickup times, reliable home shipping
-        via Postnord, or premium same-day delivery for customers within
-        reasonable driving distance. Whether you're in Helsinki, Jyväskylä,
-        Oulu or anywhere in between, your PC arrives safe and ready to use.
+        Meow PCs are available anywhere in Finland.
+        Pick up in Tampere at a time that suits you, or choose reliable home delivery via PostNord. Premium same-day delivery is available within driving distance.
+        From Helsinki to Oulu, your PC arrives safe and ready to use.
       `,
     },
     meowStory: {

@@ -74,7 +74,7 @@ export default {
     subtitleLine2: 'Säästä aikaa. Ei säätöä. Käynnistä ja pelaa.',
     browsePCsButton: 'Katso PC:t',
     or: 'tai',
-    buildPCButton: 'Rakenna juuri sinulle sopiva PC',
+    buildPCButton: 'Anna minun rakentaa unelmiesi PC',
     watchVideos: 'Katso videoitamme:',
   },
   banner: {
@@ -86,10 +86,9 @@ export default {
     `,
   },
   products: {
-    title: 'Valmiiksi kasatut pelitietokoneet',
+    title: 'Valmiit pelikoneet - heti pelaamaan',
     outOfStock: 'Loppunut varastosta',
-    info: `Nykyisten komponenttihintojen vuoksi valmiiden kokoonpanojen saatavuus vaihtelee.
-    Jos olet kiinnostunut vastaavan tehoisesta koneesta, ota rohkeasti yhteyttä niin katsotaan sinulle sopiva räätälöity vaihtoehto.`,
+    info: `Komponenttien korkean hintatason vuoksi yritän rakentaa uusia PC:itä hyvään hintaan, mutta sitä ei voida luvata. Lähetä minulle WhatsApp-viesti, jos haluat PC:n heti.`,
   },
   productDetails: {
     notFound: 'Tuotetta ei löytynyt',
@@ -120,14 +119,9 @@ export default {
     email: 'Sähköposti:',
   },
   customBuild: {
-    title: 'Hanki juuri sinulle sopiva tietokone',
+    title: 'Anna minun rakentaa unelmiesi PC',
     intro: `
-      Oli sinulla sitten selkeä visio tai vain alustava idea, olen täällä auttamassa.
-      Kerro tarpeistasi: etsitkö silkinpehmeää 1440p-pelaamista Ultra-asetuksilla,
-      kilpapelaamiseen sopivaa suorituskykyä vai työasemaa videonmuokkaukseen?
-      Haluatko RGB-valot loistamaan vai siistin stealth-kokoonpanon?
-      Kompakti PC pöydällesi vai täysikokoinen torni useilla laajennuspaikoilla?
-    `,
+      Onko sinulla jo ideoita tai osalista unelmiesi PC:stä, mutta et ehdi rakentaa sitä itse? Ei hätää. Lähetä minulle WhatsApp-viesti tai sähköposti. Valitsen parhaat osat budjettisi mukaan ja hoidan kaiken muun. Sinä voit keskittyä pelaamiseen heti.`,
     callToAction: `
       Lähetä minulle viesti ja jutellaan siitä, mitä etsit.
     `,
@@ -142,7 +136,7 @@ export default {
     contactTitle: 'Lähetä viesti numeroon +358408589471',
     availableOn: `Tavoitat minut:`,
     email: 'Sähköposti:',
-    exampleBuildsTitle: 'Viimeisimmät räätälöidyt kokoonpanot asiakkaille',
+    exampleBuildsTitle: 'Mitä asiakkaani halusivat',
   },
   about: {
     pageTitle: 'Tietoa Meow PC Storesta',
@@ -150,63 +144,49 @@ export default {
     whoIAm: {
       greeting: `Hei, olen Dinh`,
       description: `
-        Olen Tampereella asuva ohjelmistokehittäjä, jolla on syvä intohimo
-        erinomaisten tietokoneiden rakentamiseen. Sen täytyy näyttää hyvältä
-        pöydälläsi, toimia moitteettomasti ja kestää aikaa - jotain, josta
-        voit olla ylpeä.
-      `,
+        Rakennan PC-koneita ihmisille, jotka haluavat nauttia pelaamisesta ilman säätöä. Uskon, että unelmiesi PC:n tulee toimia hyvin, näyttää hyvältä työpöydällä ja tuoda iloa moniksi vuosiksi.`,
     },
     whyChoose: {
-      title: 'Miksi valita Meow PC Store?',
+      title: `Miksi valita Meow PC Store?`,
       saveTime: {
-        title: 'Säästä aikaa ja vaivaa',
+        title: `Säästä aikaa. Ei säätöä.`,
         description: `
-          Tietokoneen rakentaminen voi olla hauskaa, mutta se vaatii tunteja
-          tutkimusta, kokoamista, ohjelmistojen asennusta ja vianetsintää.
-          Anna minun hoitaa kaikki tämä, jotta voit hypätä suoraan nauttimaan
-          uudesta koneestasi.
+          PC:n rakentaminen vie tunteja tai jopa päiviä, ja siihen liittyy aina riskejä.
+          Minä hoidan kaiken, jotta voit keskittyä nauttimaan uudesta PC:stäsi heti.
         `,
       },
       customerFirst: {
-        title: 'Sinä tulet ensin',
+        title: `Sinä olet etusijalla`,
         description: `
-          Käytän aikaa ymmärtääkseni tarpeesi - olipa kyse pelaamisesta,
-          työstä tai sisällöntuotannosta. Nopeat vastaukset viesteihin tai
-          sähköpostiin, joustavat noutoajat ja premium-kotitoimitus
-          maksimaalisen mukavuuden takaamiseksi. Siksi asiakkaat antavat
-          minulle huippuarvosanoja Google Mapsissa.
+          Valitsen parhaat osat tarpeesi ja budjettisi mukaan – pelaamiseen, työhön
+          tai sisällöntuotantoon. Ei turhaa myyntiä. Ei hukkaa.
         `,
       },
       builtToLast: {
-        title: 'Kestäviksi rakennetut tietokoneet',
+        title: `PC:t, jotka kestävät`,
         description: `
-          Vain uudet, laadukkaat osat luotettavilta toimittajilta - ei oikoteitä.
-          Jokainen tietokone käy läpi täydet rasitustestit ja vakautstarkastukset
-          ennen toimitusta. Lisäksi saat 3 vuoden takuun jokaiselle kokoonpanolle
-          Suomen kuluttajansuojalain mukaisesti.
+          Vain uudet ja laadukkaat osat luotettavilta toimittajilta.
+          Ei halpoja virtalähteitä tai epäilyttäviä komponentteja.
+          Jokainen PC testataan huolellisesti ennen toimitusta.
+          Saat myös 3 vuoden takuun Suomen kuluttajansuojalain mukaisesti.
         `,
       },
       sustainability: {
-        title: 'Kestävä ja eettinen liiketoiminta',
-        description: `Olen sitoutunut vastuulliseen liiketoimintaan. Se tarkoittaa biohajoavien
-            pakkausmateriaalien käyttöä muovijätteen sijaan ja komponenttilaatikoiden
-            antamista uudelleenkäyttöön tai jälleenmyyntiin. Noudatan korkeita
-            standardeja sosiaalisessa mediassa (ei puolueellista tai väärää tietoa
-            näkyvyyden ja sponsoroinnin vuoksi). Kohtelen asiakkaita, kumppaneita ja
-            toimittajia kunnioittavasti, koska luottamuksen rakentaminen on
-            tärkeämpää kuin lyhyen aikavälin voitot. Tämä on kestäväksi
-            rakennettu liiketoiminta.`,
+        title: `Kestävä ja vastuullinen liiketoiminta`,
+        description: `
+          Toimin huolella ja kunnioituksella.
+          Vähemmän muovia, uudelleenkäytettävät pakkaukset ja rehellinen tieto.
+          Pitkäaikainen luottamus on tärkeämpää kuin lyhyen aikavälin voitot.
+        `,
       },
     },
     localAdvantage: {
-      title: 'Kotipaikka Tampereella, toimitukset koko Suomeen',
+      title: `Toimitus koko Suomeen`,
       description: `
-        Meow PC:t ovat saatavilla kaikille Suomessa.
-        Tapaa minut Tampereella joustavilla noutoajoilla, luotettava kotitoimitus
-        PostNordin kautta tai premium-pikatoimitus samana päivänä kohtuullisen
-        ajomatkan päässä oleville asiakkaille. Oletpa Helsingissä, Jyväskylässä,
-        Oulussa tai missä tahansa näiden välillä, tietokoneesi saapuu turvallisesti
-        ja käyttövalmiina.
+        Meow PC:t ovat saatavilla kaikkialla Suomessa.
+        Nouto Tampereella sinulle sopivana ajankohtana tai luotettava kotiinkuljetus PostNordin kautta.
+        Saman päivän premium-toimitus on saatavilla ajomatkan päässä.
+        Helsingistä Ouluun – PC saapuu turvallisesti ja käyttövalmiina.
       `,
     },
     meowStory: {

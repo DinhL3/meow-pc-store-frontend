@@ -24,10 +24,6 @@ export default function CustomBuildPage() {
             {t('customBuild.intro')}
           </Typography>
 
-          <Typography variant="body1" color="navy.main">
-            {t('customBuild.callToAction')}
-          </Typography>
-
           <Box>
             <Typography variant="h6" fontWeight={600} color="navy.main" gutterBottom>
               {t('customBuild.whatYouGet')}
