@@ -236,7 +236,7 @@ export const mockPCProducts: Product[] = [
       'https://res.cloudinary.com/dlhzbr2to/image/upload/v1761755495/tempest-lynx-side_ft9qta.webp',
       'https://res.cloudinary.com/dlhzbr2to/image/upload/v1761755548/tempest-lynx-timespy_fvugdj.png',
     ],
-    isAvailable: true,
+    isAvailable: false,
     isVisible: true,
     createdAt: '2025-10-26T16:48:00Z',
     updatedAt: '2025-10-29T18:34:00Z',
