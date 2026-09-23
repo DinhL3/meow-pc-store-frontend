@@ -59,7 +59,7 @@ export default {
   products: {
     title: 'Ready-to-Play Gaming PCs',
     outOfStock: 'Out of stock',
-    info: 'Due to high component prices, I am trying my best to build new PCs at a good price, but there are no promises. Please send me a Whatsapp message if you want a PC now!',
+    info: 'Due to high component prices, I am trying my best to build new PCs at a good price, but there are no promises. Please send me an email if you want a PC now!',
   },
   productDetails: {
     notFound: 'Product not found',
@@ -74,28 +74,26 @@ export default {
   },
   orderModal: {
     title: 'How to order 📦',
-    intro: 'The fastest way to order this PC is to send me a message.',
+    intro: 'The fastest way to order this PC is to send me an email.',
     deliveryTitle: 'Here are our delivery options:',
     deliveryOptions: {
       pickup: 'Pick up in Tampere (free)',
       postnord: 'PostNord home shipping (+17 €)',
       premium: 'Premium fast shipping, same or next day, including weekends (price based on distance)',
     },
-    phoneLabel: "Send a message to +358408589471, I'm available on:",
     email: 'Email:',
   },
   customBuild: {
     title: 'Let me build your dream PC',
     intro:
-      'You have some ideas, or a component list of your dream PC, but too busy to build one yourself? No worries, send me a Whatsapp message or email. I will pick the best components for your budget and take care of everything else, so you can jump straight into gaming!',
+      'You have some ideas, or a component list of your dream PC, but too busy to build one yourself? No worries, send me an email. I will pick the best components for your budget and take care of everything else, so you can jump straight into gaming!',
     callToAction: "Send me a message and let's have a chat about what you're looking for.",
     whatYouGet: 'What you get:',
     benefit1: 'Your PC built and ready within a week',
     benefit2: 'Windows 11 Pro installed',
     benefit3: 'Full benchmark testing to ensure peak performance',
     benefit4: 'Choose pickup in Tampere, standard Postnord home delivery, or premium same-day delivery',
-    contactTitle: 'Send a message to +358408589471',
-    availableOn: "I'm available on:",
+    contactTitle: 'Contact me',
     email: 'Email:',
     exampleBuildsTitle: 'What my happy customers wanted',
   },

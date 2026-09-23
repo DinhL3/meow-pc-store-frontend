@@ -1,0 +1,135 @@
+Here's your interview preparation guide based on this project:
+
+  ---
+  Interview Prep: Meow PC Store Frontend
+
+  Tech Stack Overview (be ready to explain your choices)
+
+  - React 19 + TypeScript + Vite — modern SPA
+  - Material-UI v7 — component library with custom theming
+  - React Router v7 — client-side routing
+  - i18next — English/Finnish localization
+  - React Hook Form + Yup — form validation
+  - Swiper + yet-another-react-lightbox — product image gallery
+
+  ---
+  Likely Interview Questions & Strong Answers
+
+  ---
+  Routing & Architecture
+
+  Q: How did you structure routing in this project?
+
+  ▎ I used React Router v7 with a nested route architecture. There's a Layout component wrapping all routes that renders shared navbar and footer, with <Outlet> as the page slot. Each page (products, product-details, custom-build, about)
+  is a separate route. This keeps page-level components thin and layout concerns centralized.
+
+  Q: Why did you separate routes/ from components/?
+
+  ▎ Routes are page-level entry points — they orchestrate layout and assemble feature components. The components/ directory holds the actual UI logic. This avoids the "god component" problem where one file does too much, and makes it easy
+   to reuse components across pages.
+
+  ---
+  State Management
+
+  Q: Why didn't you use Redux or Zustand?
+
+  ▎ The app doesn't have shared global state that multiple unrelated components need simultaneously. Product data is co-located with the components that use it, language state is managed by i18next's own store, and UI state (modals,
+  menus) is local. Adding Redux here would be over-engineering — I follow the principle of lifting state only as high as needed.
+
+  ---
+  Internationalization
+
+  Q: How does the multi-language (EN/FI) support work?
+
+  ▎ I used i18next with the browser language detector plugin. On load, it checks localStorage first, then the browser's navigator.language, then falls back to Finnish. Translation strings are TypeScript files in locales/en.ts and
+  locales/fi.ts. Components use the useTranslation hook, and the user can switch language via a navbar picker which persists the choice to localStorage. Even product descriptions in the mock data have language-specific fields.
+
+  ---
+  SEO
+
+  Q: How did you handle SEO in a React SPA?
+
+  ▎ SPAs have a known SEO problem — the initial HTML is nearly empty. I took two approaches:
+  ▎ 1. A SEOHead component that uses useEffect to dynamically set document.title, meta description, Open Graph tags, Twitter Card tags, canonical URLs, and hreflang alternate links per page.
+  ▎ 2. The Netlify netlify-plugin-prerender-spa plugin to pre-render pages at build time, so crawlers get actual HTML content.
+
+  This covers both social sharing previews and search engine indexing.
+
+  ---
+  Component Patterns
+
+  Q: How did you build the product image gallery?
+
+  ▎ I combined two libraries: Swiper for the carousel with thumbnail navigation (the main interactive gallery), and yet-another-react-lightbox for the full-screen overlay when a user clicks an image. They serve different UX needs — Swiper
+   for browsing, the lightbox for inspection.
+
+  Q: How does the order/contact modal work?
+
+  ▎ There's a CustomModal shared component that accepts content as children. On the product detail page, clicking "Order" opens this modal with contact options (WhatsApp, Telegram, Signal, Email). This keeps the order flow lightweight
+  without a dedicated page or backend integration for now — intentional, since the business model is direct messaging.
+
+  ---
+  TypeScript
+
+  Q: How did you use TypeScript in this project?
+
+  ▎ Strict mode is enabled — noUnusedLocals, noUnusedParameters, and all strict checks. I defined interfaces in product.types.ts and customBuild.types.ts that model the data shape, so if mock data is later replaced by an API, TypeScript
+  will catch mismatches at the call site. The i18n translation keys are also typed, preventing typo bugs in translation lookups.
+
+  ---
+  Styling
+
+  Q: Why MUI over Tailwind or plain CSS?
+
+  ▎ MUI gives a complete design system out of the box — responsive Grid, breakpoints, theme tokens, and accessible components. For a commerce site where I needed a consistent look fast, that matters. I extended the theme with custom
+  colors (navy, oceanBlue, coralRed) so the whole app uses design tokens instead of hardcoded hex values. The sx prop lets me co-locate style with markup without separate CSS files.
+
+  ---
+  Performance
+
+  Q: What performance considerations did you make?
+
+  ▎ - Variable fonts (Work Sans, Inter) reduce font file weight vs. separate weight files
+  ▎ - Cloudinary CDN for images (WebP format, optimized delivery)
+  ▎ - useMemo/useCallback where expensive recalculations or stable references are needed
+  ▎ - Vite's code splitting handles bundle optimization automatically
+  ▎ - isVisible flag on products prevents rendering items that shouldn't show — avoids unnecessary DOM nodes
+
+  ---
+  What You'd Improve (shows maturity)
+
+  Interviewers often ask "what would you do differently?" — have an answer ready:
+
+  - Replace mock data with a real API — the architecture is ready (axios is installed), just needs a backend
+  - Add a cart/checkout flow — currently the order UX is via direct messaging; a proper cart would scale better
+  - Add tests — no test suite yet; would add Vitest + React Testing Library for component tests
+  - Server-Side Rendering — move from prerender plugin to Next.js or Remix for true SSR/SEO
+  - Accessibility audit — MUI helps but custom components need manual a11y review
+
+  ---
+  Quick Facts to Know Cold
+
+  ┌──────────────────┬──────────────────────────┐
+  │      Topic       │          Answer          │
+  ├──────────────────┼──────────────────────────┤
+  │ Framework        │ React 19                 │
+  ├──────────────────┼──────────────────────────┤
+  │ Build tool       │ Vite                     │
+  ├──────────────────┼──────────────────────────┤
+  │ Language         │ TypeScript (strict)      │
+  ├──────────────────┼──────────────────────────┤
+  │ UI library       │ Material-UI v7           │
+  ├──────────────────┼──────────────────────────┤
+  │ Routing          │ React Router v7          │
+  ├──────────────────┼──────────────────────────┤
+  │ i18n             │ i18next (EN + FI)        │
+  ├──────────────────┼──────────────────────────┤
+  │ Forms            │ React Hook Form + Yup    │
+  ├──────────────────┼──────────────────────────┤
+  │ Hosting          │ Netlify                  │
+  ├──────────────────┼──────────────────────────┤
+  │ Images           │ Cloudinary CDN           │
+  ├──────────────────┼──────────────────────────┤
+  │ State management │ Local state only (hooks) │
+  └──────────────────┴──────────────────────────┘
+

@@ -2,13 +2,10 @@ import { Container, Box, Stack, Typography, Button, List, ListItem, ListItemText
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import TelegramIcon from '@mui/icons-material/Telegram';
 import EmailIcon from '@mui/icons-material/Email';
 import DescriptionIcon from '@mui/icons-material/Description';
 import SettingsIcon from '@mui/icons-material/Settings';
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
-import { FaSignalMessenger } from 'react-icons/fa6';
 import Lightbox from 'yet-another-react-lightbox';
 
 import 'swiper/css';
@@ -425,78 +422,6 @@ const ProductDetailsPage = () => {
           </Box>
 
           <Stack spacing={2}>
-            <Box
-              sx={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: 1.5,
-              }}
-            >
-              <Typography variant="body1" fontWeight={600} color="navy.main">
-                {t('orderModal.phoneLabel')}
-              </Typography>
-            </Box>
-
-            <Box
-              sx={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: 1.5,
-              }}
-            >
-              <WhatsAppIcon
-                sx={{
-                  color: '#25d366',
-                  fontSize: 28,
-                }}
-              />
-              <Typography variant="body1" color="navy.main">
-                WhatsApp
-              </Typography>
-            </Box>
-
-            <Box
-              sx={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: 1.5,
-              }}
-            >
-              <TelegramIcon
-                sx={{
-                  color: '#0088cc',
-                  fontSize: 28,
-                }}
-              />
-              <Typography variant="body1" color="navy.main">
-                Telegram
-              </Typography>
-            </Box>
-
-            <Box
-              sx={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: 1.5,
-              }}
-            >
-              <Box
-                sx={{
-                  width: 28,
-                  height: 28,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: '#3b45fd',
-                }}
-              >
-                <FaSignalMessenger size={28} />
-              </Box>
-              <Typography variant="body1" color="navy.main">
-                Signal
-              </Typography>
-            </Box>
-
             <Box
               sx={{
                 display: 'flex',

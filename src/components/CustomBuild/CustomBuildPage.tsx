@@ -1,8 +1,5 @@
 import { Container, Typography, Box, Stack, List, ListItem, ListItemIcon, ListItemText, Link } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import { FaSignalMessenger } from 'react-icons/fa6';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import TelegramIcon from '@mui/icons-material/Telegram';
 import EmailIcon from '@mui/icons-material/Email';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
@@ -75,70 +72,8 @@ export default function CustomBuildPage() {
           <Box>
             <Typography variant="h6" fontWeight={600} color="navy.main" gutterBottom>
               {t('customBuild.contactTitle')}
-              <br />
-              {t('customBuild.availableOn')}
             </Typography>
             <Stack spacing={2}>
-              <Box
-                sx={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 1.5,
-                }}
-              >
-                <WhatsAppIcon
-                  sx={{
-                    color: '#25d366',
-                    fontSize: 28,
-                  }}
-                />
-                <Typography variant="body1" color="navy">
-                  WhatsApp
-                </Typography>
-              </Box>
-
-              <Box
-                sx={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 1.5,
-                }}
-              >
-                <TelegramIcon
-                  sx={{
-                    color: '#0088cc',
-                    fontSize: 28,
-                  }}
-                />
-                <Typography variant="body1" color="navy">
-                  Telegram
-                </Typography>
-              </Box>
-
-              <Box
-                sx={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 1.5,
-                }}
-              >
-                <Box
-                  sx={{
-                    width: 28,
-                    height: 28,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    color: '#3b45fd',
-                  }}
-                >
-                  <FaSignalMessenger size={28} />
-                </Box>
-                <Typography variant="body1" color="navy">
-                  Signal
-                </Typography>
-              </Box>
-
               <Box
                 sx={{
                   display: 'flex',

@@ -58,7 +58,7 @@ export default {
   products: {
     title: 'Valmiit pelikoneet - heti pelaamaan',
     outOfStock: 'Loppunut varastosta',
-    info: 'Komponenttien korkean hintatason vuoksi yritän rakentaa uusia PC:itä hyvään hintaan, mutta sitä ei voida luvata. Lähetä minulle WhatsApp-viesti, jos haluat PC:n heti.',
+    info: 'Komponenttien korkean hintatason vuoksi yritän rakentaa uusia PC:itä hyvään hintaan, mutta sitä ei voida luvata. Lähetä minulle sähköpostia, jos haluat PC:n heti.',
   },
   productDetails: {
     notFound: 'Tuotetta ei löytynyt',
@@ -72,28 +72,26 @@ export default {
   },
   orderModal: {
     title: 'Näin tilaat 📦',
-    intro: 'Nopein tapa tilata tämä tietokone on lähettää minulle viesti.',
+    intro: 'Nopein tapa tilata tämä tietokone on lähettää minulle sähköpostia.',
     deliveryTitle: 'Toimitusvaihtoehtomme:',
     deliveryOptions: {
       pickup: 'Nouto Tampereelta (ilmainen)',
       postnord: 'PostNord-kotitoimitus (+17 €)',
       premium: 'Premium-pikatoimitus, sama tai seuraava päivä, myös viikonloppuisin (hinta etäisyyden mukaan)',
     },
-    phoneLabel: 'Lähetä viesti numeroon +358408589471, tavoitat minut:',
     email: 'Sähköposti:',
   },
   customBuild: {
     title: 'Anna minun rakentaa unelmiesi PC',
     intro:
-      'Onko sinulla jo ideoita tai osalista unelmiesi PC:stä, mutta et ehdi rakentaa sitä itse? Ei hätää. Lähetä minulle WhatsApp-viesti tai sähköposti. Valitsen parhaat osat budjettisi mukaan ja hoidan kaiken muun. Sinä voit keskittyä pelaamiseen heti.',
+      'Onko sinulla jo ideoita tai osalista unelmiesi PC:stä, mutta et ehdi rakentaa sitä itse? Ei hätää. Lähetä minulle sähköpostia. Valitsen parhaat osat budjettisi mukaan ja hoidan kaiken muun. Sinä voit keskittyä pelaamiseen heti.',
     callToAction: 'Lähetä minulle viesti ja jutellaan siitä, mitä etsit.',
     whatYouGet: 'Mitä saat:',
     benefit1: 'Tietokoneesi kasattuna ja valmiina viikossa',
     benefit2: 'Windows 11 Pro asennettuna',
     benefit3: 'Täysi benchmark-testaus huippusuorituskyvyn varmistamiseksi',
     benefit4: 'Valitse nouto Tampereelta, normaali PostNord-kotitoimitus tai premium-pikatoimitus samana päivänä',
-    contactTitle: 'Lähetä viesti numeroon +358408589471',
-    availableOn: 'Tavoitat minut:',
+    contactTitle: 'Ota yhteyttä',
     email: 'Sähköposti:',
     exampleBuildsTitle: 'Mitä asiakkaani halusivat',
   },
